@@ -1,0 +1,326 @@
+/***
+* login.scss
+**/
+.link-think{
+  color: $color_main-3_main;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+.confirm-text{
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 15px;
+}
+.link-bold{
+  color: $color_main-3_main;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.login_panel_info{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.login_panel__block{
+  display: flex;
+  align-items: center;
+  img{
+    margin: 0 18px;
+    width: 44px;
+    height: 44px;
+  }
+}
+
+.notify-icon{
+  position: relative;
+  margin: 10px;
+  &.active::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #F3A919;
+    border: 2px solid #fff;
+  }
+}
+
+.user__info_block {
+  padding: 0 20px;
+}
+
+.top-line_sign{
+  height: 80px;
+  background-color: #fff;
+  box-shadow: inset 0px -1px 0px #E4E9F0;
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  .logo_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_back{
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+.panel-login_wrapper{
+  background-image: url("../img/bg-login_spots.svg");
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 60px;
+}
+.panel-login_form{
+  background: #fff;
+  width: 100%;
+  max-width: 580px;
+  padding: 32px 24px 24px;
+  border-radius: 16px;
+  border: 1px solid #EFE8F8;
+  margin: auto;
+  .form_radio_group{
+    display: flex;
+    justify-content: center;
+    background: #FBFAFD;
+    border-radius: 8px;
+    width: 100%
+  }
+}
+.panel-login_image svg{
+  max-width: 100%;
+}
+.form-horizontal .form-control{
+  width: 100%;
+}
+
+.user-menu a.dropdown-toggle {
+  display: inline-block;
+  height: 100%;
+}
+
+.top-search-block{
+  margin-right: 15px;
+}
+
+
+.form-center{
+  height: 100vh;
+  .panel-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.main-link{
+  font-size: 16px;
+  color: $color_main-3_main;
+  font-family: 'Golos Text';
+  font-style: normal;
+  font-weight: 600;
+}
+.text-helper{
+  color: $color_neutrals-2_secondary;
+  font-size: 14px;
+  line-height: 20px;
+}
+.text-helper_label,.control-label{
+  font-size: 16px;
+  color: $color_neutrals-2_secondary;
+  line-height: 24px;
+}
+.help-block{
+  color: red;
+}
+.block_account_exist{
+  border-top: 1px solid $color_neutrals-5-borders;
+  padding-top: 32px;
+  padding-bottom: 5px;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+.login-actions{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: relative;
+  .btns-wrapper{
+    justify-content: space-between;
+    display: flex;
+  }
+  .sign-icon{
+    padding: 10px 20px 10px 20px;
+  }
+}
+.sign-text{
+  text-align: center;
+  position: relative;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  z-index: 2;
+  .text-helper{
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: #fff;
+    position: relative;
+    z-index: 2;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    left: 0;
+    top: 21px;
+    z-index: 1;
+    background-color: $color_neutrals-5-borders;
+  }
+}
+
+.panel_login_sign-auth{
+  text-align: center;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+.form-group.password{
+  position: relative;
+}
+
+.checkbox_news-send{
+  margin-top: 32px;
+  margin-bottom: 32px;
+  label{
+    font-size: 14px;
+    line-height: 20px;
+    color: #392B4B;
+  }
+}
+
+.form_radio_group {
+  display: inline-block;
+  overflow: hidden;
+  padding: 8px 0;
+
+}
+.form_radio_group-item {
+  width: 33.3%;
+  margin: 8px;
+
+}
+.form_radio_group input[type=radio] {
+  display: none;
+}
+.form_radio_group label {
+  display: block;
+  cursor: pointer;
+  padding: 0 15px;
+  margin-bottom: 0;
+  line-height: 36px;
+  border-right: none;
+  user-select: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: $color_neutrals-1_black;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* Checked */
+.form_radio_group input[type=radio]:checked + label {
+  background: $color_main-3_main;
+  color: #fff;
+}
+
+/* Hover */
+.form_radio_group label:hover {
+  color: #666;
+}
+
+/* Disabled */
+.form_radio_group input[type=radio]:disabled + label {
+  background: #efefef;
+  color: #666;
+}
+
+/* для элемента input c type="checkbox" */
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label, связанного с .custom-checkbox */
+.custom-checkbox+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента before со следующими стилями */
+.custom-checkbox+label::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+/* стили при наведении курсора на checkbox */
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+  border-color: $color_main-4_ligher;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.custom-checkbox:not(:disabled):active+label::before {
+  background-color: $color_main-4_ligher;
+  border-color: $color_main-4_ligher;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+//.custom-checkbox:focus+label::before {
+//  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+//}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.custom-checkbox:focus:not(:checked)+label::before {
+  border-color: $color_main-4_ligher;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.custom-checkbox:checked+label::before {
+  border-color: $color_main-3_main;
+  background-color: $color_main-3_main;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.custom-checkbox:disabled+label::before {
+  background-color: $color_neutrals-4_disabled;
+}
+
+
+/**************/
+

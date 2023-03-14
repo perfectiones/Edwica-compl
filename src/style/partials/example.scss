@@ -1,0 +1,24 @@
+.btn_big{
+    width: 128px;
+    height: 44px;
+}
+.btn_disabled{
+    background-color: $color_neutrals-4_disabled;
+    color: $color_neutrals-2_secondary;
+}
+.btn_active{
+    background-color: $color_main-3_main;
+    color: $color_neutrals-7-white;
+}
+.btn_hover{
+    background-color: $color_main-2_darker;
+    color: $color_neutrals-7-white;
+}
+.btn_click{
+    background-color: $color_main-1_dark;
+    color: $color_neutrals-7-white;
+}
+.btn_focus{
+    background-color: $color_neutrals-1_black;
+    color: $color_neutrals-7-white;
+}

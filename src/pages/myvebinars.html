@@ -1,0 +1,83 @@
+//= template/inc/start.html
+<header class="header">
+    //= template/inc/top-line.html
+    //= template/inc/top-panel.html
+
+</header>
+
+<div class="content-wrapper cabinet-panel">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-xl-3 order-lg-1">
+                <aside class="left-sidebar">
+                    //= template/left-sidebar/left-menu.html
+                </aside>
+            </div>
+            <div class="col-lg-8 col-xl-9 order-lg-2">
+                <main class="main-content">
+                    <div class="main__user-block side_block">
+                        <div class="content-type__link admin_user_panel">
+                            <div class="tab-content">
+                                <div class="tab-content__title">Мои вебинары</div>
+                            </div>
+                            <a href="#" class="add_course  d-none">
+                                <span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="3" width="18" height="18" rx="9" stroke="white" stroke-width="2"/>
+                                        <path d="M12 8V16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                        <path d="M16 12L8 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>
+                                    Добавить курс
+                                </span>
+                            </a>
+                        </div>
+                        //= template/search-block.html
+                    </div>
+                    <div class="courses-content">
+                        <div class="row">
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                //= template/course/card/card-vebinar_mini.html
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= template/footer.html
+//= template/modals.html
+//= template/inc/end.html
+
+<script>
+	$(document).ready(function(){
+		$('select:not(#coursesearch-sort)').select2({
+         theme: "krajee-bs4"
+      });
+	});
+</script>

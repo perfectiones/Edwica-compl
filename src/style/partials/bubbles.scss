@@ -1,0 +1,11 @@
+.bubbles {
+  & .prof-head {
+    margin-top: 32px;
+    @media (max-width:$tablet){
+      margin-top: 24px;
+    }
+    @media (max-width:$mobile){
+       margin-top: 16px; 
+    }
+  }
+}

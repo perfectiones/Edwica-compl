@@ -1,0 +1,141 @@
+.go-buttons {
+  margin-bottom: 64px;
+  @media (max-width: $pc) {
+    margin-bottom: 56px;
+  }
+  @media (max-width: $mobile) {
+    display: none;
+  }
+  // .go-buttons__main
+  &__main {
+  }
+  // .go-buttons__container
+  &__container {
+  }
+  // .go-buttons__list
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  // .go-buttons__item
+  &__item {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    @media (any-hover: hover) {
+      &:hover {
+        &::before {
+          transform: scale(1.5);
+        }
+        &::after {
+          content: "";
+          transform: rotate(-180deg);
+        }
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      transition: all 0.6s ease 0s;
+      background-image: url(../../img/course-arrow.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 14px;
+      width: 14px;
+      right: 17px;
+      top: 17px;
+    }
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    // .go-buttons__item_1
+    &_1 {
+      overflow: hidden;
+      background-color: #ccf7e5;
+      position: relative;
+      &::before {
+        content: "";
+        transition: all 0.5s ease 0s;
+        position: absolute;
+        background-image: url(../../img/course-bg_1.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 240px;
+        width: 240px;
+        top: 0;
+        @media (max-width: $pc) {
+          left: 130px;
+        }
+      }
+    }
+    // .go-buttons__item_2
+    &_2 {
+      overflow: hidden;
+      background-color: #faefdc;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        transition: all 0.5s ease 0s;
+        background-image: url(../../img/course-bg_2.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 240px;
+        width: 240px;
+        top: 0;
+        @media (max-width: $pc) {
+          left: 130px;
+        }
+      }
+    }
+    // .go-buttons__item_3
+    &_3 {
+      overflow: hidden;
+      background-color: #c4f4ff;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        transition: all 0.5s ease 0s;
+        background-image: url(../../img/course-bg_3.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 240px;
+        width: 240px;
+        top: -20px;
+        @media (max-width: $pc) {
+          left: 130px;
+        }
+      }
+    }
+  }
+  // .go-buttons__link
+  &__link {
+    text-align: center;
+    padding: 50px 0;
+    width: 450px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 129%;
+    color: #392b4b;
+    position: relative;
+    z-index: 2;
+    @media (max-width: $pc) {
+      font-size: 16px;
+      padding: 36px 45px;
+      font-weight: 500;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: #392b4b;
+      }
+    }
+  }
+}

@@ -1,0 +1,253 @@
+//= template/inc/start.html
+<header class="header">
+   //= template/inc/top-line.html
+   //= template/inc/top-panel.html
+   //= template/inc/top-menu.html
+</header>
+//= template/inc/cat_mob_button.html
+
+<div class="filter-section">
+   <form id="w0" class="" action="/course/index" method="get">
+      <input type="hidden" name="CourseSearch[type]" value="course">
+      <div class="content-type_wrapper">
+         <div class="container">
+             <div class="row">
+                 <div class="col-lg-6 col-sm-12">
+                     <div class="content-type__link">
+                         <a class="" href="/course?CourseSearch[type]=course"><h2>Курсы</h2></a>
+                         <a class="" href="/course?CourseSearch[type]=vebinar"><h2>Вебинары</h2></a>
+                     </div>
+                 </div>
+                 <div class="col-lg-6 col-sm-12">
+                     <div class="filter_sorts">
+                        <div class="select-sort-wrapper">
+                           <label for="field-coursesearch-sort">Сортировать:</label>
+                           <div class="select-sort-wrapper_inner">
+                              <div class="form-group field-coursesearch-sort">
+                                 <select id="coursesearch-sort" class="form-control select2-hidden-accessible" name="CourseSearch[sort]" data-s2-options="s2options_d70332a3" data-krajee-select2="select2_3d04198b" style="width: 1px; height: 1px; visibility: hidden;" data-select2-id="coursesearch-sort" tabindex="-1" aria-hidden="true">
+                                    <option value="0" selected="" data-select2-id="2">Не выбрано</option>
+                                    <option value="1">Стоимость по возрастанию</option>
+                                    <option value="2">Стоимость по убыванию</option>
+                                    <option value="3">Длительность по возрастанию</option>
+                                    <option value="4">Длительность по убыванию</option>
+                                 </select>
+                                 <div class="help-block"></div>
+                              </div>
+                           </div>
+                        </div>
+
+                        <a href="#collapseFilter" id="filter_desctop" class="btn_filter filter_desctop" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="collapseFilter">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6L20 6" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M8 4V8" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M16 10V14" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M8 16V20" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M4 12L20 12" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M4 18L20 18" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                           </svg>
+                           Скрыть фильтр
+                        </a>
+                        <a href="#" id="filter_mobile" class="btn_filter filter_mobile">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4 6L20 6" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M8 4V8" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M16 10V14" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M8 16V20" stroke="#966CEE" stroke-width="2" stroke-linecap="round"></path>
+                              <path d="M4 12L20 12" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                              <path d="M4 18L20 18" stroke="#966CEE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                           </svg>
+                           Показать фильтр
+                        </a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+      <div class="collapse show" id="collapseFilter">
+         <div class="filter-panel">
+            <div class="filter-panel__top">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="mm-navbars_top">
+                           <div class="mm-navbar mm-navbar_has-btns">
+                              <a class="mm-btn mm-btn_close" id="filter_close_mobile" href=""><span class="mm-sronly">Закрыть фильтр</span></a>
+                              <div class="mm-navbar__title" >Фильтры</div>
+                              <a class="mm-btn cancel-filter__top" href="" >Очистить</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="filter-panel__content">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-2 col-lg-4 order-lg-1 order-xl-1 order-1">
+                        <div class="form-group field-cat-id">
+                           <label class="control-label" for="cat-id">Категория</label>
+                           <select id="cat-id" class="form-control" name="CourseSearch[category_id]" >
+                              <option value="" data-select2-id="4">Выберите ...</option>
+                              <option value="1">Дизайн</option>
+                              <option value="3">Менеджмент</option>
+                              <option value="4">Бизнес</option>
+                              <option value="5">Маркетинг</option>
+                              <option value="6">Право</option>
+                              <option value="7">Развитие</option>
+                              <option value="8">Школа</option>
+                              <option value="9">Медицина</option>
+                              <option value="13">Разработка</option>
+                              <option value="14">Финансы</option>
+                              <option value="15">Другое</option>
+                              <option value="16">Языки</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-4 order-lg-2 order-xl-2 order-2">
+                        <div class="form-group field-subcat-id">
+                           <label class="control-label" for="subcat-id">Подкатегория</label>
+                           <select id="subcat-id" class="form-control" name="CourseSearch[subcategory_id]">
+                              <option value="" data-select2-id="6">Выберите ...</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-4 order-lg-5 order-xl-3 order-3">
+                        <div class="_form-group slider_wrap">
+                           <label for="" class="control-label">Цена</label>
+                           <div class="slider_values">
+                              <div class="slider_value__min" id="price_value__min">от <span>1000</span> ₽</div>
+                              <div class="slider_value__max" id="price_value__max">до <span>100000</span> ₽</div>
+                           </div>
+                           <input type="text" id="slider_price" class="form-control" name="CourseSearch[price]" value="1000,100000" disabled="" data-krajee-slider="slider_0dc9341e" style="display: none;" data-value="1000,100000">
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-4 order-lg-8 order-xl-4 order-5">
+                        <div class="form-group field-price-checkbox-list-inline">
+                           <label class="control-label">Тип программы</label>
+                           <input type="hidden" name="CourseSearch[types_pay]" value="">
+                           <div id="price-checkbox-list-inline" class="list-group" custom="" inline="">
+                              <input type="checkbox" id="price_Платная" name="CourseSearch[types_pay][]" value="Платная"
+                                 ><label class="list-group-item" for="price_Платная">Платная</label>
+                              <input type="checkbox" id="price_Бесплатная" name="CourseSearch[types_pay][]" value="Бесплатная">
+                              <label class="list-group-item" for="price_Бесплатная">Бесплатная</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-4 order-lg-3 order-xl-5 order-6">
+                        <div class="form-group field-coursesearch-mentor">
+                           <label class="control-label" for="coursesearch-mentor">Наставник</label>
+                           <select id="coursesearch-mentor" class="form-control" name="CourseSearch[mentor]">
+                              <option value="none">Не выбрано</option>
+                              <option value="Y">C наставником</option>
+                              <option value="N">Без наставника</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-4 order-lg-4 order-xl-6 order-7">
+                        <div class="form-group field-coursesearch-points">
+                           <label class="control-label" for="coursesearch-points">Начисление балов</label>
+                           <select id="coursesearch-points" class="form-control" name="CourseSearch[points]">
+                              <option value="none" data-select2-id="10">Не выбрано</option>
+                              <option value="Y">Есть</option>
+                              <option value="N">Нет</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-4 order-lg-7 order-xl-7 order-8">
+                        <div class="form-group field-coursesearch-certificate">
+                           <label class="control-label" for="coursesearch-certificate">Сертификат</label>
+                           <select id="coursesearch-certificate" class="form-control" name="CourseSearch[certificate]">
+                              <option value="none" data-select2-id="12">Не выбрано</option>
+                              <option value="Y">C сертификатом</option>
+                              <option value="N">Без сертификата</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-4 order-lg-6 order-xl-8 order-4">
+                        <div class="_form-group slider_wrap">
+                           <label for="" class="control-label">Длительность</label>
+                           <div class="slider_values">
+                              <div class="slider_value__min" id="duration_value__min">от <span id="duration_min">1</span> <span id="duration_min_units">недели</span></div>
+                              <div class="slider_value__max" id="duration_value__max">до <span id="duration_max">2.4</span> <span id="duration_max_units">лет</span></div>
+                           </div>
+                           <input type="text" id="slider_duration" class="form-control" name="CourseSearch[duration]" value="1,120" data-krajee-slider="slider_c247362f" style="display: none;" data-value="1,120">
+                        </div>
+                     </div>
+                     <div class="col-xl-5 col-lg-7 order-lg-9 order-xl-9 order-9">
+                        <div class="form-group field-levels-checkbox-list-inline">
+                           <label class="control-label">Уровень сложности</label>
+                           <input type="hidden" name="CourseSearch[levelIds]" value="">
+                           <div id="levels-checkbox-list-inline" class="list-group" custom="" inline="">
+                              <input type="checkbox" id="level_1" name="CourseSearch[levelIds][]" value="1"><label class="list-group-item" for="level_1">средний</label>
+                              <input type="checkbox" id="level_3" name="CourseSearch[levelIds][]" value="3"><label class="list-group-item" for="level_3">для новичка</label>
+                              <input type="checkbox" id="level_4" name="CourseSearch[levelIds][]" value="4"><label class="list-group-item" for="level_4">для професионала</label>
+                           </div>
+                           <div class="help-block"></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="filter-panel__bottom">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-sm-12">
+                        <div class="filter_actions">
+                           <button type="submit" class="btn apply-filter">Применить фильтры</button>
+                           <a class="btn cancel-filter" href="/course">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M15.435 15.435L15.4314 15.4387L12.8965 18H8.98276C8.48155 18 7.99859 17.8118 7.62953 17.4727L6.93482 16.8343L4.82844 14.7279C4.04739 13.9469 4.04739 12.6805 4.82844 11.8995L8.36397 8.36396L11.8995 4.82843C12.6806 4.04738 13.9469 4.04738 14.7279 4.82843L18.9706 9.07107C19.7516 9.85212 19.7516 11.1184 18.9706 11.8995L15.435 15.435Z" stroke="#A897BD" stroke-width="2"></path>
+                                 <path d="M10.3137 17H19.3137C19.866 17 20.3137 17.4477 20.3137 18C20.3137 18.5523 19.866 19 19.3137 19H10.3137V17Z" fill="#A897BD"></path>
+                                 <path d="M15.3137 15L9.31372 9L8.81372 8L13.3137 4L19.8137 10.5L15.3137 15Z" fill="#A897BD"></path>
+                              </svg>
+                              Очистить
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+      <div class="filters_active">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <ul>
+                     <li><a href="/course/index">Курс <i class="fa fa-close"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </form>
+</div>
+
+//= template/footer.html
+//= template/modals.html
+//= template/inc/end.html
+
+
+<script>
+	$(document).ready(function(){
+		$('select:not(#coursesearch-sort)').select2({
+         theme: "krajee-bs4"
+      });
+      $('select#coursesearch-sort').select2({
+         theme: "material",
+         dropdownParent: $('.field-coursesearch-sort')
+      });
+      $("#slider_price,#slider_duration").ionRangeSlider({
+        type: "double",
+        min: 0,
+        max: 1000,
+        from: 200,
+        to: 500,
+        grid: false,
+        hide_min_max: true,
+        hide_from_to: true
+    });
+	});
+</script>

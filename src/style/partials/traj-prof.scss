@@ -1,0 +1,91 @@
+.traj-prof__progress {
+  flex: 1 1 60%;
+}
+
+.traj-prof__btns {
+  flex: 1 1 40%;
+}
+
+.traj-prof__row-one {
+  flex: 1 1 42%;
+}
+
+.traj-prof__row-two {
+  flex: 1 1 58%;
+}
+
+.traj-selectt {
+  width: 100%;
+}
+
+.traj-title {
+  font-weight: 400;
+  color: #392b4b;
+  @include adaptiveValue("line-height", 24, 12, 1);
+  @include adaptiveValue("font-size", 16, 12, 1);
+}
+
+.traj-prof__show-more button {
+  // width: 306px;
+  @include adaptiveValue("width", 306, 250, 1);
+  margin: 0 auto;
+}
+
+.traj-prof__progress-row {
+  display: flex;
+  @include adaptiveValue("gap", 24, 10, 1);
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+  @media (max-width: $tablet) {
+    margin-bottom: 16px;
+  }
+}
+
+.traj-prof__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #a897bd;
+  margin-bottom: 0;
+}
+
+.traj-prof__title {
+  @include adaptiveValue("margin-bottom", 24, 12, 1);
+}
+
+.traj-prof__add-btn {
+  @include adaptiveValue("margin-bottom", 24, 12, 1);
+}
+
+.traj-prof__card-list {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  @media (max-width: 1250px) {
+    grid-template-columns: repeat(4, auto);
+  }
+  gap: 16px;
+  margin-bottom: 0;
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(3, auto);
+  }
+  @media (max-width: $mobile) {
+    display: flex;
+    overflow-x: scroll;
+    margin: 0 -15px;
+    padding: 0 15px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.traj-prof__btn {
+  display: block;
+}
+
+.traj-prof__body-item {
+  margin-bottom: 30px;
+}
+

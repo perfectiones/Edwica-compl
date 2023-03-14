@@ -1,0 +1,203 @@
+/**
+* active-course.css 
+**/
+.active-course__header{
+	min-height: 212px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 16px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	.active-course__teacher {
+		display: inline-flex;
+		height: 64px;
+		width: 227px;
+		background: #fff;
+		position: absolute;
+		bottom: 8px;
+		left: 8px;
+		border-radius: 10px;
+        align-items: center;
+        justify-content: space-around;
+        
+        span {
+            font-weight: bold;
+        }
+	}
+
+	img{
+		max-width: 100%;
+	}
+}
+
+.active-course__about-button {
+	padding: 10px 24px;
+	background-color: $color-accent_main;
+	color: $color_neutrals-7-white;
+	text-align: center;
+	height: 44px;
+	border-radius: 8px;
+	margin-top: 24px;
+	margin-bottom: 16px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+
+	&:hover {
+		color: $color_neutrals-7-white;
+	}
+}
+
+.active-course__ask-button {
+	padding: 10px 24px;
+	color: $color-accent_main;
+	height: 44px;
+	border-radius: 8px;
+	text-align: center;
+	margin-bottom: 16px;
+	background-color: $color-accent_superLight;
+	border: 1px solid $color-accent_extra_light;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.active-course__cert-button {
+	padding: 10px 24px;
+	color: $color_neutrals-2_secondary;
+	text-align: center;
+	height: 44px;
+	border-radius: 8px;
+	background-color: $color_neutrals-5-borders;
+	border: 1px solid $color_main-5_light;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px
+}
+
+.active-course__stat {
+	margin-left: 80px;
+	margin-top: 34px;
+}
+
+.active-course__stat-item {
+	margin-bottom: 16px;
+	padding: 0;
+	height: 24px;
+	&:last-child {
+		margin: 0;
+	}
+}
+
+.active-course__subheader {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 36px;
+}
+
+.active-course__items {
+	margin-top: 16px;
+}
+
+.active-course__module {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 8px 16px 8px 8px;
+	background-color: white;
+	height: 60px;
+	border-top: 1px solid $color_neutrals-5-borders;
+	border-right: 1px solid $color_neutrals-5-borders;
+	border-left: 1px solid $color_neutrals-5-borders;
+
+	&:first-child {
+		border-top-right-radius: 8px;
+		border-top-left-radius: 8px;
+	}
+
+	&:last-child {
+		border-bottom: 1px solid $color_neutrals-5-borders;
+		border-bottom-right-radius: 8px;
+		border-bottom-left-radius: 8px;
+	}
+
+	.module-number {
+		border-radius: 50%;
+		background-color: white;
+		padding: 10px 8px;
+		text-align: center;
+		box-shadow: 0px 2px 8px rgba(24, 29, 54, 0.1);
+		margin-right: 16px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		width: 44px;
+		height: 44px;
+
+		&.complete {
+			background-color: $color-statements-2_green_main;
+			color: white;
+		}
+	}
+
+	&.active {
+		background-color: $color-accent_superLight;
+	}
+}
+
+.active-course__lesson {
+	display: flex;
+	width: 100%;
+	background-color: white;
+	min-height: 64px;
+	border: 1px solid $color_neutrals-5-borders;
+	border-radius: 16px;
+	margin-bottom: 16px;
+	padding: 16px 16px 16px 24px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+
+	.completion-mark {
+		margin-right: 26.5px;
+	}
+
+	.active-course__completed-exercises-number {
+		text-align: center;
+		padding: 4px;
+		margin-right: 26.5px;
+		border-radius: 8px;
+		background-color: $color-statements-9_yellow_light;
+		color: $color-statements-7_yellow_dark;
+		min-width: 32px;
+		height: 32px;
+	}
+
+	.active-course__open-lesson-button {
+		text-align: center;
+		border-radius: 50%;
+		min-width: 32px;
+		height: 32px;
+		background-color: $color-accent_superLight;
+
+		svg {
+			position: relative;
+			top: 2px;
+			left: 1px;
+		}
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+

@@ -1,0 +1,46 @@
+.mm-menu ul > li > a span {
+  padding: 0 15px;
+  white-space: pre-wrap;
+}
+
+.docs-con {
+  margin: 48px 0;
+}
+
+.body__container_text_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  word-break: break-word;
+  line-height: 50px;
+  text-align: center;
+  color: #392b4b;
+  margin-bottom: 72px;
+}
+
+.doc-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #392b4b;
+}
+
+.doc-subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 56px;
+  color: #392b4b;
+  margin: 54px 0;
+}
+
+.body__container_text_description {
+  margin-bottom: 54px;
+}
+
+.body__container_text_term_text_p {
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+}

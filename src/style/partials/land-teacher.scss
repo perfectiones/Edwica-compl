@@ -1,0 +1,102 @@
+.land-teacher-mb{
+	margin-bottom: 40px;
+}
+
+.land-teacher-curse{
+	margin-bottom: 160px;
+	>svg{
+		margin-bottom: 24px;
+	}
+	.h3,.font-main{
+		margin-bottom: 40px;
+	}
+	.button_primary{
+		min-width: 240px;
+		margin: 0;
+	}
+}
+
+.land-teacher-panel{
+	background: #fff;
+	border: 1px solid #EFE8F8;
+	padding: 32px;
+	border-radius: 24px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 32px;
+	&__time{
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		color: #168C4C;
+		margin-bottom: 24px;
+		svg{
+			flex-shrink: 0;
+		}
+	}
+}
+
+.text-help{
+	padding-left: 28px;
+	background-image: url("data:image/svg+xml,%3Csvg width='10' height='110' viewBox='0 0 10 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.31444 1.0104L5.14604 3.32778C9.23311 6.67264 9.22034 12.9263 5.11964 16.2545V16.2545C1.01893 19.5826 1.00616 25.8363 5.09324 29.1812V29.1812C9.18031 32.5261 9.16754 38.7798 5.06684 42.1079V42.1079C0.966138 45.436 0.953369 51.6897 5.04044 55.0346V55.0346C9.12752 58.3795 9.11475 64.6332 5.01405 67.9613V67.9613C0.913344 71.2895 0.900574 77.5432 4.98765 80.888V80.888C9.07472 84.2329 9.06195 90.4866 4.96125 93.8147V93.8147C0.860549 97.1429 0.847774 103.397 4.93485 106.741L7.54413 108.877' stroke='%23966CEE' stroke-width='2'/%3E%3C/svg%3E%0A");
+	background-repeat: repeat-y;
+	background-position: left top;
+}
+
+.nav--line{
+	border-bottom: 1px solid #DFDBEE;
+	flex-wrap: nowrap;
+
+	.nav-item{
+		flex-grow: 1;
+		padding: 0;
+	}
+	.nav-link{
+		color: #A897BD;
+		text-align: center;
+		border-bottom: 4px solid transparent;
+		margin-bottom: -1px;
+		display: block;
+		padding: 0 0 26px;
+		font-weight: 600;
+		font-size: 20px;
+
+		&.active{
+			color: #392B4B;
+			border-color: #392B4B;
+			font-weight: 600;
+		}
+	}
+}
+
+.land-teacher-img-center{
+	position: absolute;
+	width: 50%;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.land-teacher-privilege{
+
+	&__item{
+		margin-bottom: 88px;
+	}
+}
+
+.land-teacher-front{
+	padding-top: 58px;
+	margin-bottom: -100px;
+	overflow: hidden;
+	width: 100%;
+	.display-1{
+		font-weight: bold;
+	}
+
+	&__img{
+		margin-top: -60px;
+		margin-left: -140px;
+	}
+}

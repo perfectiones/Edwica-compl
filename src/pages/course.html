@@ -1,0 +1,56 @@
+//= template/inc/start.html
+<header class="header">
+    //= template/inc/top-line.html
+    //= template/inc/top-panel.html
+    //= template/inc/top-menu.html
+</header>
+//= template/inc/cat_mob_button.html
+
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-xl-3 order-lg-2">
+                <aside class="left-sidebar">
+                    //= template/left-sidebar/course_details.html
+                </aside>
+            </div>
+            <div class="col-lg-8 col-xl-9 order-lg-1">
+                <main class="main-content">
+                    <div class="course__content">
+                        <div class="course__header" style="background-image: url(img/course-poster.jpg);">
+                            <a href="" class="play_button"  data-toggle="modal" data-target="#course-header_popup"></a>
+                        </div>
+                        //= template/course/section/title-viewer.html
+                        //= template/course/section/programm-viewer.html
+                        //= template/course/section/skills-viewer.html
+                        //= template/course/section/soft-viewer.html
+                        //= template/course/section/teacher-viewer.html
+                        //= template/course/section/testimon-viewer.html
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= template/footer.html
+
+<!-- Modal -->
+<div class="modal fade" id="course-header_popup" tabindex="-1" role="dialog" aria-labelledby="course-header_popupLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="course-header_popupLabel">Факультет проджект-менеджмента</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit, reprehenderit perferendis explicabo quia quae ipsa. Nostrum velit at officia error veniam vero facere ipsum similique aperiam? Nisi, eius rerum.
+        </div>
+    </div>
+    </div>
+</div>
+
+//= template/modals.html
+//= template/inc/end.html

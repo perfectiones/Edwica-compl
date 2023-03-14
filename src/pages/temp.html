@@ -1,0 +1,1471 @@
+//= template/inc/start.html
+//= template/inc/header.html
+
+<div class="edit-company">
+  <div class="container-a">
+    <div class="edit-company__main">
+      <div class="edit-company__top">
+        <h1 class="edit-company__title main__title">Формирование траектории</h1>
+        <button
+          type="button"
+          onclick="history.back();"
+          class="edit-company__btn main__btn-light soar"
+        >
+          Отменить
+        </button>
+      </div>
+
+      <form
+        action="#"
+        method="post"
+        class="step-s__form"
+        enctype="multipart/form-data"
+      >
+        <div class="edit-company__steps-numbers step-n">
+          <div class="step-n__main">
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">1</div>
+              <div class="step-n__number_text main__text-neutral">
+                Образование
+              </div>
+            </div>
+            <div class="step-n__gap"></div>
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">2</div>
+              <div class="step-n__number_text main__text-neutral">
+                Опыт работы
+              </div>
+            </div>
+
+            <div class="step-n__gap"></div>
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">3</div>
+              <div class="step-n__number_text main__text-neutral">
+                Профориентация
+              </div>
+            </div>
+            <div class="step-n__gap"></div>
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">4</div>
+              <div class="step-n__number_text main__text-neutral">
+                Постановка цели
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edit-company__steps steps-m">
+          <div class="steps-m__step step-s">
+            <div class="item-conversion">
+              <div class="step-s__row-title">
+                <div class="step-s__title">Профессиональное образование</div>
+                <div class="step-s__scores">Вы заработали: 0 баллов</div>
+              </div>
+              <div class="step-s__teachers teacher-s mb">
+                <button
+                  type="button"
+                  class="teacher-s__add-temp"
+                  data-toggle="modal"
+                  data-target="#special-education-popp"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                    <path
+                      d="M20 16V24"
+                      stroke="#B298EE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24 20L16 20"
+                      stroke="#B298EE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="main__text">Добавить</p>
+                </button>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+            <div class="item-conversion">
+              <div class="step-s__row-title">
+                <div class="step-s__title">Профессиональное образование</div>
+                <div class="step-s__scores">
+                  <span class="green">+ 150 баллов</span>
+                  <span>Вы заработали: 345 баллов</span>
+                </div>
+              </div>
+              <div class="step-s__teachers teacher-s mb">
+                <button
+                  type="button"
+                  class="teacher-s__add-temp-2 "
+                  data-toggle="modal"
+                  data-target="#special-education-popp"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                    <path
+                      d="M20 16V24"
+                      stroke="#B298EE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24 20L16 20"
+                      stroke="#B298EE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="main__text">Добавить</p>
+                </button>
+
+                <div class="teacher-s__item-temp">
+                  <div class="teacher-s__main">
+                    <div class="teacher-s__experience">Высшее образование</div>
+                    <div class="teacher-s__name main__text-bold">
+                      РЭУ им. Г.В.Плеханова Еще одна строка
+                    </div>
+                    <div class="teacher-s__text">
+                      Очень длинное название факультета для примера длинных
+                    </div>
+                  </div>
+                  <div class="teacher-s__buttons">
+                    <button
+                      type="button"
+                      class="teacher-s__edit main__btn-light soar"
+                      data-toggle="modal"
+                      data-target="#special-education-popp"
+                    >
+                      Редактировать
+                    </button>
+                    <button type="button" class="teacher-s__reset">
+                      <svg
+                        width="14"
+                        height="20"
+                        viewBox="0 0 14 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                          stroke="#EF3D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="teacher-s__item-temp">
+                  <div class="teacher-s__main">
+                    <div class="teacher-s__experience">Высшее образование</div>
+                    <div class="teacher-s__name main__text-bold">
+                      РЭУ им. Г.В.Плеханова Еще одна строка
+                    </div>
+                    <div class="teacher-s__text">
+                      Очень длинное название факультета для примера длинных
+                    </div>
+                  </div>
+                  <div class="teacher-s__buttons">
+                    <button
+                      type="button"
+                      class="teacher-s__edit main__btn-light soar"
+                      data-toggle="modal"
+                      data-target="#special-education-popp"
+                    >
+                      Редактировать
+                    </button>
+                    <button type="button" class="teacher-s__reset">
+                      <svg
+                        width="14"
+                        height="20"
+                        viewBox="0 0 14 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                          stroke="#EF3D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s">
+            <div class="item-conversion">
+              <div class="step-s__row-title">
+                <div class="step-s__title">Профессиональный опыт</div>
+                <div class="step-s__scores">Вы заработали: 600 баллов</div>
+              </div>
+              <div class="step-s__next-step">
+                Если у вас нет опыта работы, вы можете сразу перейти к
+                <a href="">следующему этапу</a>
+              </div>
+              <div class="step-s__teachers teacher-s mb">
+                <button
+                  type="button"
+                  class="teacher-s__add-temp "
+                  data-toggle="modal"
+                  data-target="#prof-experiencee"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                    <path
+                      d="M20 16V24"
+                      stroke="#B298EE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24 20L16 20"
+                      stroke="#B298EE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="main__text">Добавить</p>
+                </button>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+            <div class="item-conversion">
+              <div class="step-s__row-title">
+                <div class="step-s__title">Профессиональный опыт</div>
+                <div class="step-s__scores">
+                  <span class="green">+ 150 баллов</span>
+                  <span>Вы заработали: 650 баллов</span>
+                </div>
+              </div>
+              <div class="step-s__next-step">
+                Если у вас нет опыта работы, вы можете сразу перейти к
+                <a href="">следующему этапу</a>
+              </div>
+              <div class="step-s__teachers teacher-s mb">
+                <button
+                  type="button"
+                  class="teacher-s__add-temp-2 "
+                  data-toggle="modal"
+                  data-target="#prof-experiencee"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                    <path
+                      d="M20 16V24"
+                      stroke="#B298EE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24 20L16 20"
+                      stroke="#B298EE"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="main__text">Добавить</p>
+                </button>
+
+                <div class="teacher-s__item-temp">
+                  <div class="teacher-s__main">
+                    <div class="teacher-s__name main__text-bold">ООО "ТМЗ"</div>
+                    <div class="opinion__experience">Project Manager</div>
+                    <div class="opinion__text">01.09.2016 — 01.07.2020</div>
+                  </div>
+                  <div class="teacher-s__buttons">
+                    <button
+                      type="button"
+                      class="teacher-s__edit main__btn-light soar"
+                      data-toggle="modal"
+                      data-target="#prof-experiencee"
+                    >
+                      Редактировать
+                    </button>
+                    <button type="button" class="teacher-s__reset">
+                      <svg
+                        width="14"
+                        height="20"
+                        viewBox="0 0 14 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                          stroke="#EF3D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="teacher-s__item-temp">
+                  <div class="teacher-s__main">
+                    <div class="teacher-s__name main__text-bold">ООО "ТМЗ"</div>
+                    <div class="opinion__experience">Project Manager</div>
+                    <div class="opinion__text">01.09.2016 — 01.07.2020</div>
+                  </div>
+                  <div class="teacher-s__buttons">
+                    <button
+                      type="button"
+                      class="teacher-s__edit main__btn-light soar"
+                      data-toggle="modal"
+                      data-target="#prof-experiencee"
+                    >
+                      Редактировать
+                    </button>
+                    <button type="button" class="teacher-s__reset">
+                      <svg
+                        width="14"
+                        height="20"
+                        viewBox="0 0 14 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                          stroke="#EF3D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s">
+            <div>
+              <div class="gap__item">
+                <h2 class="step-s__title">Налоговая информация</h2>
+                <div class="step-s__radio step-s__input">
+                  <div class="step-s__radio_text main__text-neutral">
+                    Юридическая форма
+                  </div>
+                  <div class="step-s__radio_inputs">
+                    <label class="step-s__radio_label radio-label">
+                      <input type="radio" name="legalform" value="OOO" />
+                      <div class="radio-label__fake"></div>
+                      <div class="radio-label__text main__text">ООО</div>
+                    </label>
+                    <label class="step-s__radio_label radio-label">
+                      <input type="radio" name="legalform" value="IP" />
+                      <div class="radio-label__fake"></div>
+                      <div class="radio-label__text main__text">ИП</div>
+                    </label>
+                  </div>
+                </div>
+                <div class="step-s__input">
+                  <div class="step-s__input_text main__text-neutral">ИНН</div>
+                  <input class="main__input" type="number" name="inn" />
+                </div>
+              </div>
+              <div class="gap__item">
+                <h2 class="step-s__title">Платежная информация</h2>
+                <div class="step-s__input">
+                  <div class="step-s__input_text main__text-neutral">
+                    Валюта вашего счета
+                  </div>
+                  <input class="main__input" type="text" name="currency" />
+                </div>
+                <div class="step-s__input">
+                  <div class="step-s__input_text main__text-neutral">
+                    Владелец счета
+                  </div>
+                  <input class="main__input" type="text" name="owner" />
+                </div>
+                <div class="step-s__input">
+                  <div class="step-s__input_text main__text-neutral">
+                    Название банка
+                  </div>
+                  <input class="main__input" type="text" name="bank" />
+                </div>
+              </div>
+              <div class="gap__item">
+                <h2 class="step-s__title">Платежная информация</h2>
+                <div class="step-s__select step-s__input">
+                  <div class="step-s__selects">
+                    <label class="step-s__select_label select-label">
+                      <div class="step-s__input_text main__text-neutral">
+                        Страна
+                      </div>
+                      <select name="country">
+                        <option value="Russia" selected>Россия</option>
+                        <option value="2">Страна №1</option>
+                        <option value="3">Страна №2</option>
+                        <option value="4">Страна №3</option>
+                      </select>
+                    </label>
+                    <label class="step-s__select_label select-label">
+                      <div class="step-s__input_text main__text-neutral">
+                        Город
+                      </div>
+                      <select name="sity">
+                        <option value="Moscow" selected>Москва</option>
+                        <option value="2">Город №1</option>
+                        <option value="3">Город №2</option>
+                        <option value="4">Город №3</option>
+                      </select>
+                    </label>
+                  </div>
+                </div>
+                <div class="step-s__input">
+                  <div class="step-s__input_text main__text-neutral">Адрес</div>
+                  <input class="main__input" type="text" name="address" />
+                </div>
+                <div class="step-s__input">
+                  <div class="step-s__input_text main__text-neutral">
+                    Индекс
+                  </div>
+                  <input class="main__input" type="text" name="index" />
+                </div>
+                <div class="step-s__input">
+                  <div class="step-s__input_text main__text-neutral">БИК</div>
+                  <input class="main__input" type="number" name="bik" />
+                </div>
+                <div class="step-s__input">
+                  <div class="step-s__input_text main__text-neutral">
+                    Номер счета
+                  </div>
+                  <input class="main__input" type="text" name="accountnumber" />
+                </div>
+              </div>
+            </div>
+
+            <div class="step-s__buttons">
+              <button
+                class="step-s__prev_btn main__btn-light soar"
+                onclick="goUp();"
+              >
+                Назад
+              </button>
+              <button class="step-s__next_btn main__btn soar" onclick="goUp();">
+                Далее
+              </button>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s">
+            <div class="item-conversion">
+              <div>
+                <div class="gap__item">
+                  <h2 class="step-s__title">Истории успеха</h2>
+                  <div class="step-s__point-light point-s">
+                    <div class="point-s__top">
+                      <div class="point-s__number main__text">1</div>
+                      <label class="point-s__label">
+                        <input
+                          class="main__input"
+                          maxlength="10"
+                          type="text"
+                          name="fio"
+                          placeholder="ФИО"
+                        />
+                        <div class="fio__counter"></div>
+                      </label>
+                      <button type="button" class="point-s__reset">
+                        <svg
+                          width="14"
+                          height="20"
+                          viewBox="0 0 14 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                            stroke="#EF3D32"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <label class="textarea__label">
+                      <textarea
+                        class="main__input"
+                        placeholder="История успеха"
+                        maxlength="250"
+                        name="historysuccess"
+                      ></textarea>
+                      <div class="textarea__counter"></div>
+                    </label>
+                    <label class="point-s__label mmbb file__label">
+                      <div class="file__con df">
+                        <div class="file__icon">
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 20 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M17 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.316071 1.44129 0 2.20435 0 3V17C0 17.7956 0.316071 18.5587 0.87868 19.1213C1.44129 19.6839 2.20435 20 3 20H17C17.1645 19.9977 17.3284 19.981 17.49 19.95L17.79 19.88H17.86H17.91L18.28 19.74L18.41 19.67C18.51 19.61 18.62 19.56 18.72 19.49C18.8535 19.3918 18.9805 19.2849 19.1 19.17L19.17 19.08C19.2682 18.9805 19.3585 18.8735 19.44 18.76L19.53 18.63C19.5998 18.5187 19.6601 18.4016 19.71 18.28C19.7374 18.232 19.7609 18.1818 19.78 18.13C19.83 18.01 19.86 17.88 19.9 17.75V17.6C19.9567 17.4046 19.9903 17.2032 20 17V3C20 2.20435 19.6839 1.44129 19.1213 0.87868C18.5587 0.316071 17.7956 0 17 0ZM3 18C2.73478 18 2.48043 17.8946 2.29289 17.7071C2.10536 17.5196 2 17.2652 2 17V12.69L5.29 9.39C5.38296 9.29627 5.49356 9.22188 5.61542 9.17111C5.73728 9.12034 5.86799 9.0942 6 9.0942C6.13201 9.0942 6.26272 9.12034 6.38458 9.17111C6.50644 9.22188 6.61704 9.29627 6.71 9.39L15.31 18H3ZM18 17C17.9991 17.1233 17.9753 17.2453 17.93 17.36C17.9071 17.4087 17.8804 17.4556 17.85 17.5C17.8232 17.5423 17.7931 17.5825 17.76 17.62L12.41 12.27L13.29 11.39C13.383 11.2963 13.4936 11.2219 13.6154 11.1711C13.7373 11.1203 13.868 11.0942 14 11.0942C14.132 11.0942 14.2627 11.1203 14.3846 11.1711C14.5064 11.2219 14.617 11.2963 14.71 11.39L18 14.69V17ZM18 11.86L16.12 10C15.5477 9.45699 14.7889 9.15428 14 9.15428C13.2111 9.15428 12.4523 9.45699 11.88 10L11 10.88L8.12 8C7.54772 7.45699 6.7889 7.15428 6 7.15428C5.2111 7.15428 4.45228 7.45699 3.88 8L2 9.86V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H17C17.2652 2 17.5196 2.10536 17.7071 2.29289C17.8946 2.48043 18 2.73478 18 3V11.86Z"
+                              fill="#D0C2DE"
+                            />
+                          </svg>
+                        </div>
+                        <div class="fake-file-name main__text">
+                          загруженный файл*
+                        </div>
+                        <input type="file" class="file__input add-file" />
+                        <button type="button" class="file__reset">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <rect
+                              width="24"
+                              height="24"
+                              rx="4"
+                              fill="#966CEE"
+                            />
+                            <path
+                              d="M16 8.25L8.5 15.75"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                            <path
+                              d="M8.5 8.25L16 15.75"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="file__button main__btn-light soar">
+                        Загрузить файл
+                      </div>
+                    </label>
+                    <button
+                      type="button"
+                      class="point-s__button main__btn-light soar"
+                    >
+                      Добавить пукт
+                    </button>
+                  </div>
+                </div>
+                <div class="gap__item">
+                  <h2 class="step-s__title">Основатели</h2>
+                  <div class="step-s__teachers teacher-s mb">
+                    <div class="teacher-s__item">
+                      <div class="teacher-s__main">
+                        <div class="teacher-s__avatar">
+                          <img src="#" alt="" />
+                        </div>
+                        <div class="teacher-s__name main__text-bold">
+                          Иванов Иван Иванович
+                        </div>
+                        <div class="teacher-s__experience">Стаж 5 лет</div>
+                      </div>
+                      <div class="teacher-s__buttons">
+                        <button
+                          type="button"
+                          class="teacher-s__edit main__btn-light soar"
+                        >
+                          Редактировать
+                        </button>
+                        <button type="button" class="teacher-s__reset">
+                          <svg
+                            width="14"
+                            height="20"
+                            viewBox="0 0 14 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                              stroke="#EF3D32"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="teacher-s__add "
+                      onclick="goUp();"
+                    >
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                        <path
+                          d="M20 16V24"
+                          stroke="#B298EE"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M24 20L16 20"
+                          stroke="#B298EE"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <p class="main__text">Добавить</p>
+                    </button>
+                  </div>
+                  <div class="step-s__buttons">
+                    <button
+                      class="step-s__prev_btn main__btn-light soar"
+                      onclick="goUp();"
+                    >
+                      Назад
+                    </button>
+                    <button
+                      class="step-s__next_btn main__btn soar"
+                      onclick="goUp();"
+                    >
+                      Далее
+                    </button>
+                  </div>
+                </div>
+                <div class="gap__item">
+                  <h2 class="step-s__title">Основатели</h2>
+                  <div class="step-s__teachers teacher-s">
+                    <div class="teacher-s__item">
+                      <div class="teacher-s__main">
+                        <div class="teacher-s__avatar">
+                          <img src="#" alt="" />
+                        </div>
+                        <div class="teacher-s__name main__text-bold">
+                          Иванов Иван Иванович
+                        </div>
+                        <div class="teacher-s__experience">Стаж 5 лет</div>
+                      </div>
+                      <div class="teacher-s__buttons">
+                        <button
+                          type="button"
+                          class="teacher-s__edit main__btn-light soar"
+                        >
+                          Редактировать
+                        </button>
+                        <button type="button" class="teacher-s__reset">
+                          <svg
+                            width="14"
+                            height="20"
+                            viewBox="0 0 14 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                              stroke="#EF3D32"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      class="teacher-s__add "
+                      onclick="goUp();"
+                    >
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                        <path
+                          d="M20 16V24"
+                          stroke="#B298EE"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                        <path
+                          d="M24 20L16 20"
+                          stroke="#B298EE"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <p class="main__text">Добавить</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+            <form action="#" method="post" enctype="multipart/form-data">
+              <div class="edit-profile prof-e item-conversion dis-n">
+                <div class="prof-e__top">
+                  <h2 class="prof-e__top_title main__title">
+                    Персональная информация
+                  </h2>
+                  <div class="prof-e__top_buttons">
+                    <button
+                      type="button"
+                      class="prof-e__top_btn main__btn-light "
+                    >
+                      Назад
+                    </button>
+                    <button
+                      type="submit"
+                      class="prof-e__top_btn main__btn "
+                    >
+                      Сохранить
+                    </button>
+                  </div>
+                </div>
+
+                <div class="prof-e__con">
+                  <div class="gap__item">
+                    <div class="prof-e__main-info prof-mi">
+                      <label class="prof-mi__avatar prof-ma">
+                        <input type="file" class="prof-ma__input" />
+                        <div class="prof-ma__preview">
+                          <img
+                            src="/img/ava_teacher-square.jpg"
+                            class="prof-ma__preview_i"
+                          />
+                        </div>
+                        <div class="prof-ma__button main__btn-light">
+                          <svg
+                            width="25"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M20.5 15V18.3333C20.5 18.7754 20.3127 19.1993 19.9793 19.5118C19.6459 19.8244 19.1937 20 18.7222 20H6.27778C5.80628 20 5.3541 19.8244 5.0207 19.5118C4.6873 19.1993 4.5 18.7754 4.5 18.3333V15"
+                              stroke="#966CEE"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M16.5 8L12.5 4L8.5 8"
+                              stroke="#966CEE"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M12.5 4L12.5 15"
+                              stroke="#966CEE"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <p>Загрузить</p>
+                        </div>
+                      </label>
+                      <div class="prof-mi__main prof-mm">
+                        <div class="step-s__selects">
+                          <div class="step-s__row-item input__row-item ff">
+                            <div class="step-s__input_text main__text-neutral">
+                              Имя
+                            </div>
+                            <input
+                              class="main__input"
+                              type="text"
+                              name="start"
+                            />
+                          </div>
+                          <div class="step-s__row-item input__row-item ff">
+                            <div class="step-s__input_text main__text-neutral">
+                              Фамилия
+                            </div>
+                            <input
+                              class="main__input"
+                              type="text"
+                              name="start"
+                            />
+                          </div>
+                        </div>
+                        <div class="step-s__selects">
+                          <label class="step-s__select_label select-label ff">
+                            <div class="step-s__input_text main__text-neutral">
+                              Страна
+                            </div>
+                            <select name="country">
+                              <option value="Russia" selected>Россия</option>
+                              <option value="2">Страна №1</option>
+                              <option value="3">Страна №2</option>
+                              <option value="4">Страна №3</option>
+                            </select>
+                          </label>
+                          <label class="step-s__select_label select-label ff">
+                            <div class="step-s__input_text main__text-neutral">
+                              Город
+                            </div>
+                            <select name="sity">
+                              <option value="Moscow" selected>Москва</option>
+                              <option value="2">Город №1</option>
+                              <option value="3">Город №2</option>
+                              <option value="4">Город №3</option>
+                            </select>
+                          </label>
+                        </div>
+                        <div class="step-s__row">
+                          <div class="step-s__row-item input__row-item">
+                            <div class="step-s__input_text main__text-neutral">
+                              Дата рождения
+                            </div>
+                            <input
+                              class="main__input"
+                              type="date"
+                              name="start"
+                              style="width: auto"
+                            />
+                          </div>
+                          <div class="step-s__radio step-s__input pr">
+                            <div class="step-s__radio_text main__text-neutral">
+                              Пол:
+                            </div>
+                            <div class="step-s__radio_inputs">
+                              <label class="step-s__radio_label radio-label">
+                                <input
+                                  type="radio"
+                                  name="author"
+                                  value="teacher"
+                                />
+                                <div class="radio-label__fake"></div>
+                                <div class="radio-label__text main__text">
+                                  Мужской
+                                </div>
+                              </label>
+                              <label class="step-s__radio_label radio-label">
+                                <input
+                                  type="radio"
+                                  name="author"
+                                  value="company"
+                                />
+                                <div class="radio-label__fake"></div>
+                                <div class="radio-label__text main__text">
+                                  Женский
+                                </div>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step-s__input">
+                      <div class="step-s__input_text main__title-small">
+                        О себе
+                      </div>
+                      <textarea class="main__input" name="details"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="gap__item">
+                    <h3 class="main__title-small">Специальное образование</h3>
+                    <div class="step-s__teachers teacher-s mb">
+                      <div class="teacher-s__item special-education__item">
+                        <div class="teacher-s__main special-education">
+                          <div class="main__text-neutral">
+                            Среднее образование
+                          </div>
+                          <div class="special-education__text main__text-bold">
+                            РЭУ им. Г.В.Плеханова Еще одна строка
+                          </div>
+                          <div class="main__text">
+                            Очень длинное название факультета для примера
+                            длинных
+                          </div>
+                        </div>
+                        <div class="diplom">
+                          <div class="diplom__text main__text-neutral">
+                            Подтверждение:
+                            <span class="main__text">Диплом</span>
+                          </div>
+                          <div class="diplom__status main__text-bold">
+                            Подтверждено
+                          </div>
+                        </div>
+                        <div class="teacher-s__buttons">
+                          <button
+                            type="button"
+                            class="teacher-s__edit main__btn-light soar"
+                          >
+                            Редактировать
+                          </button>
+                          <button type="button" class="teacher-s__reset">
+                            <svg
+                              width="14"
+                              height="20"
+                              viewBox="0 0 14 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                                stroke="#EF3D32"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+
+                      <button
+                        type="button"
+                        class="teacher-s__add special-education__item pop-btn"
+                        data-toggle="modal"
+                        data-target="#special-education-popp"
+                      >
+                        <svg
+                          width="40"
+                          height="40"
+                          viewBox="0 0 40 40"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                          <path
+                            d="M20 16V24"
+                            stroke="#B298EE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M24 20L16 20"
+                            stroke="#B298EE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <p class="main__text">Добавить</p>
+                      </button>
+                    </div>
+
+                    <div class="step-s__input">
+                      <div class="step-s__input_text main__text-neutral">
+                        Научная степень
+                      </div>
+                      <select name="site" class="main__select">
+                        <option value="geekbrains">Нет</option>
+                        <option value="geekbrainsss">Есть</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="gap__item">
+                    <h3 class="main__title-small">Повышение квалификации</h3>
+                    <div class="step-s__teachers teacher-s mb">
+                      <div class="teacher-s__item training__item">
+                        <div class="teacher-s__main special-education">
+                          <div class="special-education__text main__text-bold">
+                            РЭУ им. Г.В.Плеханова Еще одна строка
+                          </div>
+                          <div class="main__text">
+                            Очень длинное название факультета для примера
+                            длинных
+                          </div>
+                        </div>
+                        <div class="diplom">
+                          <div class="diplom__text main__text-neutral">
+                            Подтверждение:
+                            <span class="main__text">Диплом</span>
+                          </div>
+                          <div class="diplom__status main__text-bold">
+                            Подтверждено
+                          </div>
+                        </div>
+                        <div class="teacher-s__buttons">
+                          <button
+                            type="button"
+                            class="teacher-s__edit main__btn-light soar"
+                          >
+                            Редактировать
+                          </button>
+                          <button type="button" class="teacher-s__reset">
+                            <svg
+                              width="14"
+                              height="20"
+                              viewBox="0 0 14 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                                stroke="#EF3D32"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+
+                      <button
+                        type="button"
+                        class="teacher-s__add training__item pop-btn"
+                        data-toggle="modal"
+                        data-target="#special-education-popp"
+                      >
+                        <svg
+                          width="40"
+                          height="40"
+                          viewBox="0 0 40 40"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                          <path
+                            d="M20 16V24"
+                            stroke="#B298EE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M24 20L16 20"
+                            stroke="#B298EE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <p class="main__text">Добавить</p>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="gap__item">
+                    <h3 class="main__title-small">Профессиональный опыт</h3>
+                    <div class="step-s__teachers teacher-s mb">
+                      <div class="teacher-s__item experience__item">
+                        <div class="teacher-s__main special-education">
+                          <div class="special-education__text main__text-bold">
+                            ООО “ТМЗ”
+                          </div>
+                          <div class="main__text">Project Manager</div>
+                        </div>
+                        <div class="diplom">
+                          <div class="diplom__text main__text-neutral">
+                            01.09.2016 - 01.07.2020
+                          </div>
+                        </div>
+                        <div class="teacher-s__buttons">
+                          <button
+                            type="button"
+                            class="teacher-s__edit main__btn-light soar"
+                          >
+                            Редактировать
+                          </button>
+                          <button type="button" class="teacher-s__reset">
+                            <svg
+                              width="14"
+                              height="20"
+                              viewBox="0 0 14 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                                stroke="#EF3D32"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+
+                      <button
+                        type="button"
+                        class="teacher-s__add experience__item pop-btn"
+                        data-toggle="modal"
+                        data-target="#prof-experiencee"
+                      >
+                        <svg
+                          width="40"
+                          height="40"
+                          viewBox="0 0 40 40"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect width="40" height="40" rx="20" fill="#F9F4FF" />
+                          <path
+                            d="M20 16V24"
+                            stroke="#B298EE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                          <path
+                            d="M24 20L16 20"
+                            stroke="#B298EE"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                          />
+                        </svg>
+                        <p class="main__text">Добавить</p>
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="gap__item">
+                    <h3 class="main__title-small">Профессиональные навыки</h3>
+                    <div class="input__add">
+                      <div class="step-s__input">
+                        <div class="input__text-icon">
+                          <div
+                            class="step-s__input_text main__text-neutral no-margin"
+                          >
+                            Перечислите навыки
+                          </div>
+                          <svg
+                            width="25"
+                            height="24"
+                            viewBox="0 0 25 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M12.5 4C8.08172 4 4.5 7.58172 4.5 12C4.5 16.4183 8.08172 20 12.5 20C16.9183 20 20.5 16.4183 20.5 12C20.5 7.58172 16.9183 4 12.5 4ZM2.5 12C2.5 6.47715 6.97715 2 12.5 2C18.0228 2 22.5 6.47715 22.5 12C22.5 17.5228 18.0228 22 12.5 22C6.97715 22 2.5 17.5228 2.5 12Z"
+                              fill="#D0C2DE"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M12.7582 8.02098C12.2927 7.94113 11.814 8.02861 11.4068 8.26793C10.9996 8.50725 10.6902 8.88295 10.5335 9.32851C10.3502 9.8495 9.77926 10.1233 9.25827 9.94C8.73728 9.75673 8.46351 9.18581 8.64678 8.66482C8.96025 7.77371 9.57898 7.0223 10.3934 6.54367C11.2078 6.06503 12.1653 5.89007 13.0964 6.04977C14.0274 6.20947 14.8719 6.69352 15.4802 7.41619C16.0884 8.13872 16.4214 9.05314 16.4201 9.99758C16.4197 11.5279 15.2851 12.5386 14.4748 13.0787C14.0392 13.3691 13.6107 13.5827 13.295 13.723C13.1358 13.7938 13.0016 13.8475 12.905 13.8843C12.8566 13.9027 12.8174 13.917 12.7888 13.9272L12.7541 13.9393L12.743 13.9431L12.7391 13.9444L12.7376 13.9449C12.7373 13.945 12.7363 13.9453 12.4201 12.9967L12.7363 13.9453C12.2124 14.12 11.6461 13.8368 11.4714 13.3129C11.2969 12.7893 11.5796 12.2234 12.1028 12.0483L12.1016 12.0488C12.1017 12.0487 12.1018 12.0487 12.1028 12.0483L12.1188 12.0427C12.1342 12.0373 12.1594 12.0281 12.193 12.0153C12.2605 11.9896 12.3607 11.9496 12.4827 11.8954C12.7296 11.7856 13.051 11.6242 13.3654 11.4146C14.055 10.9549 14.4201 10.4658 14.4201 9.99667L14.4201 9.99518C14.4208 9.52286 14.2543 9.06553 13.9502 8.70419C13.646 8.34286 13.2238 8.10083 12.7582 8.02098Z"
+                              fill="#D0C2DE"
+                            />
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M11.5 17C11.5 16.4477 11.9477 16 12.5 16H12.5091C13.0614 16 13.51 16.4477 13.51 17C13.51 17.5523 13.0623 18 12.51 18H12.5009C11.9486 18 11.5 17.5523 11.5 17Z"
+                              fill="#D0C2DE"
+                            />
+                          </svg>
+                        </div>
+                        <div class="input__add-row">
+                          <input class="main__input" type="text" />
+                          <button
+                            type="button"
+                            class="input__add-btn main__btn-light"
+                          >
+                            Добавить
+                          </button>
+                        </div>
+                        <div
+                          class="input__add_tags input__add_tags-green tag-items"
+                        >
+                          <div class="tag-items_i">
+                            <p>Figma</p>
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16 8.25L8.5 15.75"
+                                stroke="#38BF7E"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M8.5 8.25L16 15.75"
+                                stroke="#38BF7E"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="tag-items_i">
+                            <p>Figma</p>
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16 8.25L8.5 15.75"
+                                stroke="#38BF7E"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M8.5 8.25L16 15.75"
+                                stroke="#38BF7E"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="tag-items_i">
+                            <p>Figma</p>
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16 8.25L8.5 15.75"
+                                stroke="#38BF7E"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M8.5 8.25L16 15.75"
+                                stroke="#38BF7E"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="gap__item">
+                    <div class="input__add">
+                      <h3 class="main__title-small">Профессиональные навыки</h3>
+                      <div class="step-s__input">
+                        <div class="input__add-row">
+                          <input class="main__input" type="text" />
+                          <button
+                            type="button"
+                            class="input__add-btn main__btn-light"
+                          >
+                            Добавить
+                          </button>
+                        </div>
+                        <div
+                          class="input__add_tags input__add_tags-red tag-items"
+                        >
+                          <div class="tag-items_i">
+                            <p>Figma</p>
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16 8.25L8.5 15.75"
+                                stroke="#EB92CD"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M8.5 8.25L16 15.75"
+                                stroke="#EB92CD"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="tag-items_i">
+                            <p>Figma</p>
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16 8.25L8.5 15.75"
+                                stroke="#EB92CD"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M8.5 8.25L16 15.75"
+                                stroke="#EB92CD"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </div>
+                          <div class="tag-items_i">
+                            <p>Figma</p>
+                            <svg
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M16 8.25L8.5 15.75"
+                                stroke="#EB92CD"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                              <path
+                                d="M8.5 8.25L16 15.75"
+                                stroke="#EB92CD"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="prof-e__bottom_buttons">
+                  <button
+                    type="button"
+                    class="prof-e__bottom_btn main__btn-light "
+                  >
+                    Назад
+                  </button>
+                  <button
+                    type="submit"
+                    class="prof-e__bottom_btn main__btn "
+                  >
+                    Сохранить
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+//= template/modals.html
+//= template/inc/end.html

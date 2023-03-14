@@ -1,0 +1,261 @@
+//= template/inc/start.html
+<header class="header">
+    <div class="top-line d-none d-lg-block d-sm-none d-md-none">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul>
+                        <li><a href="">О нас</a></li>
+                        <li><a href="">Курсы</a></li>
+                        <li><a href="">Уроки</a></li>
+                        <li><a href="">Вебинары</a></li>
+                        <li><a href="">Статьи</a></li>
+                        <li><a href="">Конкурсы</a></li>
+                        <li><a href="">Траектория</a></li>
+                        <li><a href="">Партнерам</a></li>
+                        <li><a href="">Преподавателям</a></li>
+                        <li><a href="">Контакты</a></li>
+                        <li><a href="">Траектория</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-panel">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-md-2 col-lg-3 col-xl-3 col-8">
+                    <div class="logo-wrapper">
+                        <a href=""><img src="img/logo.svg" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-4 col-sm-4 col-md-10 col-lg-5 col-xl-5">
+                    <div class="top-nav-wrapper">
+                        <div class="search-wrapper">
+                            <input type="text" placeholder="Поиск по курсам, вебинарам и  занятиям" class="form-control search-input" id="search-input">
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn search-btn"  data-toggle="modal" data-target="#searchPopup"></button>
+                        </div>
+                        <div class="toogle-button">
+                            <a  href="" class="toggle-menu"  data-toggle="collapse" data-target="#navbar_top" >
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="8" y="7" width="16" height="2" fill="#A7B3C6"/>
+                                    <rect y="15" width="32" height="2" fill="#A7B3C6"/>
+                                    <rect x="8" y="23" width="16" height="2" fill="#A7B3C6"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-4 col-4 d-none d-lg-block d-sm-none d-md-none">
+                    <div class="user_profile__wrapper">
+                        <ul class="nav navbar-nav">
+                            <!-- Notifications: style can be found in dropdown.less -->
+                            <li class="dropdown notifications-menu open">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><img src="img/icon_notify_active.svg" alt=""><span class="label label-warning">10</span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="header">You have 10 notifications</li>
+                                    <li>
+                                        <!-- inner menu: contains the actual data -->
+                                        <ul class="menu">
+                                            <li><a href="#"><i class="fa fa-users text-aqua"></i> 5 new members joined today</a></li>
+                                            <li><a href="#"><i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems</a></li>
+                                            <li><a href="#"><i class="fa fa-users text-red"></i> 5 new members joined</a>
+                                            </li><li><a href="#"><i class="fa fa-shopping-cart text-green"></i> 25 sales made</a></li>
+                                            <li><a href="#"><i class="fa fa-user text-red"></i> You changed your username</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="footer"><a href="#">View all</a></li>
+                                </ul>
+                            </li>
+                            <!-- User Account: style can be found in dropdown.less -->
+                            <li class="dropdown user user-menu">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="img/user_profile.png" class="user-image" alt="User Image"><span class="hidden-xs">Alexander Pierce</span></a>
+                                <ul class="dropdown-menu">
+                                    <!-- User image -->
+                                    <li class="user-header">
+                                        <img src="img/user_profile.png" class="img-circle" alt="User Image">
+                                        <p>Alexander Pierce - Web Developer<small>Member since Nov. 2012</small></p>
+                                    </li>
+                                    <!-- Menu Body -->
+                                    <li class="user-body">
+                                        <div class="row">
+                                            <div class="col-xs-4 text-center"><a href="#">Followers</a></div>
+                                            <div class="col-xs-4 text-center"><a href="#">Sales</a></div>
+                                            <div class="col-xs-4 text-center"><a href="#">Friends</a></div>
+                                        </div>
+                                        <!-- /.row -->
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left"><a href="#" class="btn btn-default btn-flat">Profile</a></div>
+                                        <div class="pull-right"><a href="#" class="btn btn-default btn-flat">Sign out</a></div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-menu__mobile collapse navbar-collapsed" id="navbar_top">
+        <div class="container">
+            <div class="row">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a  class="nav-link" href="">О нас</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Курсы</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Уроки</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Вебинары</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Статьи</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Конкурсы</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Траектория</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Партнерам</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Преподавателям</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Контакты</a></li>
+                    <li class="nav-item"><a  class="nav-link" href="">Траектория</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="btns-wrapper">
+                    <a href="" class="sign-icon">Войти</a>
+                    <a href="" class="btn-place">Разместить курс</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-search__mobile">
+        <!-- Modal -->
+        <div class="modal fade" id="searchPopup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="top-search__mobile_inner">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <form class="form-inline form_search my-2 my-lg-0">
+                                <input class="form-control" type="search" placeholder="Поиск" aria-label="Поиск">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="result__content_list">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item"><a  class="nav-link" href=""><img src="img/search_img.svg" alt="">факультет <br>Проджект менеджемента</a></li>
+                                    <li class="nav-item"><a  class="nav-link" href=""><img src="img/search_img.svg" alt="">факультет <br>Проджект менеджемента</a></li>
+                                    <li class="nav-item"><a  class="nav-link" href=""><img src="img/search_img.svg" alt="">факультет <br>Проджект менеджемента</a></li>
+                                    <li class="nav-item"><a  class="nav-link" href=""><img src="img/search_img.svg" alt="">факультет <br>Проджект менеджемента</a></li>
+                                </ul>
+                            </div>
+                            <div class="block__result_all">
+                                <a href="" class="mm-btn_next">Смотреть все результаты <span class="mm-sronly"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-panel d-none d-lg-block d-sm-none d-md-none">
+        <div class="container">
+            <div class="header-wrap clearfix">
+                <nav class="top-menu" id="panel-menu" >
+                    <ul class="menu-main">
+                        <li>
+                            <a href="#"><img src="img/cat-icon_lang.svg" alt=""><span>Языки</span></a>
+                            <ul>
+                                <li><a href="">Искуственный интелект</a></li>
+                                <li><a href="">Веб-разработка</a></li>
+                                <li><a href="">Языки программирования</a></li>
+                                <li><a href="">Веб-аналитика</a></li>
+                                <li><a href="">Тестирование</a></li>
+                                <li><a href="">Тестирование</a></li>
+                                <li><a href="">Тестирование</a></li>
+                                <li><a href="">Тестирование</a></li>
+                                <li><a href="">Тестирование</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="img/cat-icon_marketing.svg" alt=""><span>Маркетинг</span></a></li>
+                        <li>
+                            <a href="#"><img src="img/cat-icon_devs.svg" alt=""><span>Разработка</span></a>
+                            <ul>
+                                <li><a href="">Искуственный интелект</a></li>
+                                <li><a href="">Веб-разработка</a></li>
+                                <li><a href="">Языки программирования</a></li>
+                                <li><a href="">Веб-аналитика</a></li>
+                                <li><a href="">Тестирование</a></li>
+                                <li><a href="">Тестирование</a></li>
+                                <li><a href="">Тестирование</a></li>
+                                <li><a href="">Тестирование</a></li>
+                                <li><a href="">Тестирование</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#"><img src="img/cat-icon_design.svg" alt=""><span>Дизайн</span></a></li>
+                        <li><a href="#"><img src="img/cat-icon_managment.svg" alt=""><span>Менеджмент</span></a></li>
+                        <li><a href="#"><img src="img/cat-icon_managment.svg" alt=""><span>Финансы</span></a></li>
+                        <li><a href="#"><img src="img/cat-icon_business.svg" alt=""><span>Бизнес</span></a></li>
+                        <li><a href="#"><img src="img/cat-icon_pravo.svg" alt=""><span>Право</span></a></li>
+                        <li><a href="#"><img src="img/cat-icon_school.svg" alt=""><span>Школа</span></a></li>
+                        <li><a href="#"><img src="img/cat-icon_development.svg" alt=""><span>Развитие</span></a></li>
+                        <li><a href="#"><img src="img/cat-icon_medicina.svg" alt=""><span>Медицина</span></a></li>
+                        <li><a href="#"><img src="img/cat-icon_other.svg" alt=""><span>Другое</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+//= template/inc/cat_mob_button.html
+
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-xl-9">
+                <main class="main-content">
+                    <div class="course__header" style="background-image: url(img/course-poster.jpg);">
+                        <a href="" class="play_button"  data-toggle="modal" data-target="#course-header_popup"></a>
+                    </div>
+                    <div class="course__content">
+
+                        //= template/course/section/title-viewer.html
+                        //= template/course/section/programm-viewer.html
+                        //= template/course/section/skills-viewer.html
+                        //= template/course/section/soft-viewer.html
+                        //= template/course/section/teacher-viewer.html
+                        //= template/course/section/testimon-viewer.html
+
+                    </div>
+
+                </main>
+            </div>
+            <div class="col-lg-4 col-xl-3">
+                <aside class="left-sidebar">
+                    //= template/left-sidebar/course_details.html
+                </aside>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= template/footer.html
+
+<!-- Modal -->
+<div class="modal fade" id="course-header_popup" tabindex="-1" role="dialog" aria-labelledby="course-header_popupLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="course-header_popupLabel">Факультет проджект-менеджмента</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias suscipit, reprehenderit perferendis explicabo quia quae ipsa. Nostrum velit at officia error veniam vero facere ipsum similique aperiam? Nisi, eius rerum.
+        </div>
+    </div>
+    </div>
+</div>
+
+//=  template/inc/end.html

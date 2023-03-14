@@ -1,0 +1,402 @@
+//= template/inc/start.html
+<header class="header">
+  //= template/inc/top-line.html
+  //= template/inc/top-panel.html
+  //= template/inc/top-menu.html
+</header>
+
+<div class="content-wrapper cabinet-panel">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-xl-3 order-lg-1">
+        <aside class="left-sidebar">
+          //= template/left-sidebar/left-menu-student.html
+        </aside>
+      </div>
+      <div class="col-lg-8 col-xl-9 order-lg-2">
+
+        <h4 class="my-4">тут блок со статистикой юзера, готов на беке</h4>
+
+        <h4 class="mb-4"> В процессе</h4>
+        <div class="ct-stat row">
+
+          <div class="col-auto col-md-6 col-xl-4 d-flex pb-md-4">
+            <div class="ct-stat-item">
+              <div class="ct-stat-item__img" style="background-image:url(./img/ct-stat-1.png)"></div>
+              <div class="ct-stat-item__bl">
+                <small>Skillbox</small>
+                <a href="#" class="ct-stat-item__title">Управление проектами</a>
+                <div class="ct-stat-item__bar">
+                  <span>24%</span>
+                  <div><span style="width:24%;"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto col-md-6 col-xl-4 d-flex pb-md-4">
+            <div class="ct-stat-item">
+              <div class="ct-stat-item__img" style="background-image:url(./img/ct-stat-2.png)"></div>
+              <div class="ct-stat-item__bl">
+                <small>Skillbox</small>
+                <a href="#" class="ct-stat-item__title">Факультет тестирования ПО</a>
+                <div class="ct-stat-item__bar">
+                  <span>80%</span>
+                  <div><span style="width:80%;"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-auto col-md-6 col-xl-4 d-flex pb-md-4">
+            <div class="ct-stat-item">
+              <div class="ct-stat-item__img" style="background-image:url(./img/ct-stat-3.png)"></div>
+              <div class="ct-stat-item__bl">
+                <small>Geekbrains</small>
+                <a href="#" class="ct-stat-item__title">Факультет проджект-менеджмента</a>
+                <div class="ct-stat-item__bar">
+                  <span>8%</span>
+                  <div><span style="width:8%;"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <h4 class="mb-4">Траектория</h4>
+
+        <div class="ct-way">
+
+          <div class="ct-way__head">
+
+            <div class="ct-way__num">1</div>
+
+            <div class="ct-way__name">Опыт работы в проектах, использующих большие объемы данных.</div>
+
+            <a href="#ct-modal-1" data-toggle="modal" class="ct-way__detail d-md-none">Подробнее</a>
+
+            <div class="ct-way__bar ct-way__bar--done">
+              <div><span style="width:100%;"></span></div>
+              <span>100%</span>
+            </div>
+
+            <div class="ct-way__status">
+              <div class="ct-way__done">Задача выполнена</div>
+            </div>
+
+            <a href="#cl1" class="ct-way__toggle" data-toggle="collapse" onclick="this.closest('.ct-way').classList.toggle('is-active')"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 11L12 15L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+
+          </div>
+
+          <div id="ct-modal-1" class="modal fade d-md-block">
+
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+              <div class="modal-content">
+
+                <div class="modal-header d-md-none">
+                  <div class="d-flex align-items-start">
+                    <div class="ct-way__name">Опыт работы в проектах, использующих большие объемы данных.</div>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.25 5L5.25 19" stroke="#A897BD" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M5.25 5L19.25 19" stroke="#A897BD" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="ct-way__bar ct-way__bar--done">
+                    <div><span style="width:100%;"></span></div>
+                    <span>100%</span>
+                  </div>
+                </div>
+
+                <div class="modal-body">
+                  <div id="cl1" class="collapse">
+
+                    <div class="ct-way__popup">
+                      <div class="row align-items-center mb-3">
+                        <div class="col-auto mr-auto">
+                          <label class="custom-control custom-checkbox mb-3 mb-xl-0">
+                            <input checked type="checkbox" class="custom-control-input">
+                            <span class="custom-control-label">Показывать курсы, которые закрывают несколько этапов</span>
+                          </label>
+                        </div>
+                        <div class="col-auto d-none d-md-block">
+                          <a href="#" class="ct-way__link-all">Смотреть все курсы<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 16L14 12L10 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="ct-way__row-cards">
+                        //= template/course/card/card-course-personal.html
+                        <div class="course_item is-progress">
+                          <div class="course_item__header">
+                            <div class="course_item__elements">
+                              <img src="/img/icon_skillbox.svg" class="course-logo" alt="">
+
+                              <button class="btn_course"
+                                      data-container="body"
+                                      data-toggle="popover"
+                                      data-placement="top"
+                                      data-content="Убрать из избанного"
+                                      data-color="primary" > <img src="/img/icon_unfavorite.svg" class="course-rating"  alt=""></button>
+                              <button class="btn_course d-none"
+                                      data-container="body"
+                                      data-toggle="popover"
+                                      data-placement="top"
+                                      data-content="Добавить в сравнение"
+                                      data-color="primary" ><img src="/img/icon_grafic.svg" class="course-compare"  alt=""></button>
+                              <button class="btn_course d-none"
+                                      data-container="body"
+                                      data-toggle="popover"
+                                      data-placement="top"
+                                      data-content="Добавить в избранное"
+                                      data-color="primary" >
+                                <img src="/img/icon_favorite.svg" class="course-favorite"  alt=""></button>
+                            </div>
+                            <img src="/img/course_header_1.svg" alt="">
+                            <div class="cat_markers">
+                              <div class="cat_marker__item red">Скидка 50%</div>
+                            </div>
+                          </div>
+                          <div class="course_item__content">
+                            <div class="course_item__title">Факультет</div>
+                            <div class="course_item__name">Управление очень очень очень очень очень очень очень очень очень  сложными проектами</div>
+                            <ul class="block_feature">
+                              <li class="icon_primary_level">Начальный уровень</li>
+                              <li class="icon_mentor">Наставник: Ecть</li>
+                              <li class="icon_certificat">Сертификат: Ecть</li>
+                            </ul>
+                            <div class="course_item__info">
+                              <div class="info_block">
+                                <div class="info_block__title">Длительность</div>
+                                <div class="info_block__value">1,2 года</div>
+                              </div>
+                              <div class="info_block">
+                                <div class="info_block__title">Стоимость</div>
+                                <div class="info_block__value"><span>120 000 р.</span> <strike>120 000 р.</strike></div>
+                              </div>
+                            </div>
+                            <div class="btn_action">
+                              <a href="" class="btn-details">Подробнее</a>
+                              <span class="button_primary is-done">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.6664 3L4.63866 14H12.6387L11.6664 21L20.6911 10H12.6911L13.6664 3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      Выполняется
+                    </span>
+                            </div>
+                          </div>
+                        </div>
+                        //= template/course/card/card-course-personal.html
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="modal-footer d-md-none ">
+                  <div class="text-center pb-3">
+                    <a href="#" class="ct-way__link-all">Смотреть все курсы<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 16L14 12L10 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </a>
+                  </div>
+
+                  <div class="ct-way__status pb-2">
+                    <div class="ct-way__done">Задача выполнена</div>
+                  </div>
+
+                  <button type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="ct-way">
+
+          <div class="ct-way__head">
+
+            <div class="ct-way__num">2</div>
+
+            <div class="ct-way__name">Cus-Dev</div>
+
+            <a href="#ct-modal-2" data-toggle="modal" class="ct-way__detail d-md-none">Подробнее</a>
+
+            <div class="ct-way__bar">
+              <div><span style="width:70%;"></span></div>
+              <span>70%</span>
+            </div>
+
+            <div class="ct-way__status">
+              <a class="ct-way__fill">Выполнить задачу</a>
+            </div>
+
+            <a href="#cl2" class="ct-way__toggle" data-toggle="collapse" onclick="this.closest('.ct-way').classList.toggle('is-active')"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 11L12 15L16 11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            </a>
+
+          </div>
+
+          <div id="ct-modal-2" class="modal fade d-md-block">
+
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+
+              <div class="modal-content">
+
+                <div class="modal-header d-md-none">
+                  <div class="d-flex align-items-start">
+                    <div class="ct-way__name">Опыт работы в проектах, использующих большие объемы данных.</div>
+                    <button type="button" class="close" data-dismiss="modal">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19.25 5L5.25 19" stroke="#A897BD" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M5.25 5L19.25 19" stroke="#A897BD" stroke-width="2" stroke-linecap="round"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="ct-way__bar">
+                    <div><span style="width:70%;"></span></div>
+                    <span>70%</span>
+                  </div>
+                </div>
+
+                <div class="modal-body">
+                  <div id="cl2" class="collapse">
+
+                    <div class="ct-way__popup">
+                      <div class="row align-items-center mb-3">
+                        <div class="col-auto mr-auto">
+                          <label class="custom-control custom-checkbox mb-3 mb-xl-0">
+                            <input checked type="checkbox" class="custom-control-input">
+                            <span class="custom-control-label">Показывать курсы, которые закрывают несколько этапов</span>
+                          </label>
+                        </div>
+                        <div class="col-auto d-none d-md-block">
+                          <a href="#" class="ct-way__link-all">Смотреть все курсы<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 16L14 12L10 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="ct-way__row-cards">
+                        //= template/course/card/card-course-personal.html
+                        <div class="course_item is-progress">
+                          <div class="course_item__header">
+                            <div class="course_item__elements">
+                              <img src="/img/icon_skillbox.svg" class="course-logo" alt="">
+
+                              <button class="btn_course"
+                                      data-container="body"
+                                      data-toggle="popover"
+                                      data-placement="top"
+                                      data-content="Убрать из избанного"
+                                      data-color="primary" > <img src="/img/icon_unfavorite.svg" class="course-rating"  alt=""></button>
+                              <button class="btn_course d-none"
+                                      data-container="body"
+                                      data-toggle="popover"
+                                      data-placement="top"
+                                      data-content="Добавить в сравнение"
+                                      data-color="primary" ><img src="/img/icon_grafic.svg" class="course-compare"  alt=""></button>
+                              <button class="btn_course d-none"
+                                      data-container="body"
+                                      data-toggle="popover"
+                                      data-placement="top"
+                                      data-content="Добавить в избранное"
+                                      data-color="primary" >
+                                <img src="/img/icon_favorite.svg" class="course-favorite"  alt=""></button>
+                            </div>
+                            <img src="/img/course_header_1.svg" alt="">
+                            <div class="cat_markers">
+                              <div class="cat_marker__item red">Скидка 50%</div>
+                            </div>
+                          </div>
+                          <div class="course_item__content">
+                            <div class="course_item__title">Факультет</div>
+                            <div class="course_item__name">Управление очень очень очень очень очень очень очень очень очень  сложными проектами</div>
+                            <ul class="block_feature">
+                              <li class="icon_primary_level">Начальный уровень</li>
+                              <li class="icon_mentor">Наставник: Ecть</li>
+                              <li class="icon_certificat">Сертификат: Ecть</li>
+                            </ul>
+                            <div class="course_item__info">
+                              <div class="info_block">
+                                <div class="info_block__title">Длительность</div>
+                                <div class="info_block__value">1,2 года</div>
+                              </div>
+                              <div class="info_block">
+                                <div class="info_block__title">Стоимость</div>
+                                <div class="info_block__value"><span>120 000 р.</span> <strike>120 000 р.</strike></div>
+                              </div>
+                            </div>
+                            <div class="btn_action">
+                              <a href="" class="btn-details">Подробнее</a>
+                              <span class="button_primary is-done">
+                      <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.6664 3L4.63866 14H12.6387L11.6664 21L20.6911 10H12.6911L13.6664 3Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      Выполняется
+                    </span>
+                            </div>
+                          </div>
+                        </div>
+                        //= template/course/card/card-course-personal.html
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="modal-footer d-md-none ">
+                  <div class="text-center pb-3">
+                    <a href="#" class="ct-way__link-all">Смотреть все курсы<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 16L14 12L10 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    </a>
+                  </div>
+
+                  <div class="ct-way__status pb-2">
+                    <div class="ct-way__done">Задача выполнена</div>
+                  </div>
+
+                  <button type="button" data-dismiss="modal">Закрыть</button>
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+//= template/footer.html
+//= template/modals.html
+//= template/inc/end.html
+
+<script>
+  $(document).ready(function(){
+    $('select:not(#coursesearch-sort)').select2({
+      theme: "krajee-bs4"
+    });
+  });
+</script>

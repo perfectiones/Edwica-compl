@@ -1,0 +1,35 @@
+{
+  "name": "habr",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap-touchspin": "^4.3.0",
+    "browser-sync": "^2.2.3",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-imagemin": "^2.2.1",
+    "gulp-minify-css": "^1.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.1.0",
+    "gulp-watch": "^4.1.1",
+    "imagemin-pngquant": "^4.0.0",
+    "ion-rangeslider": "^2.3.1",
+    "jquery.mmenu": "^7.3.3",
+    "mmenu-js": "^8.5.22",
+    "node": "^10.9.0",
+    "node-sass": "^2.1.1",
+    "npm": "^7.7.6",
+    "owl.carousel": "^2.3.4",
+    "rimraf": "^2.3.1",
+    "superfish": "^1.7.10"
+  },
+  "devDependencies": {
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0"
+  }
+}

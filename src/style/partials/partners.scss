@@ -1,0 +1,115 @@
+.partner {
+  @include adaptiveValue("margin-bottom", 64, 48, 48);
+  // .partner__img
+  &__img {
+    background: #ffffff;
+    border: 1px solid #efe8f8;
+    box-sizing: border-box;
+    border-radius: 16px;
+    transition: all 0.5s ease 0s;
+    @media (max-width: $pc) {
+      width: fit-content;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        box-shadow: 0px 6px 24px rgba(24, 29, 54, 0.12);
+      }
+    }
+  }
+  // .partner__link
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 44px 0;
+    @media (max-width: $pc) {
+      display: none;
+    }
+  }
+  // .partner__link-mob
+  &__link-mob {
+    display: none;
+    width: 90px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+    overflow: hidden;
+    & img {
+      max-width: 90px;
+      display: block;
+    }
+    @media (max-width: $pc) {
+      display: flex;
+    }
+  }
+  // .partner__text
+  &__text {
+    display: none;
+    margin-top: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 143%;
+    color: #a897bd;
+    text-align: center;
+    @media (max-width: $pc) {
+      display: block;
+    }
+  }
+}
+.partners {
+  // .partners__main
+  &__main {
+    position: relative;
+  }
+  // .partners__slider
+  &__slider {
+    position: static;
+  }
+  // .partners__wrapper
+  &__wrapper {
+    padding: 10px 0 15px;
+  }
+  // .partners__slide
+  &__slide {
+    height: fit-content;
+    @media (max-width: $pc) {
+      width: fit-content;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+.container {
+}
+.courses {
+  // .courses__title
+  &__title {
+    // .courses__title_form
+    &_form {
+    }
+    // .courses__title_text
+    &_text {
+    }
+  }
+}
+.swiper {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper-button-prev {
+  @media (max-width: $pc) {
+    display: none;
+  }
+}
+.swiper-button-next {
+  @media (max-width: $pc) {
+    display: none;
+  }
+}

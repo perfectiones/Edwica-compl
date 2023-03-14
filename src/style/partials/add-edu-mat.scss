@@ -1,0 +1,120 @@
+.add {
+  // .add__wrapper
+  &__wrapper {
+  }
+  // .add__flex
+  &__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  // .add__item
+  &__item {
+    display: flex;
+    background: #ffffff;
+    border: 1px solid #efe8f8;
+    border-radius: 8px;
+    @media (max-width: $tablet) {
+      flex-direction: column;
+    }
+    @media (min-width: $tablet) {
+      align-items: center;
+    }
+  }
+  // .add__item-left
+  &__item-left {
+    @media (min-width: $tablet) {
+      flex: 1 1 50%;
+      padding-left: 15px;
+    }
+    @include adaptiveValue("padding-left", 40, 15, 1);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    height: 60px;
+  }
+  // .add__item-num
+  &__item-num {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 9px 16px;
+    border-radius: 50%;
+    border: 1px solid #a897bd;
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+  // .add__item-title
+  &__item-title {
+    font-weight: 700;
+    line-height: 24px;
+    color: #6c6377;
+    @include adaptiveValue("font-size", 16, 12, 1);
+  }
+  // .add__item-right
+  &__item-right {
+    @media (min-width: $tablet) {
+      flex: 1 1 50%;
+    }
+    @media (max-width: $tablet) {
+      justify-content: center;
+      border-top: 1px solid #efe8f8;
+    }
+    display: flex;
+    align-items: center;
+  }
+  // .add__item-row
+  &__item-row {
+    display: flex;
+    @media (max-width: $tablet) {
+      width: 100%;
+    }
+  }
+  // .add__item-row-el
+  &__item-row-el {
+    display: flex;
+    @media (min-width: $tablet) {
+      padding: 15px 0;
+    }
+    flex-direction: column;
+    gap: 7px;
+    border-left: 1px solid #efe8f8;
+    align-items: center;
+    @include adaptiveValue("width", 170, 140, 1);
+    @media (max-width: $tablet) {
+      width: 100%;
+      gap: 0px;
+      padding: 5px 0;
+    }
+    @include adaptiveValue("font-size", 14, 10, 1);
+    line-height: 24px;
+    @media (max-width: $tablet) {
+      &:nth-child(1) {
+        border-left: none;
+      }
+    }
+    &:nth-child(3) {
+      border-right: 1px solid #efe8f8;
+      @media (max-width: $tablet) {
+        display: none;
+      }
+    }
+    & span:nth-child(odd) {
+      color: #a897bd;
+    }
+    & span:nth-child(even) {
+      color: #6c6377;
+    }
+  }
+  &__btn {
+    margin: 0 auto;
+    
+  }
+  &__box-btn{
+    width: 266px;
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+}

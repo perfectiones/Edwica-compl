@@ -1,0 +1,328 @@
+.sahalin-color {
+  color: #0087ff !important;
+  & button {
+    color: #0087ff !important;
+  }
+  & p {
+    color: #0087ff;
+  }
+  & a {
+    color: #0087ff;
+  }
+}
+
+.sahalin-back {
+  background: #0087ff !important;
+}
+.sahalin-text-color {
+  color: #b2c7ef !important;
+}
+
+.sahalin-back-dark {
+  background: #00315b !important;
+}
+
+.sahalin-main__btn-light {
+  background: #f2f7ff;
+  border: 1px solid #bac9ff;
+  color: #0087ff;
+  &:hover {
+    color: #0087ff;
+  }
+}
+
+.sahalin-flex-end {
+  justify-content: flex-end;
+}
+.sahalin-flex-start {
+  align-items: flex-start;
+}
+.sahalin-gap {
+  // gap: 30px;
+  justify-content: space-between;
+  @media (max-width: 1270px) {
+    justify-content: flex-start;
+    gap: 107px;
+  }
+  @media (max-width: 1200px) {
+    gap: 37px;
+  }
+}
+.sahalin-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-bottom: 42px;
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 16px;
+  }
+  @media (max-width: $mobile) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: $mobileSmall) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.sahalin-all-el-prof__head-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 550px) {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.sahalin-btn-back {
+  width: 128px;
+}
+
+.sahalin-spesh_tt {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 36px;
+  color: #392b4b;
+  @media (max-width: $tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+.sahalin-padding {
+  @media (max-width: $mobile) {
+    padding: 32px 0;
+  }
+}
+.sahalin__swiper{
+  position: relative;
+  z-index: 1;
+}
+.sahalin-swiper-button-prev {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+  background: #ffffff;
+  position: absolute;
+  top: 47%;
+  left: 1%;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0px 6px 24px rgba(24, 29, 54, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  &::after {
+    position: relative;
+    content: "";
+    background-image: url(/img/sahalin-prev-arrow.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 22px;
+  }
+}
+
+.sahalin-swiper-button-next {
+  @media (max-width: $tablet) {
+    display: none;
+  }
+  background: #ffffff;
+  overflow: hidden;
+  position: absolute;
+  top: 47%;
+  right: 1%;
+  z-index: 2;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0px 6px 24px rgba(24, 29, 54, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &::after {
+    position: relative;
+    content: "";
+    background-image: url(/img/sahalin-next-arrow.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 22px;
+  }
+}
+
+.sahalin-input-tablet {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 30px;
+  @media (min-width: $tablet) {
+    display: none;
+  }
+  .search-input {
+    padding: 0 78px 0 24px;
+    border: 1px solid #0887eb;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    background: #ffffff;
+    height: 44px;
+    color: #0887eb;
+  }
+  .search-btn {
+    background-color: $color-accent_main;
+    border-radius: 4px;
+    width: 64px;
+    height: 36px;
+    right: 5px;
+    top: 4px;
+    position: absolute;
+  }
+}
+.sahalin-input {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-top: 30px;
+  @media (max-width: $tablet) {
+    display: none;
+  }
+  .search-input {
+    padding: 0 78px 0 24px;
+    border: 1px solid #0887eb;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    background: #ffffff;
+    height: 44px;
+    color: #0887eb;
+  }
+  .search-btn {
+    background-color: $color-accent_main;
+    border-radius: 4px;
+    width: 64px;
+    height: 36px;
+    right: 5px;
+    top: 4px;
+    position: absolute;
+  }
+}
+.sahalin-filter-popup button {
+  display: block;
+  height: 44px;
+  width: 46px;
+  background: #f2f7ff;
+  border: 1px solid #bac9ff;
+  border-radius: 3px;
+  background-image: url("../img/edu-filter-icon.svg");
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+/////////////////////////////////////////////
+// edit-courses
+.sahalin-number-color {
+  &::before {
+    content: counter(numb);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #0087ff;
+    border: 2px solid #0087ff;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+  }
+}
+/////////////////////////////////////////////
+
+/////////////////////////////////////////////
+// traj-prof
+.sahalin-traj-prof__avatar_con {
+  @media (min-width: 1200px) {
+    flex: 1 1 43%;
+  }
+}
+.sahalin-traj-prof__body {
+  @media (min-width: 1200px) {
+    flex: 1 1 57%;
+  }
+}
+/////////////////////////////////////////////
+
+/////////////////////////////////////////////
+// student-traectory
+.sahalin-stud-traj__btn-row {
+  display: flex;
+  @include adaptiveValue("gap", 16, 6, 1);
+  @media (max-width: 1200px) {
+    display: none;
+  }
+  margin-top: 40px;
+}
+.sahalin-stud-traj__btn-column {
+  display: flex;
+  @include adaptiveValue("gap", 16, 6, 1);
+  justify-content: center;
+  @media (min-width: 1200px) {
+    display: none;
+  }
+  @media (max-width: $mobileSmall) {
+    flex-direction: column;
+  }
+  margin-top: 20px;
+}
+.sahalin-stud-traj__btn-blue {
+  background: #ffffff;
+  border: 1px solid #0087ff;
+  border-radius: 8px;
+  color: #0087ff;
+  width: 233px;
+}
+.sahalin-stud-traj__btn-black {
+  background: #ffffff;
+  border: 1px solid #313131;
+  border-radius: 8px;
+  color: #313131;
+  width: 180px;
+  &:hover {
+    color: #313131;
+  }
+}
+.sahalin-btn-width-min {
+  width: 230px;
+  @media (max-width: $mobileSmall) {
+    width: 100%;
+  }
+}
+
+.sahalin-hide-btn {
+  display: none;
+  @media (max-width: 1200px) {
+    display: block;
+    margin: 20px auto 0 auto;
+  }
+}
+/////////////////////////////////////////////
+
+/////////////////////////////////////////////
+// detail-info
+/////////////////////////////////////////////

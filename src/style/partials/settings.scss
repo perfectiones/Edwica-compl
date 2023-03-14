@@ -1,0 +1,73 @@
+/**
+* settings.css
+**/
+.form-settings{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    .form-group {
+        margin-bottom: 1rem;
+    }
+    .btn-place{
+        width: 100%;
+        max-width: 180px;
+        margin: auto;
+    }
+    label{
+        color: $color_neutrals-2_secondary;
+    }
+}
+
+.form-control{
+    border: 1px solid #EFE8F8;
+    border-radius: 8px;
+    height: 44px;
+}
+.form-control:focus{
+    border-color: $color_main-3_main;
+}
+.field-status{
+    font-weight: 600;
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 28px;
+    height: 44px;
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.confirm-status{
+    background-image: url(../img/confirm.svg);
+    color: rgb(22, 140, 76);
+}
+
+.do-confirm{
+    font-size: 16px;
+    line-height: 24px;
+    color: $color_main-3_main;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+.password-control {
+	position: absolute;
+    bottom: 9px;
+    right: 14px;
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: url(/img/view.svg) 0 0 no-repeat;
+}
+.password-control.view {
+	background: url(/img/no-view.svg) 0 0 no-repeat;
+}

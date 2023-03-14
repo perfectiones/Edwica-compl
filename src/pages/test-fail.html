@@ -1,0 +1,36 @@
+//= template/inc/start.html
+<header class="header">
+    //= template/inc/top-line.html
+    //= template/inc/top-panel.html
+</header>
+
+<div class="content-wrapper cabinet-panel">
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="col-md-10 col-sm-12 col-12">
+                <main class="main-content">
+                    <div class="test-result fail">
+                        <h3 class="test-result__header">Тест не пройден!</h3>
+                        <span class="test-result__stat">2 из 10 вопросов правильно</span>
+                        <div class="test-result__mark">Ваша оценка <span>2</span></div>
+                        <div class="test-result__warning">
+                            <svg style="min-width: 24px;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#F3A919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 16V12" stroke="#F3A919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 8H12.01" stroke="#F3A919" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span class="text-center">Кажется, у вас много ошибок. Советуем закрепить материал и попытаться улучшить результат теста</span>
+                        </div>
+                        <a class="test-result__go-back-button">Вернуться на страницу урока</a>
+                        <img src="/img/test-fail.svg">
+                    </div>
+                </main>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+//= template/footer.html
+//= template/modals.html
+//= template/inc/end.html

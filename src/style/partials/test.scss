@@ -1,0 +1,318 @@
+.test-card {
+    align-items: center;
+    padding: 12px 16px;
+    justify-content: space-between;
+    background-color: white;
+    margin-bottom: 12px;
+    margin-left: 0;
+    margin-right: 0;
+    border: 1px solid $color_neutrals-5-borders;
+    border-radius: 16px;
+
+    .vendor-logo {
+        width: 48px;
+        height: 48px;
+    }
+
+    .test-info {
+        display: flex;
+        flex-direction: column;
+
+        .test-vendor-name {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-neutrals_black;
+        }
+
+        .test-description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-neutrals_black;
+        }
+    }
+
+    .test-score {
+        display: flex;
+        justify-content: space-around;
+
+        th {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-neutrals_secondary;
+        }
+
+        td {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 20px;
+            color: $color-neutrals_black;
+        }
+    }
+
+    .test-result {
+        border-radius: 36px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        padding: 6px 12px;
+        
+        &.done {
+            color: $color-statements-1_green_dark;
+            background-color: $color-statements-3_green_light;
+        }
+
+        &.in-progress {
+            background-color: $color-statements-9_yellow_light;
+            color: $color-statements-7_yellow_dark;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.test-view {
+    .lesson-name {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-neutrals_secondary;
+    }
+
+    .name {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .cancel-button {
+        float: right;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-accent_main;
+        background-color: $color-accent_superLight;
+        padding: 10px 24px;
+        border: 1px solid $color-accent_extra_light;
+        border-radius: 8px;
+    }
+
+    .description {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .question-card {
+        background-color: white;
+        border-left: 1px solid $color_neutrals-5-borders;
+        border-right: 1px solid $color_neutrals-5-borders;
+        border-top: 1px solid $color_neutrals-5-borders;
+
+        &:first-child {
+            border-top-right-radius: 16px;
+            border-top-left-radius: 16px;
+        }
+
+        .question {
+            display: flex;
+            align-items: center;
+            padding: 24px 24px 0 24px;
+            margin-bottom: 20px;
+
+            .question-number {
+                background-color: white;
+                box-shadow: 0px 2px 8px rgba(24, 29, 54, 0.1);
+                border-radius: 50%;
+                width: 44px;
+                height: 44px;
+                margin-right: 16px;
+
+                span {
+                    left: 17.5px;
+                    top: 10px;
+                    position: relative;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                }
+            }
+
+            .question-text {
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+            }
+        }
+
+        .answer{
+            padding-left: 60px;
+            margin-bottom: 16px;
+
+            &:last-child {
+                margin-bottom: 32px;
+            }
+
+            label {
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 24px;
+                color: $color_neutrals-1_black;
+            }
+
+            input {
+                width: 16px;
+                height: 16px;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .submit-button-wrapper {
+        background-color: white;
+        border-bottom: 1px solid $color_neutrals-5-borders;
+        border-left: 1px solid $color_neutrals-5-borders;
+        border-right: 1px solid $color_neutrals-5-borders;
+        border-bottom-right-radius: 16px;
+        border-bottom-left-radius: 16px;
+        padding-bottom: 24px;
+        padding-right: 24px;
+
+        .submit-button {
+            float: right;
+            padding: 10px 24px;
+            border-radius: 8px;
+            background-color: $color-accent_main;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: white;
+        }
+    }
+}
+
+.test-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 750px;
+    border: 1px solid $color_neutrals-5-borders;
+    border-radius: 16px;
+    background-color: white;
+    padding-top: 32px;
+    
+    &.success {
+        .test-result__mark {
+            background-color: $color-statements-3_green_light;
+            border: 1px solid $color-statements-2_green_main;
+            color: $color-statements-1_green_dark;
+        }
+    }
+
+    &.fail {
+        .test-result__mark {
+            background-color: $color-statements-6_red_light;
+            border: 1px solid $color-red_main;
+            color: $color-red_main;
+        }
+    }
+
+    .test-result__background-image {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 631px;
+        border-radius: 16px;
+    }
+
+    .test-result__header {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 4px;
+    }
+
+    .test-result__stat {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-neutrals_secondary;
+        margin-bottom: 16px;
+    }
+
+    .test-result__mark {
+        border-radius: 8px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;                            
+        text-align: center;                            
+        padding: 8px 16px;
+        margin-bottom: 32px;
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 7px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px; 
+        }
+    }
+
+    .test-result__go-back-button {
+        background-color: $color-accent_main;
+        border-radius: 8px;
+        padding: 10px 24px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: white;
+        margin-bottom: 32px;
+    }
+
+    .test-result__warning {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        padding: 8px 8px 8px 16px;
+        border-radius: 8px;
+        background-color: $color-statements-9_yellow_light;
+        max-width: 500px;
+
+        span {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

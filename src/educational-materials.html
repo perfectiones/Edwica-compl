@@ -1,0 +1,2237 @@
+//= template/inc/start.html
+//= template/inc/account-header.html
+
+<div class="content-wrapper account-wrapper main-page edu__back-color">
+  <div class="container-ac">
+    <div class="top-p edu__top-p">
+      <div class="company">
+        <div class="company__logo">
+          <svg
+            class="d-3-none svg-dec"
+            width="20"
+            height="21"
+            viewBox="0 0 20 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.6673 13V15.7778C16.6673 16.1461 16.5112 16.4994 16.2334 16.7599C15.9556 17.0203 15.5788 17.1667 15.1858 17.1667H4.81547C4.42255 17.1667 4.04573 17.0203 3.7679 16.7599C3.49007 16.4994 3.33398 16.1461 3.33398 15.7778V13"
+              stroke="#966CEE"
+              stroke-width="1.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M13.3327 7.16671L9.99935 3.83337L6.66602 7.16671"
+              stroke="#966CEE"
+              stroke-width="1.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M10 3.83337L10 13"
+              stroke="#966CEE"
+              stroke-width="1.66667"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <div class="logo-wrapper">
+            <img src="/img/Re160.png" />
+          </div>
+          <button class="upload d-3">
+            <svg
+              width="20"
+              height="21"
+              viewBox="0 0 20 21"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.6673 13V15.7778C16.6673 16.1461 16.5112 16.4994 16.2334 16.7599C15.9556 17.0203 15.5788 17.1667 15.1858 17.1667H4.81547C4.42255 17.1667 4.04573 17.0203 3.7679 16.7599C3.49007 16.4994 3.33398 16.1461 3.33398 15.7778V13"
+                stroke="#966CEE"
+                stroke-width="1.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M13.3327 7.16671L9.99935 3.83337L6.66602 7.16671"
+                stroke="#966CEE"
+                stroke-width="1.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M10 3.83337L10 13"
+                stroke="#966CEE"
+                stroke-width="1.66667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Загрузить</p>
+          </button>
+        </div>
+
+        <div class="company__info">
+          <div class="name">
+            <p>
+              Агентство по развитию человеческого капитала Сахалинской области
+            </p>
+          </div>
+          <div class="activities">
+            <div class="activ__item desc">
+              <div class="item__img">
+                <svg
+                  width="17"
+                  height="15"
+                  viewBox="0 0 17 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8.74369 7.68118C9.15656 7.30082 9.48772 6.83038 9.71469 6.30178C9.94165 5.77319 10.0591 5.19882 10.0591 4.61765C10.0591 3.52558 9.6515 2.47824 8.92594 1.70603C8.20038 0.933822 7.21632 0.5 6.19022 0.5C5.16413 0.5 4.18006 0.933822 3.45451 1.70603C2.72895 2.47824 2.32133 3.52558 2.32133 4.61765C2.32133 5.19882 2.43879 5.77319 2.66576 6.30178C2.89273 6.83038 3.22389 7.30082 3.63676 7.68118C2.55358 8.2032 1.63458 9.0462 0.989647 10.1094C0.344714 11.1726 0.00113889 12.411 0 13.6765C0 13.8949 0.0815228 14.1044 0.226634 14.2588C0.371746 14.4132 0.568559 14.5 0.773778 14.5C0.978997 14.5 1.17581 14.4132 1.32092 14.2588C1.46603 14.1044 1.54756 13.8949 1.54756 13.6765C1.54756 12.366 2.03669 11.1092 2.90736 10.1825C3.77803 9.25588 4.95891 8.73529 6.19022 8.73529C7.42154 8.73529 8.60242 9.25588 9.47309 10.1825C10.3438 11.1092 10.8329 12.366 10.8329 13.6765C10.8329 13.8949 10.9144 14.1044 11.0595 14.2588C11.2046 14.4132 11.4015 14.5 11.6067 14.5C11.8119 14.5 12.0087 14.4132 12.1538 14.2588C12.2989 14.1044 12.3804 13.8949 12.3804 13.6765C12.3793 12.411 12.0357 11.1726 11.3908 10.1094C10.7459 9.0462 9.82687 8.2032 8.74369 7.68118ZM6.19022 7.08824C5.73111 7.08824 5.2823 6.94334 4.90056 6.67187C4.51882 6.40039 4.22129 6.01454 4.04559 5.5631C3.86989 5.11166 3.82392 4.61491 3.91349 4.13566C4.00306 3.65641 4.22415 3.2162 4.54879 2.87068C4.87344 2.52516 5.28706 2.28986 5.73735 2.19453C6.18765 2.0992 6.65439 2.14813 7.07856 2.33512C7.50273 2.52211 7.86527 2.83878 8.12034 3.24506C8.37541 3.65135 8.51156 4.12901 8.51156 4.61765C8.51156 5.27289 8.26699 5.90129 7.83166 6.36462C7.39632 6.82794 6.80588 7.08824 6.19022 7.08824ZM13.7268 7.35176C14.222 6.75827 14.5455 6.0251 14.6583 5.24051C14.7711 4.45592 14.6685 3.65336 14.3627 2.92941C14.0569 2.20547 13.5611 1.59101 12.9348 1.16C12.3086 0.728982 11.5787 0.499788 10.8329 0.5C10.6277 0.5 10.4309 0.586765 10.2857 0.741206C10.1406 0.895648 10.0591 1.10512 10.0591 1.32353C10.0591 1.54194 10.1406 1.75141 10.2857 1.90585C10.4309 2.06029 10.6277 2.14706 10.8329 2.14706C11.4485 2.14706 12.039 2.40735 12.4743 2.87068C12.9097 3.334 13.1542 3.96241 13.1542 4.61765C13.1531 5.0502 13.0454 5.47486 12.8417 5.84917C12.638 6.22348 12.3455 6.53431 11.9936 6.75059C11.8788 6.82102 11.783 6.92161 11.7153 7.04273C11.6475 7.16385 11.6101 7.30145 11.6067 7.44235C11.6034 7.58216 11.6337 7.72054 11.6946 7.84445C11.7555 7.96836 11.8451 8.07371 11.9549 8.15059L12.2566 8.36471L12.3572 8.42235C13.2899 8.89318 14.0768 9.63787 14.6252 10.5687C15.1735 11.4996 15.4605 12.5778 15.4523 13.6765C15.4523 13.8949 15.5339 14.1044 15.679 14.2588C15.8241 14.4132 16.0209 14.5 16.2261 14.5C16.4313 14.5 16.6282 14.4132 16.7733 14.2588C16.9184 14.1044 16.9999 13.8949 16.9999 13.6765C17.0062 12.4127 16.7088 11.1682 16.136 10.0612C15.5631 8.95425 14.7338 8.02155 13.7268 7.35176Z"
+                    fill="#615473"
+                  />
+                </svg>
+              </div>
+              <div class="item__text">
+                <p>Пользователей</p>
+                <p><span> 11 321</span></p>
+              </div>
+            </div>
+            <div class="activ__item desc">
+              <div class="item__img">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.46303 9.65295L6.81406 12.0142C6.81406 12.0142 14.4014 9.98426 13.1291 3.2443C13.1291 3.2443 7.56601 1.26328 4.46303 9.65295Z"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <path
+                    d="M9.70873 6.87674C10.053 7.22097 10.6111 7.22097 10.9553 6.87674C11.2996 6.5325 11.2996 5.97437 10.9553 5.63014C10.6111 5.2859 10.053 5.2859 9.70873 5.63014C9.36449 5.97437 9.36449 6.5325 9.70873 6.87674Z"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <path
+                    d="M8.03711 12.1053L8.52209 13.8292L10.7038 12.6323L10.3941 10.2197"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4.57532 8.64355L2.85146 8.15857L4.04832 5.97689L6.46094 6.28653"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.38674 11.8692C5.84362 13.5673 2.90599 13.4688 2.90599 13.4688C2.90599 13.4688 2.68968 10.6675 4.46802 10.0167"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                </svg>
+              </div>
+
+              <div class="item__text">
+                <p>Активность</p>
+                <p><span> 70% </span></p>
+              </div>
+            </div>
+
+            <div class="activ__item mob">
+              <div class="item__img">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.00065 2.49967H12.0007V5.83301C12.0007 8.04215 10.2098 9.83301 8.00065 9.83301C5.79151 9.83301 4.00065 8.04215 4.00065 5.83301V2.49967Z"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <path
+                    d="M12.0007 6.50033L12.0007 3.16699L13.0007 3.16699C13.9211 3.16699 14.6673 3.91318 14.6673 4.83366C14.6673 5.75413 13.9211 6.50033 13.0007 6.50033L12.0007 6.50033Z"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <path
+                    d="M3.99935 6.50033L3.99935 3.16699L2.99935 3.16699C2.07887 3.16699 1.33268 3.91318 1.33268 4.83366C1.33268 5.75413 2.07887 6.50033 2.99935 6.50033L3.99935 6.50033Z"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <path
+                    d="M4.66667 13.833C4.66667 13.0966 5.26362 12.4997 6 12.4997H10C10.7364 12.4997 11.3333 13.0966 11.3333 13.833V14.4997H4.66667V13.833Z"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <rect
+                    x="6.66667"
+                    y="9.83366"
+                    width="2.66667"
+                    height="2.66667"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                </svg>
+              </div>
+
+              <div class="item__text">
+                <p>Рейтинг</p>
+                <p><span> 1435 </span></p>
+              </div>
+            </div>
+
+            <div class="activ__item mob">
+              <div class="item__img">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="2.00065"
+                    y="9.16667"
+                    width="2.66667"
+                    height="3.33333"
+                    rx="0.666667"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <rect
+                    x="6.66667"
+                    y="3.83366"
+                    width="2.66667"
+                    height="8.66667"
+                    rx="0.666667"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <rect
+                    x="11.3327"
+                    y="6.49967"
+                    width="2.66667"
+                    height="6"
+                    rx="0.666667"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                </svg>
+              </div>
+
+              <div class="item__text">
+                <p>Место</p>
+                <p><span> 321</span></p>
+              </div>
+            </div>
+
+            <div class="activ__item mob">
+              <div class="item__img">
+                <svg
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.46303 9.65295L6.81406 12.0142C6.81406 12.0142 14.4014 9.98426 13.1291 3.2443C13.1291 3.2443 7.56601 1.26328 4.46303 9.65295Z"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <path
+                    d="M9.70873 6.87674C10.053 7.22097 10.6111 7.22097 10.9553 6.87674C11.2996 6.5325 11.2996 5.97437 10.9553 5.63014C10.6111 5.2859 10.053 5.2859 9.70873 5.63014C9.36449 5.97437 9.36449 6.5325 9.70873 6.87674Z"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                  <path
+                    d="M8.03711 12.1053L8.52209 13.8292L10.7038 12.6323L10.3941 10.2197"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M4.57532 8.64355L2.85146 8.15857L4.04832 5.97689L6.46094 6.28653"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M6.38674 11.8692C5.84362 13.5673 2.90599 13.4688 2.90599 13.4688C2.90599 13.4688 2.68968 10.6675 4.46802 10.0167"
+                    stroke="#615473"
+                    stroke-width="1.33333"
+                  />
+                </svg>
+              </div>
+
+              <div class="item__text">
+                <p>Активность</p>
+                <p><span> 70% </span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="total__progress">
+        <div class="rad__con main-ofice">
+          <svg class="radial-progress" data-percentage="61" viewBox="0 0 80 80">
+            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+            <circle
+              class="complete"
+              cx="40"
+              cy="40"
+              r="35"
+              stroke-linecap="round"
+              style="stroke-dashoffset: 39.58406743523136"
+            ></circle>
+            <text
+              class="percentage"
+              x="50%"
+              y="57%"
+              transform="matrix(0, 1, -1, 0, 80, 0)"
+            >
+              <tspan x="50%" y="45%" class="text" style="font-size: 7px; color:  #A897BD;font-weight: 400;">Прогресс</tspan>
+              <tspan x="50%" y="65%">61%</tspan>
+            </text>
+          </svg>
+          <div class="rad__con_info d-3">
+            <div class="rad__con_text">Прогресс</div>
+            <div class="rad__con_num">61%</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="l-nav">
+        <ul>
+          <li><p>Главная</p></li>
+          <li><p>База образовательных материалов</p></li>
+          <li><p>Пользователи</p></li>
+          <li><p>Чат</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="search-wrapper-educational-materials edu__search-desktop">
+      <form action="/course" class="form-search">
+        <input
+          name="CourseSearch[name]"
+          type="text"
+          placeholder="Поиск по курсам, вебинарам и  занятиям"
+          class="form-control search-input search-entry"
+          id="search-input"
+        />
+        <button type="submit" class="search-btn">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.8068 14.8288L20 20M16.6738 10.3369C16.6738 13.8367 13.8367 16.6738 10.3369 16.6738C6.83714 16.6738 4 13.8367 4 10.3369C4 6.83713 6.83714 4 10.3369 4C13.8367 4 16.6738 6.83713 16.6738 10.3369Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M7.5 11C7.83333 12.1667 9 14 12 13"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="mrpl__top mrpl-t">
+      <div class="mrpl-t__titles">
+        <h1 class="mrpl-t__title">Курсы</h1>
+        <a href="#" class="mrpl-t__title">Вебинары</a>
+      </div>
+      <div class="mrpl-t__btns">
+        <button class="mrpl-t__btn-edu-1" type="submit">В наличии</button>
+        <button class="mrpl-t__btn-edu-2" type="submit">
+          Недостающие темы
+        </button>
+      </div>
+      <div class="search-wrapper-educational-materials edu__search-tablet">
+        <form action="/course" class="form-search">
+          <input
+            name="CourseSearch[name]"
+            type="text"
+            placeholder="Поиск по курсам, вебинарам и  занятиям"
+            class="form-control search-input search-entry"
+            id="search-input"
+          />
+          <button type="submit" class="search-btn">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.8068 14.8288L20 20M16.6738 10.3369C16.6738 13.8367 13.8367 16.6738 10.3369 16.6738C6.83714 16.6738 4 13.8367 4 10.3369C4 6.83713 6.83714 4 10.3369 4C13.8367 4 16.6738 6.83713 16.6738 10.3369Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M7.5 11C7.83333 12.1667 9 14 12 13"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </form>
+        <div class="edu__filter-popup">
+          <button type="button" data-toggle="modal" data-target="#edu-filters-pop">
+        </div>
+      </div>
+      <div class="mrpl-t__buttons edu__buttons">
+        <div class="course-s__selects input__con input__con-cust">
+          <p class="input__prev-text main__text-neutral">Сортировать:</p>
+          <label class="main__select cust-select">
+            <select
+              name="category"
+              class="course-s__select main__selectt-small"
+            >
+              <option class="main__option" value="design">Не выбрано</option>
+              <option class="main__option" value="option1">
+                Стоимость по возрастанию
+              </option>
+              <option class="main__option" value="option2">
+                Стоимость по убыванию
+              </option>
+              <option class="main__option" value="option3">
+                Длительность по возрастанию
+              </option>
+              <option class="main__option" value="option4">
+                Длительность по убыванию
+              </option>
+              <option class="main__option" value="option5">
+                Выручка по возрастанию
+              </option>
+              <option class="main__option" value="option6">
+                Выручка по убыванию
+              </option>
+              <option class="main__option" value="option7">
+                Популярность по возрастанию
+              </option>
+              <option class="main__option" value="option8">
+                Популярность по убыванию
+              </option>
+            </select>
+          </label>
+        </div>
+
+        <button class="mrpl-t__buttons_hide">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6L20 6"
+              stroke="#966CEE"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8 4V8"
+              stroke="#966CEE"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M16 10V14"
+              stroke="#966CEE"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 16V20"
+              stroke="#966CEE"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke="#966CEE"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 18L20 18"
+              stroke="#966CEE"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <p>Скрыть фильтры</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mrpl__filters mrpl-f edu__filters-block">
+    <form action="#">
+      <div class="mrpl-f__body mrpl-fb">
+        <div class="container">
+          <div class="mrpl-f__con">
+            <div class="mrpl-fb__selects mrpl-f__con_item">
+              <div class="course-s__selects input__con input__con-custt">
+                <p class="input__prev-text main__text-neutral">Категория</p>
+                <label class="main__selectt">
+                  <select
+                    name="category"
+                    class="course-s__select main__selectt-small"
+                  >
+                    <option class="main__option" value="design">Дизайн</option>
+                    <option class="main__option" value="option1">
+                      Стоимость по возрастанию
+                    </option>
+                    <option class="main__option" value="option2">
+                      Стоимость по убыванию
+                    </option>
+                    <option class="main__option" value="option3">
+                      Длительность по возрастанию
+                    </option>
+                    <option class="main__option" value="option4">
+                      Длительность по убыванию
+                    </option>
+                  </select>
+                </label>
+              </div>
+              <div class="course-s__selects input__con input__con-custt">
+                <p class="input__prev-text main__text-neutral">Подкатегория</p>
+                <label class="main__selectt">
+                  <select
+                    name="category"
+                    class="course-s__select main__selectt-small"
+                  >
+                    <option class="main__option" value="design">
+                      Web-дизайн
+                    </option>
+                    <option class="main__option" value="option1">
+                      Стоимость по возрастанию
+                    </option>
+                    <option class="main__option" value="option2">
+                      Стоимость по убыванию
+                    </option>
+                    <option class="main__option" value="option3">
+                      Длительность по возрастанию
+                    </option>
+                    <option class="main__option" value="option4">
+                      Длительность по убыванию
+                    </option>
+                  </select>
+                </label>
+              </div>
+              <div class="course-s__selects input__con input__con-custt">
+                <p class="input__prev-text main__text-neutral">Сертификат</p>
+                <label class="main__selectt">
+                  <select
+                    name="category"
+                    class="course-s__select main__selectt-small"
+                  >
+                    <option class="main__option" value="design">
+                      С сертификатом
+                    </option>
+                    <option class="main__option" value="option1">
+                      Стоимость по возрастанию
+                    </option>
+                    <option class="main__option" value="option2">
+                      Стоимость по убыванию
+                    </option>
+                    <option class="main__option" value="option3">
+                      Длительность по возрастанию
+                    </option>
+                    <option class="main__option" value="option4">
+                      Длительность по убыванию
+                    </option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div class="mrpl-fb__ranges mrpl-f__con_item">
+              <div class="mrpl-fb__range">
+                <div class="input__prev-text main__text-neutral">Цена</div>
+                <div class="slider_valuess">
+                  <div class="slider_value__minn" id="price_value__minn">
+                    от <span>1000</span> ₽
+                  </div>
+                  <div class="slider_value__maxx" id="price_value__maxx">
+                    до <span>100000</span> ₽
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  id="slider_price"
+                  class="form-control"
+                  name="CourseSearch[price]"
+                  value="1000,100000"
+                  disabled=""
+                  data-krajee-slider="slider_0dc9341e"
+                  style="display: none"
+                  data-value="1000,100000"
+                />
+              </div>
+              <div class="mrpl-fb__range">
+                <div class="input__prev-text main__text-neutral">
+                  Длительность
+                </div>
+                <div class="slider_valuess">
+                  <div class="slider_value__minn" id="price_value__minn">
+                    от <span>2</span> месяцев
+                  </div>
+                  <div class="slider_value__maxx" id="price_value__maxx">
+                    до <span>2</span> лет
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  id="slider_price"
+                  class="form-control"
+                  name="CourseSearch[price]"
+                  value="1000,100000"
+                  disabled=""
+                  data-krajee-slider="slider_0dc9341e"
+                  style="display: none"
+                  data-value="1000,100000"
+                />
+              </div>
+            </div>
+
+            <div class="mrpl-fb__checkboxes mrpl-f__con_item">
+              <div class="mrpl-fb__checkboxes_row">
+                <div class="companies-f__form_con">
+                  <div class="input__prev-text main__text-neutral">
+                    Тип программы
+                  </div>
+                  <div class="companies-f__form_labels no-margin">
+                    <label class="companies-f__on-self">
+                      <input type="checkbox" name="on-self" id="on-self" />
+                      <div class="companies-f__on-self_fake"></div>
+                      <div class="companies-f__on-self_text">Платная</div>
+                      <div class="companies-f__on-self_border"></div>
+                    </label>
+                    <label class="companies-f__on-edwica">
+                      <input type="checkbox" name="on-edwica" id="on-edwica" />
+                      <div class="companies-f__on-edwica_fake"></div>
+                      <div class="companies-f__on-edwica_text">Бесплатная</div>
+                      <div class="companies-f__on-edwica_border"></div>
+                    </label>
+                  </div>
+                </div>
+                <div class="course-s__selects input__con input__con-custt">
+                  <p class="input__prev-text main__text-neutral">Категория</p>
+                  <label class="main__selectt">
+                    <select
+                      name="category"
+                      class="course-s__select main__selectt-small"
+                    >
+                      <option class="main__option" value="design">
+                        С наставником
+                      </option>
+                      <option class="main__option" value="option1">
+                        Без наставника
+                      </option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="mrpl-fb__checkboxes_row">
+                <div class="companies-f__form_con">
+                  <div class="input__prev-text main__text-neutral">
+                    Уровень сложности
+                  </div>
+                  <div
+                    class="companies-f__form_labels no-margin companies-f__form_labels-c"
+                  >
+                    <label class="companies-f__on-self">
+                      <input type="checkbox" name="on-self" id="on-self" />
+                      <div class="companies-f__on-self_fake"></div>
+                      <div class="companies-f__on-self_text">Начальный</div>
+                      <div class="companies-f__on-self_border"></div>
+                    </label>
+                    <label class="companies-f__on-edwica">
+                      <input type="checkbox" name="on-edwica" id="on-edwica" />
+                      <div class="companies-f__on-edwica_fake"></div>
+                      <div class="companies-f__on-edwica_text">Продвинутый</div>
+                      <div class="companies-f__on-edwica_border"></div>
+                    </label>
+                    <label class="companies-f__on-edwica">
+                      <input type="checkbox" name="on-edwica" id="on-edwica" />
+                      <div class="companies-f__on-edwica_fake"></div>
+                      <div class="companies-f__on-edwica_text">
+                        Профессиональный
+                      </div>
+                      <div class="companies-f__on-edwica_border"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pad-tb">
+        <div class="container">
+          <div class="companies-f__buttons">
+            <button class="companies-f__submit main__btn" type="submit">
+              Применить фильтры
+            </button>
+            <button class="companies-f__reset" type="reset">Очистить</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="container-ac">
+    <div class="edu__wrapper">
+      <form action="#" method="post">
+        <div class="edu__flex">
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu1.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Фундаментальные финансы
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu2.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  СТРАТЕГИЯ КОМПАНИИ - РАЗРАБОТКА И ОЦЕНКА ЭФФЕКТИВНОСТИ
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu3.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">Инвестиционная оценка</div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu4.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Создание системы управления процессами
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu5.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Корпоративные финансы: планирование и анализ
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu6.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Юнит-экономика и метрики продукта
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu7.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">Скрам-мастер</div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu8.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Инструменты бухгалтера. 1С:Бухгалтерия, 1С:ЗУП
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu1.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">Фундаментальные финансы</div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu2.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  СТРАТЕГИЯ КОМПАНИИ - РАЗРАБОТКА И ОЦЕНКА ЭФФЕКТИВНОСТИ
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu3.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">Инвестиционная оценка</div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu4.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Создание системы управления процессами
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu5.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Корпоративные финансы: планирование и анализ
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu6.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Юнит-экономика и метрики продукта
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu7.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">Скрам-мастер</div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="edu__item">
+            <div class="edu__item-left">
+              <div class="edu__item-img">
+                <img src="/img/edu8.png" alt="" />
+              </div>
+              <div class="edu__item-left-info">
+                <div class="edu__item-title">
+                  Инструменты бухгалтера. 1С:Бухгалтерия, 1С:ЗУП
+                </div>
+                <div class="edu__item-left-row">
+                  <div class="edu__item-left-el">
+                    <span>Длительность</span>
+                    <span>6 мес.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Стоимость</span>
+                    <span>112 500 руб.</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Формат</span>
+                    <span>Онлайн</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Уровень</span>
+                    <span>Начальный</span>
+                  </div>
+                  <div class="edu__item-left-el">
+                    <span>Сертификат</span>
+                    <span>Есть</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edu__item-right">
+              <div class="edu__item-right-info">
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Выручка общая</span>
+                    <span>448 000 руб.</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Проходят сейчас</span>
+                    <span>4</span>
+                  </div>
+                </div>
+                <div>
+                  <div class="edu__item-right-el">
+                    <span>Кол-во покупок</span>
+                    <span>4</span>
+                  </div>
+                  <div class="edu__item-right-el">
+                    <span>Уже прошли</span>
+                    <span>0</span>
+                  </div>
+                </div>
+              </div>
+              <div class="edu__item-right-btns">
+                <button type="button" class="edu__main-btn edu__edit-btn">
+                  Редактировать
+                </button>
+                <button type="button" class="edu__main-btn edu__more-btn">
+                  Подробнее
+                </button>
+                <button type="submit" class="edu__main-btn edu__delete-btn">
+                  Удалить
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="edu__flex-tablet">
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-1">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Фундаментальные финансы</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            112 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            6 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-2">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >СТРАТЕГИЯ КОМПАНИИ - РАЗРАБОТКА И ОЦЕНКА ЭФФЕКТИВНОСТИ</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            11 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            1 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-3">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Инвестиционная оценка</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            93 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            3 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-4">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Создание системы управления процессами</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            9 300 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            1 нед.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-1">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Фундаментальные финансы</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            112 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            6 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-2">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >СТРАТЕГИЯ КОМПАНИИ - РАЗРАБОТКА И ОЦЕНКА ЭФФЕКТИВНОСТИ</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            11 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            1 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-3">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Инвестиционная оценка</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            93 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            3 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-4">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Создание системы управления процессами</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            9 300 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            1 нед.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-1">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Фундаментальные финансы</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            112 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            6 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-2">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >СТРАТЕГИЯ КОМПАНИИ - РАЗРАБОТКА И ОЦЕНКА ЭФФЕКТИВНОСТИ</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            11 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            1 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-3">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Инвестиционная оценка</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            93 500 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            3 мес.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+          <div class="courses__slide slide-small edu__slide">
+                  <div class="swiper-slide__main slide-body">
+                    <div class="slide-body__top edu__body-top-4">
+                      <div class="slide-body__top_row">
+                        <a href="#" class="slide-body__form_logo">
+                          <img src="/img/icon_skillbox.svg" alt="" />
+                        </a>
+                        <a href="#" class="slide-body__form_favorite">
+                          <img src="/src/img/edu-img-before.svg" alt="" />
+                        </a>
+                      </div>
+                      
+                    </div>
+                    <div class="slide-body__content slide-content">
+                      <div class="slide-content__main">
+                        <div class="slide-content__subtitle"></div>
+                        <a href="#" class="slide-content__title"
+                          >Создание системы управления процессами</a
+                        >
+                        <div class="slide-content__price">
+                          <div class="slide-content__price_price">
+                            9 300 руб.
+                          </div>
+                          <div class="slide-content__price_period">
+                            1 нед.
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="slide-content__go_btn">
+                        Подробнее
+                      </a>
+                    </div>
+                  </div>
+          
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+//= template/modals.html
+//= template/inc/end.html

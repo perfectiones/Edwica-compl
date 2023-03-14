@@ -1,0 +1,468 @@
+//= template/inc/start.html
+//= template/inc/sahalin-header.html
+
+<div class="content-wrapper account-wrapper main-page sahalin-padding">
+  <div class="container-ac">
+    <div class="sahalin-all-el-prof__head-row">
+      <h1 class="sahalin-spesh_tt no-margin">Все подходящие профессии</h1>
+      <button type="button" class="main__btn-light sahalin-main__btn-light sahalin-btn-back soar">
+        Назад
+      </button>
+    </div>
+    <div class="edu__search-desktop sahalin-input">
+      <form action="/course" class="form-search">
+        <input
+          name="CourseSearch[name]"
+          type="text"
+          placeholder="Введите название профессии, которую ищете"
+          class="form-control search-input search-entry"
+          id="search-input"
+        />
+        <button type="submit" class="search-btn sahalin-back">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.8068 14.8288L20 20M16.6738 10.3369C16.6738 13.8367 13.8367 16.6738 10.3369 16.6738C6.83714 16.6738 4 13.8367 4 10.3369C4 6.83713 6.83714 4 10.3369 4C13.8367 4 16.6738 6.83713 16.6738 10.3369Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M7.5 11C7.83333 12.1667 9 14 12 13"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="mrpl__top mrpl-t sahalin-flex-end">
+      <div class="search-wrapper-educational-materials edu__search-tablet sahalin-input-tablet">
+        <form action="/course" class="form-search">
+          <input
+            name="CourseSearch[name]"
+            type="text"
+            placeholder="Поиск по курсам, вебинарам и  занятиям"
+            class="form-control search-input search-entry"
+            id="search-input"
+          />
+          <button type="submit" class="search-btn sahalin-back">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.8068 14.8288L20 20M16.6738 10.3369C16.6738 13.8367 13.8367 16.6738 10.3369 16.6738C6.83714 16.6738 4 13.8367 4 10.3369C4 6.83713 6.83714 4 10.3369 4C13.8367 4 16.6738 6.83713 16.6738 10.3369Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M7.5 11C7.83333 12.1667 9 14 12 13"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </form>
+        <div class="sahalin-filter-popup">
+          <button type="button" data-toggle="modal" data-target="#sahalin-filters-pop">
+        </div>
+      </div>
+      <div class="mrpl-t__buttons edu__buttons">
+        <div class="course-s__selects input__con input__con-cust">
+          <p class="input__prev-text main__text-neutral">Сортировать:</p>
+          <label class="main__select cust-select">
+            <select
+              name="category"
+              class="course-s__select main__selectt-small"
+            >
+              <option class="main__option" value="design">Не выбрано</option>
+              <option class="main__option" value="option1">
+                Стоимость по возрастанию
+              </option>
+              <option class="main__option" value="option2">
+                Стоимость по убыванию
+              </option>
+              <option class="main__option" value="option3">
+                Длительность по возрастанию
+              </option>
+              <option class="main__option" value="option4">
+                Длительность по убыванию
+              </option>
+              <option class="main__option" value="option5">
+                Выручка по возрастанию
+              </option>
+              <option class="main__option" value="option6">
+                Выручка по убыванию
+              </option>
+              <option class="main__option" value="option7">
+                Популярность по возрастанию
+              </option>
+              <option class="main__option" value="option8">
+                Популярность по убыванию
+              </option>
+            </select>
+          </label>
+        </div>
+
+        <button class="mrpl-t__buttons_hide sahalin-main__btn-light">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6L20 6"
+              stroke="#0087ff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M8 4V8"
+              stroke="#0087ff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M16 10V14"
+              stroke="#0087ff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M8 16V20"
+              stroke="#0087ff"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+            <path
+              d="M4 12L20 12"
+              stroke="#0087ff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M4 18L20 18"
+              stroke="#0087ff"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+
+          <p>Скрыть фильтры</p>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="mrpl__filters mrpl-f edu__filters-block">
+    <form action="#">
+      <div class="mrpl-f__body mrpl-fb">
+        <div class="container">
+          <div class="mrpl-f__con sahalin-flex-start">
+            <div class="mrpl-fb__selects mrpl-f__con_item">
+              <div class="course-s__selects input__con input__con-custt">
+                <p class="input__prev-text main__text-neutral">Отдел / департамент</p>
+                <label class="main__selectt">
+                  <select
+                    name="category"
+                    class="course-s__select main__selectt-small"
+                  >
+                    <option class="main__option" value="design">Финансовый департ</option>
+                    <option class="main__option" value="option1">
+                      Финансовый департ
+                    </option>
+                    <option class="main__option" value="option2">
+                      Финансовый департ
+                    </option>
+                    <option class="main__option" value="option3">
+                      Финансовый департ
+                    </option>
+                    <option class="main__option" value="option4">
+                      Финансовый департ
+                    </option>
+                  </select>
+                </label>
+              </div>
+              <div class="course-s__selects input__con input__con-custt">
+                <p class="input__prev-text main__text-neutral">Направление</p>
+                <label class="main__selectt">
+                  <select
+                    name="category"
+                    class="course-s__select main__selectt-small"
+                  >
+                    <option class="main__option" value="design">
+                      Финансы
+                    </option>
+                    <option class="main__option" value="option1">
+                      Финансы
+                    </option>
+                    <option class="main__option" value="option2">
+                      Финансы
+                    </option>
+                    <option class="main__option" value="option3">
+                      Финансы
+                    </option>
+                    <option class="main__option" value="option4">
+                      Финансы
+                    </option>
+                  </select>
+                </label>
+              </div>
+              <div class="mrpl-fb__range">
+                <div class="input__prev-text main__text-neutral">Процент соответсвия</div>
+                <div class="slider_valuess">
+                  <div class="slider_value__minn" id="price_value__minn">
+                    от <span>0</span> %
+                  </div>
+                  <div class="slider_value__maxx" id="price_value__maxx">
+                    до <span>100</span> %
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  id="slider_price"
+                  class="form-control"
+                  name="CourseSearch[price]"
+                  value="1000,100000"
+                  disabled=""
+                  data-krajee-slider="slider_0dc9341e"
+                  style="display: none"
+                  data-value="1000,100000"
+                />
+              </div>
+            </div>
+            <div class="mrpl-fb__ranges mrpl-f__con_item">
+              <div class="mrpl-fb__range">
+                <div class="input__prev-text main__text-neutral">Заработная плата</div>
+                <div class="slider_valuess">
+                  <div class="slider_value__minn" id="price_value__minn">
+                    от <span>14 800</span> ₽
+                  </div>
+                  <div class="slider_value__maxx" id="price_value__maxx">
+                    до <span>1 000 000</span> ₽
+                  </div>
+                </div>
+                <input
+                  type="text"
+                  id="slider_price"
+                  class="form-control"
+                  name="CourseSearch[price]"
+                  value="1000,100000"
+                  disabled=""
+                  data-krajee-slider="slider_0dc9341e"
+                  style="display: none"
+                  data-value="1000,100000"
+                />
+              </div>
+            </div>
+
+            <div class="mrpl-fb__checkboxes mrpl-f__con_item">
+              <div class="mrpl-fb__checkboxes_row sahalin-gap">
+                <div class="course-s__selects input__con input__con-custt">
+                  <p class="input__prev-text main__text-neutral">Уровень должности</p>
+                  <label class="main__selectt">
+                    <select
+                      name="category"
+                      class="course-s__select main__selectt-small"
+                    >
+                      <option class="main__option" value="design">Не выбрано</option>
+                      <option class="main__option" value="option1">
+                        Не выбрано
+                      </option>
+                      <option class="main__option" value="option2">
+                        Не выбрано
+                      </option>
+                      <option class="main__option" value="option3">
+                        Не выбрано
+                      </option>
+                      <option class="main__option" value="option4">
+                        Не выбрано
+                      </option>
+                    </select>
+                  </label>
+                </div>
+                <div class="companies-f__form_con">
+                  <div class="input__prev-text main__text-neutral">
+                    Наличие открытых вакансий
+                  </div>
+                  <div class="companies-f__form_labels no-margin">
+                    <label class="companies-f__on-self">
+                      <input type="radio" name="on-self" id="on-self" />
+                      <div class="companies-f__on-self_fake"></div>
+                      <div class="companies-f__on-self_text">Есть</div>
+                      <div class="companies-f__on-self_border"></div>
+                    </label>
+                    <label class="companies-f__on-edwica">
+                      <input type="radio" name="on-self" id="on-edwica" />
+                      <div class="companies-f__on-edwica_fake"></div>
+                      <div class="companies-f__on-edwica_text">Нет</div>
+                      <div class="companies-f__on-edwica_border"></div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pad-tb">
+        <div class="container">
+          <div class="companies-f__buttons">
+            <button class="companies-f__submit main__btn sahalin-back" type="submit">
+              Применить фильтры
+            </button>
+            <button class="companies-f__reset" type="reset">Очистить</button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="container-ac">
+    <div class="outside__cards cards-o" style="padding-bottom: 10px">
+        <div class="title__con spesh-con-title">
+          <div class="cards-o__title no-margin ds-spesh">
+            <h1 class="spesh_tt no-margin">
+              Найдено 6 вариантов
+            </h1>
+          </div>
+        </div>
+
+        <div class="slides__conn sahalin-grid">
+          <div class="courses__slide courses__slide_spesh">
+            <div class="swiper-slide__main slide-body">
+              <div class="slide-body__top"></div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <a href="#" class="slide-content__title slide_title__spesh">
+                    Геймдизайнер
+                  </a>
+                  <div class="spesh__slide-text">
+                    Дорогие друзья, консультация с профессионалами из IT играет
+                    важную роль в формировании модели развития. Разнообразный и
+                    богатый
+                  </div>
+                </div>
+                <div class="slide-content__price spesh_price">
+                  Ср. зарплата: <span>120 000 руб.</span>
+                </div>
+                <a href="#" class="spesh-btn-con">
+                  <div class="main__btn-light sahalin-main__btn-light">Это моя цель</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="courses__slide courses__slide_spesh">
+            <div class="swiper-slide__main slide-body">
+              <div class="slide-body__top"></div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <a href="#" class="slide-content__title slide_title__spesh">
+                    Геймдизайнер
+                  </a>
+                  <div class="spesh__slide-text">
+                    Дорогие друзья, консультация с профессионалами из IT играет
+                    важную роль в формировании модели развития. Разнообразный и
+                    богатый
+                  </div>
+                </div>
+                <div class="slide-content__price spesh_price">
+                  Ср. зарплата: <span>120 000 руб.</span>
+                </div>
+                <a href="#" class="spesh-btn-con">
+                  <div class="main__btn-light sahalin-main__btn-light">Это моя цель</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="courses__slide courses__slide_spesh">
+            <div class="swiper-slide__main slide-body">
+              <div class="slide-body__top"></div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <a href="#" class="slide-content__title slide_title__spesh">
+                    Геймдизайнер
+                  </a>
+                  <div class="spesh__slide-text">
+                    Дорогие друзья, консультация с профессионалами из IT играет
+                    важную роль в формировании модели развития. Разнообразный и
+                    богатый
+                  </div>
+                </div>
+                <div class="slide-content__price spesh_price">
+                  Ср. зарплата: <span>120 000 руб.</span>
+                </div>
+                <a href="#" class="spesh-btn-con">
+                  <div class="main__btn-light sahalin-main__btn-light">Это моя цель</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="courses__slide courses__slide_spesh">
+            <div class="swiper-slide__main slide-body">
+              <div class="slide-body__top"></div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <a href="#" class="slide-content__title slide_title__spesh">
+                    Геймдизайнер
+                  </a>
+                  <div class="spesh__slide-text">
+                    Дорогие друзья, консультация с профессионалами из IT играет
+                    важную роль в формировании модели развития. Разнообразный и
+                    богатый
+                  </div>
+                </div>
+                <div class="slide-content__price spesh_price">
+                  Ср. зарплата: <span>120 000 руб.</span>
+                </div>
+                <a href="#" class="spesh-btn-con">
+                  <div class="main__btn-light sahalin-main__btn-light">Это моя цель</div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="courses__slide courses__slide_spesh">
+            <div class="swiper-slide__main slide-body">
+              <div class="slide-body__top"></div>
+              <div class="slide-body__content slide-content">
+                <div class="slide-content__main">
+                  <a href="#" class="slide-content__title slide_title__spesh">
+                    Геймдизайнер
+                  </a>
+                  <div class="spesh__slide-text">
+                    Дорогие друзья, консультация с профессионалами из IT играет
+                    важную роль в формировании модели развития. Разнообразный и
+                    богатый
+                  </div>
+                </div>
+                <div class="slide-content__price spesh_price">
+                  Ср. зарплата: <span>120 000 руб.</span>
+                </div>
+                <a href="#" class="spesh-btn-con">
+                  <div class="main__btn-light sahalin-main__btn-light">Это моя цель</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+//= template/modals.html
+//= template/inc/end.html

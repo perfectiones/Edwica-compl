@@ -1,0 +1,63 @@
+/***
+* fonts.css
+***/
+
+@font-face {
+    font-family: 'Golos Text';
+    src: url('GolosText-Medium.eot');
+    src: local('../fonts/Golos Text Medium'), local('GolosText-Medium'),
+        url('../fonts/GolosText-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GolosText-Medium.woff2') format('woff2'),
+        url('../fonts/GolosText-Medium.woff') format('woff'),
+        url('../fonts/GolosText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos Text';
+    src: url('GolosText-Black.eot');
+    src: local('../fonts/Golos Text Black'), local('GolosText-Black'),
+        url('../fonts/GolosText-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GolosText-Black.woff2') format('woff2'),
+        url('../fonts/GolosText-Black.woff') format('woff'),
+        url('../fonts/GolosText-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos Text';
+    src: url('../fonts/GolosText-DemiBold.eot');
+    src: local('../fonts/Golos Text DemiBold'), local('GolosText-DemiBold'),
+        url('../fonts/GolosText-DemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GolosText-DemiBold.woff2') format('woff2'),
+        url('../fonts/GolosText-DemiBold.woff') format('woff'),
+        url('../fonts/GolosText-DemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos Text';
+    src: url('../fonts/GolosText-Bold.eot');
+    src: local('../fonts/Golos Text Bold'), local('GolosText-Bold'),
+        url('../fonts/GolosText-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GolosText-Bold.woff2') format('woff2'),
+        url('../fonts/GolosText-Bold.woff') format('woff'),
+        url('../fonts/GolosText-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Golos Text';
+    src: url('../fonts/GolosText-Regular.eot');
+    src: local('../fonts/Golos Text Regular'), local('GolosText-Regular'),
+        url('../fonts/GolosText-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GolosText-Regular.woff2') format('woff2'),
+        url('../fonts/GolosText-Regular.woff') format('woff'),
+        url('../fonts/GolosText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

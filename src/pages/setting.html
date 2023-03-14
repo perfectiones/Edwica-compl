@@ -1,0 +1,96 @@
+//= template/inc/start.html
+<header class="header">
+    //= template/inc/top-line.html
+    //= template/inc/top-panel.html
+
+</header>
+
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-xl-3 order-lg-1">
+                <aside class="left-sidebar">
+                    //= template/left-sidebar/left-menu.html
+                </aside>
+            </div>
+            <div class="col-lg-8 col-xl-9 order-lg-2">
+                <main class="main-content">
+                    <div class="main__user-block side_block">
+                        <div class="main__user-block_title ">
+                            <div class="content-type__link">
+                                <div class="tab-content">
+                                    <div class="tab-content__title">Настройки аккаунта</div>
+                                </div>
+                            </div>
+                        </div>
+                        <form class="form-settings" id="email_change">
+                            <div class="row">
+                              <div class="col-sm-12 col-md-4">
+                                <div class="form-group">
+                                  <label for="inputEmail">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4 order-md-2">
+                                <div class="form-group">
+                                  <div class="confirm-status field-status">Подтверждено</div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4 order-md-1">
+                                <div class="form-group">
+                                  <button type="submit" class="btn-place">Изменить</button>
+                                </div>
+                              </div>
+                            </div>
+                        </form>
+                        <form class="form-settings" id="phone_change">
+                            <div class="row">
+                              <div class="col-sm-12 col-md-4">
+                                <label for="inputPhone">Телефон</label>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4  order-md-2">
+                                <div class="form-group">
+                                  <div class="confirm-status field-status">Подтверждено</div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4 order-md-1">
+                                <div class="form-group">
+                                  <button type="submit" class="btn-place">Изменить</button>
+                                </div>
+                              </div>
+                            </div>
+                        </form>
+                        <form class="form-settings" id="password_change">
+                            <div class="row">
+                              <div class="col-sm-12 col-md-4">
+                                <label for="password-input">Пароль</label>
+                                <div class="form-group password">
+                                    <input type="password" class="form-control"  id="password-input" placeholder="Введите пароль" name="password">
+                                    <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4  order-md-2">
+                                <div class="form-group">
+                                  <a href="" class="do-confirm">Подтвердить</a>
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4  order-md-1">
+                                <div class="form-group">
+                                  <button type="submit" class="btn-place">Изменить</button>
+                                </div>
+                              </div>
+                            </div>
+                        </form>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+</div>
+
+//= template/footer.html
+//= template/modals.html
+//= template/inc/end.html

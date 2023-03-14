@@ -1,0 +1,1043 @@
+//= template/inc/start.html
+//= template/inc/sahalin-header.html
+
+<div class="edit-company cop-temp">
+  <div class="container-a">
+    <div class="edit-company__main">
+      <div class="edit-company__top">
+        <h1 class="edit-company__title main__title">Формирование траектории</h1>
+        <button
+          type="button"
+          onclick="history.back();"
+          class="edit-company__btn main__btn-light soar sahalin-main__btn-light"
+        >
+          Отменить
+        </button>
+      </div>
+
+      <form
+        action="#"
+        method="post"
+        class="step-s__form"
+        enctype="multipart/form-data"
+      >
+        <div class="edit-company__steps-numbers step-n">
+          <div class="step-n__main">
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">1</div>
+              <div class="step-n__number_text main__text-neutral">
+                Образование
+              </div>
+            </div>
+            <div class="step-n__gap"></div>
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">2</div>
+              <div class="step-n__number_text main__text-neutral">
+                Опыт работы
+              </div>
+            </div>
+            <div class="step-n__gap"></div>
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">3</div>
+              <div class="step-n__number_text main__text-neutral">
+                Диагностика
+              </div>
+            </div>
+
+            <div class="step-n__gap"></div>
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">4</div>
+              <div class="step-n__number_text main__text-neutral">
+                Профориентация
+              </div>
+            </div>
+            <div class="step-n__gap"></div>
+            <div class="step-n__number">
+              <div class="step-n__number_circle main__text-white">5</div>
+              <div class="step-n__number_text main__text-neutral">
+                Постановка цели
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edit-company__steps steps-m">
+          <div class="steps-m__step step-s">
+            <div class="item-conversion">
+              <div class="step-s__row-title">
+                <div class="step-s__title">Профессиональное образование</div>
+                <div class="step-s__scores">Вы заработали: 0 баллов</div>
+              </div>
+              <div class="step-s__teachers teacher-s mb">
+                <button
+                  type="button"
+                  class="teacher-s__add-temp"
+                  data-toggle="modal"
+                  data-target="#special-education-popp"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#F2F7FF" />
+                    <path
+                      d="M20 16V24"
+                      stroke="#0087ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24 20L16 20"
+                      stroke="#0087ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="main__text">Добавить</p>
+                </button>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light sahalin-main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar sahalin-back"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+            <div class="item-conversion">
+              <div class="step-s__row-title">
+                <div class="step-s__title">Профессиональное образование</div>
+                <div class="step-s__scores">
+                  <span class="green">+ 150 баллов</span>
+                  <span>Вы заработали: 345 баллов</span>
+                </div>
+              </div>
+              <div class="step-s__teachers teacher-s mb">
+                <button
+                  type="button"
+                  class="teacher-s__add-temp-2"
+                  data-toggle="modal"
+                  data-target="#special-education-popp"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#F2F7FF" />
+                    <path
+                      d="M20 16V24"
+                      stroke="#0087ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24 20L16 20"
+                      stroke="#0087ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="main__text">Добавить</p>
+                </button>
+
+                <div class="teacher-s__item-temp">
+                  <div class="teacher-s__main">
+                    <div class="teacher-s__experience">Высшее образование</div>
+                    <div class="teacher-s__name main__text-bold">
+                      РЭУ им. Г.В.Плеханова Еще одна строка
+                    </div>
+                    <div class="teacher-s__text">
+                      Очень длинное название факультета для примера длинных
+                    </div>
+                  </div>
+                  <div class="teacher-s__buttons">
+                    <button
+                      type="button"
+                      class="teacher-s__edit main__btn-light sahalin-main__btn-light soar"
+                      data-toggle="modal"
+                      data-target="#special-education-popp"
+                    >
+                      Редактировать
+                    </button>
+                    <button type="button" class="teacher-s__reset">
+                      <svg
+                        width="14"
+                        height="20"
+                        viewBox="0 0 14 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                          stroke="#EF3D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="teacher-s__item-temp">
+                  <div class="teacher-s__main">
+                    <div class="teacher-s__experience">Высшее образование</div>
+                    <div class="teacher-s__name main__text-bold">
+                      РЭУ им. Г.В.Плеханова Еще одна строка
+                    </div>
+                    <div class="teacher-s__text">
+                      Очень длинное название факультета для примера длинных
+                    </div>
+                  </div>
+                  <div class="teacher-s__buttons">
+                    <button
+                      type="button"
+                      class="teacher-s__edit main__btn-light sahalin-main__btn-light soar"
+                      data-toggle="modal"
+                      data-target="#special-education-popp"
+                    >
+                      Редактировать
+                    </button>
+                    <button type="button" class="teacher-s__reset">
+                      <svg
+                        width="14"
+                        height="20"
+                        viewBox="0 0 14 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                          stroke="#EF3D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light sahalin-main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar sahalin-back"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s">
+            <div class="item-conversion">
+              <div class="step-s__row-title">
+                <div class="step-s__title">Профессиональный опыт</div>
+                <div class="step-s__scores">Вы заработали: 600 баллов</div>
+              </div>
+              <div class="step-s__next-step">
+                Если у вас нет опыта работы, вы можете сразу перейти к
+                <a href="" class="sahalin-color">следующему этапу</a>
+              </div>
+              <div class="step-s__teachers teacher-s mb">
+                <button
+                  type="button"
+                  class="teacher-s__add-temp"
+                  data-toggle="modal"
+                  data-target="#prof-experiencee"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#F2F7FF" />
+                    <path
+                      d="M20 16V24"
+                      stroke="#0087ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24 20L16 20"
+                      stroke="#0087ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="main__text">Добавить</p>
+                </button>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light sahalin-main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar sahalin-back"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+            <div class="item-conversion">
+              <div class="step-s__row-title">
+                <div class="step-s__title">Профессиональный опыт</div>
+                <div class="step-s__scores">
+                  <span class="green">+ 150 баллов</span>
+                  <span>Вы заработали: 650 баллов</span>
+                </div>
+              </div>
+              <div class="step-s__next-step">
+                Если у вас нет опыта работы, вы можете сразу перейти к
+                <a href="">следующему этапу</a>
+              </div>
+              <div class="step-s__teachers teacher-s mb">
+                <button
+                  type="button"
+                  class="teacher-s__add-temp-2"
+                  data-toggle="modal"
+                  data-target="#prof-experiencee"
+                >
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="40" height="40" rx="20" fill="#F2F7FF" />
+                    <path
+                      d="M20 16V24"
+                      stroke="#0087ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M24 20L16 20"
+                      stroke="#0087ff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <p class="main__text">Добавить</p>
+                </button>
+
+                <div class="teacher-s__item-temp">
+                  <div class="teacher-s__main">
+                    <div class="teacher-s__name main__text-bold">ООО "ТМЗ"</div>
+                    <div class="opinion__experience">Project Manager</div>
+                    <div class="opinion__text">01.09.2016 — 01.07.2020</div>
+                  </div>
+                  <div class="teacher-s__buttons">
+                    <button
+                      type="button"
+                      class="teacher-s__edit main__btn-light sahalin-main__btn-light soar"
+                      data-toggle="modal"
+                      data-target="#prof-experiencee"
+                    >
+                      Редактировать
+                    </button>
+                    <button type="button" class="teacher-s__reset">
+                      <svg
+                        width="14"
+                        height="20"
+                        viewBox="0 0 14 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                          stroke="#EF3D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="teacher-s__item-temp">
+                  <div class="teacher-s__main">
+                    <div class="teacher-s__name main__text-bold">ООО "ТМЗ"</div>
+                    <div class="opinion__experience">Project Manager</div>
+                    <div class="opinion__text">01.09.2016 — 01.07.2020</div>
+                  </div>
+                  <div class="teacher-s__buttons">
+                    <button
+                      type="button"
+                      class="teacher-s__edit main__btn-light sahalin-main__btn-light soar"
+                      data-toggle="modal"
+                      data-target="#prof-experiencee"
+                    >
+                      Редактировать
+                    </button>
+                    <button type="button" class="teacher-s__reset">
+                      <svg
+                        width="14"
+                        height="20"
+                        viewBox="0 0 14 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M4 5.00048C4 4.71476 4 4.36832 4 4.0002C4 2.34334 5.34314 1 7 1V1C8.65685 1 10 2.34354 10 4.00039C10 4.42602 10 4.79018 10 5.00048M1.00001 10V5.00048H13C13 6.23242 13 13.4356 13 17.0016C13 18.1062 12.1046 19 11 19H3.00001C1.89543 19 1 18.1049 1 17.0003C1.00001 15.8216 1.00001 14.4712 1.00001 14M1.00001 10H6.00001M1.00001 10V14M1.00001 14H6.00001"
+                          stroke="#EF3D32"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light sahalin-main__btn-light soar"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn soar sahalin-back"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s nt sahalin-back-dark">
+            <img src="/img/diagnostic-img.png" alt="" class="nt__image" />
+            <div class="nt__content">
+              <div class="nt__span">Вы заработали : 1200 баллов</div>
+              <div class="nt__title">
+                Продолжить развитие или сменить профессию?
+              </div>
+              <div class="nt__text">
+                Если вы не желаете продолжать развитие в данных профессиях, то
+                просто нажмите на кнопку “Далее” ничего не выбирая
+              </div>
+
+              <div class="nt__checkboxes">
+                <label>
+                  <input type="checkbox" />
+                  <p>Product manager</p>
+                  <div></div>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Project manager</p>
+                  <div></div>
+                </label>
+                <label>
+                  <input type="checkbox" />
+                  <p>Помощник управляющего проектами</p>
+                  <div></div>
+                </label>
+              </div>
+
+              <div class="step-s__buttons">
+                <button
+                  class="step-s__prev_btn main__btn-light sahalin-main__btn-light"
+                  onclick="goUp();"
+                >
+                  Назад
+                </button>
+                <button
+                  class="step-s__next_btn main__btn-light sahalin-main__btn-light"
+                  onclick="goUp();"
+                >
+                  Далее
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s nttt">
+            <div class="purple-block pbb sahalin-back-dark">
+              <img class="diag-class" src="/img/diagnostic-img-2.png" alt="" />
+              <div class="pbb__body">
+                <div class="pbb__span">Вы заработали : 1200 баллов</div>
+                <div class="pbb__title">
+                  Выберете наиболее подходящий для себя путь
+                </div>
+                <div class="pbb__text">
+                  Наши алгоритмы проанализировали 1321 резюме других людей,
+                  которые ранее уже достигали похожей цели. На основе этого
+                  анализа мы определили топ 3 наиболее популярных путей по
+                  достижению данной цели. Путь представляет собой
+                  последовательность промежуточных профессий и должностей,
+                  которые вам предстоит пройти для достижения поставленной цели.
+                  Для продолжения выберете один из предложенных
+                </div>
+                <ul class="pbb__list">
+                  <li class="pbb__item pbbi">
+                    <div class="pbbi__body sahalin-number-color">
+                      <div class="pbbi__time">2 года</div>
+                      <div class="pbbi__steps">4 этапа</div>
+                      <div class="pbbi__skills">123 навыка</div>
+                      <div class="pbbi__way d-3-none sahalin-main__btn-light">
+                        Мой путь
+                      </div>
+                      <button
+                        type="button"
+                        class="d-3-none sahalin-color"
+                        data-toggle="modal"
+                        data-target="#temp-info-detail"
+                      >
+                        Подробнее >>
+                      </button>
+                    </div>
+                    <div class="pbbi__bodys d-3">
+                      <div class="pbbi__cus-btn">Мой путь</div>
+                    </div>
+                    <div class="pbbi__bodys d-3">
+                      <button
+                        type="button"
+                        class="pbbi__cus-btn sahalin-color"
+                        data-toggle="modal"
+                        data-target="#temp-info-detail"
+                      >
+                        Подробнее >>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="pbb__item pbbi">
+                    <div class="pbbi__body sahalin-number-color">
+                      <div class="pbbi__time">2 года</div>
+                      <div class="pbbi__steps">4 этапа</div>
+                      <div class="pbbi__skills">123 навыка</div>
+                      <div class="pbbi__way d-3-none sahalin-main__btn-light">
+                        Мой путь
+                      </div>
+
+                      <button
+                        type="button"
+                        class="d-3-none sahalin-color"
+                        data-toggle="modal"
+                        data-target="#temp-info-detail"
+                      >
+                        Подробнее >>
+                      </button>
+                    </div>
+                    <div class="pbbi__bodys d-3">
+                      <div class="pbbi__cus-btn">Мой путь</div>
+                    </div>
+                    <div class="pbbi__bodys d-3">
+                      <button
+                        type="button"
+                        class="pbbi__cus-btn sahalin-color"
+                        data-toggle="modal"
+                        data-target="#temp-info-detail"
+                      >
+                        Подробнее >>
+                      </button>
+                    </div>
+                  </li>
+                  <li class="pbb__item pbbi">
+                    <div class="pbbi__body sahalin-number-color">
+                      <div class="pbbi__time">2 года</div>
+                      <div class="pbbi__steps">4 этапа</div>
+                      <div class="pbbi__skills">123 навыка</div>
+                      <div class="pbbi__way d-3-none sahalin-main__btn-light">
+                        Мой путь
+                      </div>
+                      <button
+                        type="button"
+                        class="d-3-none sahalin-color"
+                        data-toggle="modal"
+                        data-target="#temp-info-detail"
+                      >
+                        Подробнее >>
+                      </button>
+                    </div>
+                    <div class="pbbi__bodys d-3">
+                      <div class="pbbi__cus-btn">Мой путь</div>
+                    </div>
+                    <div class="pbbi__bodys d-3">
+                      <button
+                        type="button"
+                        class="pbbi__cus-btn sahalin-color"
+                        data-toggle="modal"
+                        data-target="#temp-info-detail"
+                      >
+                        Подробнее >>
+                      </button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="step-s__buttons">
+              <button
+                class="step-s__prev_btn main__btn-light sahalin-main__btn-light soar"
+                onclick="goUp();"
+              >
+                Назад
+              </button>
+              <button
+                class="step-s__next_btn main__btn soar sahalin-back"
+                onclick="goUp();"
+              >
+                Далее
+              </button>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s step-s__spesh">
+            <div class="post__goal goalp">
+              <div class="goalp__content">
+                <div class="goalp__title main__title-white">
+                  Постановка цели
+                </div>
+                <div class="goalp__text main__text-white">
+                  На основе полученных от вас данных мы составили списки
+                  профессий, которые больше всего вам подходят. Вам осталось
+                  только выбрать одну из них и начать двигаться к своей цели!
+                </div>
+              </div>
+              <div class="goalp__image"></div>
+            </div>
+            <div class="goal__row goalr">
+              <div class="goalr__title main__title">
+                Твои таланты по итогам тестирования
+              </div>
+              <ul class="goalr__list">
+                <li class="goalr__item">
+                  <img src="/img/prof_item-1.svg" alt="" class="goalr__image" />
+                  <div class="goalr__item_title">Коммуникационный талант</div>
+                  <div class="goalr__text">
+                    Это талант передавать и получать информацию. Умение
+                    договариваться, находить подход к людям, понимать их, а
+                    также организовывать их совместную деятельность. Люди с этим
+                    талантом очень контактные, легкие и гибкие в общении.
+                  </div>
+                </li>
+                <li class="goalr__item">
+                  <img src="/img/prof_item-2.svg" alt="" class="goalr__image" />
+                  <div class="goalr__item_title">Исследовательский талант</div>
+                  <div class="goalr__text">
+                    Это способность работать с большим объемом информации,
+                    которую черпаете из разных видов источников. Склонность
+                    анализировать и, путём исследования, выявлять новые
+                    концепции, развивать теории и практику, а также намечать
+                    концептуально новые пути решения проблем.
+                  </div>
+                </li>
+                <li class="goalr__item">
+                  <img src="/img/prof_item-3.svg" alt="" class="goalr__image" />
+                  <div class="goalr__item_title">Практический талант</div>
+                  <div class="goalr__text">
+                    Это стремление получить осязаемый результат своей
+                    деятельности. Таким людям важно работать руками, влиять на
+                    физический мир, изменять его, улучшать. Решая прикладные
+                    задачи, исправлять существующие неполадки, улучшать способы
+                    производства, создавать новое.
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="outside__cards cards-o">
+              <div class="title__con spesh-con-title">
+                <div class="cards-o__title no-margin ds-spesh">
+                  <h2 class="spesh_tt no-margin">
+                    Профессии на основе профориентации
+                  </h2>
+                  <span class="title__span span-spesh">5</span>
+                </div>
+                <div class="title__con-span d-3-none">Смотреть все</div>
+              </div>
+
+              <div class="courses">
+                <div class="courses__main">
+                  <div class="courses__main">
+                    <div class="con--p">
+                      <!-- Оболочка слайдера -->
+                      <div
+                        class="sahalin__swiper swiper"
+                        style="--swiper-navigation-size: auto"
+                      >
+                        <!-- Двигающееся часть слайдера -->
+                        <div class="courses__wrapper swiper-wrapper">
+                          <!-- Слайд -->
+                          <div class="courses__slide swiper-slide">
+                            <div class="swiper-slide__main slide-body">
+                              <div class="slide-body__top"></div>
+                              <div class="slide-body__content slide-content">
+                                <div class="slide-content__main">
+                                  <a
+                                    href="#"
+                                    class="slide-content__title slide_title__spesh"
+                                  >
+                                    Геймдизайнер
+                                  </a>
+                                  <div class="spesh__slide-text">
+                                    Дорогие друзья, консультация с
+                                    профессионалами из IT играет важную роль в
+                                    формировании модели развития. Разнообразный
+                                    и богатый
+                                  </div>
+                                </div>
+                                <div class="slide-content__price spesh_price">
+                                  Ср. зарплата: <span>120 000 руб.</span>
+                                </div>
+                                <a href="#" class="spesh-btn-con">
+                                  <div
+                                    class="main__btn-light sahalin-main__btn-light"
+                                  >
+                                    Это моя цель
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="courses__slide swiper-slide">
+                            <div class="swiper-slide__main slide-body">
+                              <div class="slide-body__top"></div>
+                              <div class="slide-body__content slide-content">
+                                <div class="slide-content__main">
+                                  <a
+                                    href="#"
+                                    class="slide-content__title slide_title__spesh"
+                                  >
+                                    Геймдизайнер
+                                  </a>
+                                  <div class="spesh__slide-text">
+                                    Дорогие друзья, консультация с
+                                    профессионалами из IT играет важную роль в
+                                    формировании модели развития. Разнообразный
+                                    и богатый
+                                  </div>
+                                </div>
+                                <div class="slide-content__price spesh_price">
+                                  Ср. зарплата: <span>120 000 руб.</span>
+                                </div>
+                                <a href="#" class="spesh-btn-con">
+                                  <div
+                                    class="main__btn-light sahalin-main__btn-light"
+                                  >
+                                    Это моя цель
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="courses__slide swiper-slide">
+                            <div class="swiper-slide__main slide-body">
+                              <div class="slide-body__top"></div>
+                              <div class="slide-body__content slide-content">
+                                <div class="slide-content__main">
+                                  <a
+                                    href="#"
+                                    class="slide-content__title slide_title__spesh"
+                                  >
+                                    Геймдизайнер
+                                  </a>
+                                  <div class="spesh__slide-text">
+                                    Дорогие друзья, консультация с
+                                    профессионалами из IT играет важную роль в
+                                    формировании модели развития. Разнообразный
+                                    и богатый
+                                  </div>
+                                </div>
+                                <div class="slide-content__price spesh_price">
+                                  Ср. зарплата: <span>120 000 руб.</span>
+                                </div>
+                                <a href="#" class="spesh-btn-con">
+                                  <div
+                                    class="main__btn-light sahalin-main__btn-light"
+                                  >
+                                    Это моя цель
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="courses__slide swiper-slide">
+                            <div class="swiper-slide__main slide-body">
+                              <div class="slide-body__top"></div>
+                              <div class="slide-body__content slide-content">
+                                <div class="slide-content__main">
+                                  <a
+                                    href="#"
+                                    class="slide-content__title slide_title__spesh"
+                                  >
+                                    Геймдизайнер
+                                  </a>
+                                  <div class="spesh__slide-text">
+                                    Дорогие друзья, консультация с
+                                    профессионалами из IT играет важную роль в
+                                    формировании модели развития. Разнообразный
+                                    и богатый
+                                  </div>
+                                </div>
+                                <div class="slide-content__price spesh_price">
+                                  Ср. зарплата: <span>120 000 руб.</span>
+                                </div>
+                                <a href="#" class="spesh-btn-con">
+                                  <div
+                                    class="main__btn-light sahalin-main__btn-light"
+                                  >
+                                    Это моя цель
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="courses__slide swiper-slide">
+                            <div class="swiper-slide__main slide-body">
+                              <div class="slide-body__top"></div>
+                              <div class="slide-body__content slide-content">
+                                <div class="slide-content__main">
+                                  <a
+                                    href="#"
+                                    class="slide-content__title slide_title__spesh"
+                                  >
+                                    Геймдизайнер
+                                  </a>
+                                  <div class="spesh__slide-text">
+                                    Дорогие друзья, консультация с
+                                    профессионалами из IT играет важную роль в
+                                    формировании модели развития. Разнообразный
+                                    и богатый
+                                  </div>
+                                </div>
+                                <div class="slide-content__price spesh_price">
+                                  Ср. зарплата: <span>120 000 руб.</span>
+                                </div>
+                                <a href="#" class="spesh-btn-con">
+                                  <div
+                                    class="main__btn-light sahalin-main__btn-light"
+                                  >
+                                    Это моя цель
+                                  </div>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="sahalin-swiper-button-prev"
+                        ></button>
+                        <button
+                          type="button"
+                          class="sahalin-swiper-button-next"
+                        ></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="title__con-span d-3 greps">Смотреть все</div>
+            </div>
+
+            <div class="class__educationn ed-block">
+              <div class="ed-block__main fort">
+                <div class="fot-block-title">
+                  Посмотри, какие профессии тебе еще могут подойти
+                </div>
+                <div
+                  class="fot-block-btn main__btn-light sahalin-main__btn-light"
+                >
+                  Выбрать другую профессию
+                </div>
+              </div>
+              <div class="ed-block__imagee"></div>
+            </div>
+            <div class="step-s__buttons r_btns">
+              <button
+                class="step-s__prev_btn main__btn-light sahalin-main__btn-light r_btn"
+                onclick="goUp();"
+              >
+                Назад
+              </button>
+              <button
+                class="step-s__next_btn main__btn r_btn sahalin-back"
+                onclick="goUp();"
+              >
+                Далее
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div
+    class="modal fade modal-worker"
+    tabindex="-1"
+    id="temp-info-detail"
+    style="display: none"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content bg-white container-a-pop">
+        <button
+          type="button"
+          class="slllc d-3-none"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.25 5L5.25 19"
+              stroke="#A897BD"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+            <path
+              d="M5.25 5L19.25 19"
+              stroke="#A897BD"
+              stroke-width="2"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="pop-form">
+          <button
+            type="button"
+            class="fjdl"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14 16L10 12L14 8"
+                stroke="#b298ee"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Назад
+          </button>
+          <div class="pop-form__title">Путь № 1</div>
+          <ul class="pop-form__list_skills">
+            <li class="pop-form__item_skills">
+              <div class="pbbi__time">2 года</div>
+            </li>
+            <li class="pop-form__item_skills">
+              <div class="pbbi__steps">4 этапа</div>
+            </li>
+            <li class="pop-form__item_skills">
+              <div class="pbbi__skills">123 навыка</div>
+            </li>
+          </ul>
+
+          <ul class="pop-form__list">
+            <li class="pop-form__item pop-form-i">
+              <div class="pop-form-i__title">Junior Product Manager</div>
+              <ul class="pop-form-i__list">
+                <li class="pop-form-i__item sahalin-back">
+                  Управление командой разработки
+                </li>
+                <li class="pop-form-i__item sahalin-back">
+                  Планирование проекта
+                </li>
+                <li class="pop-form-i__item sahalin-back">
+                  Финансовое планирование
+                </li>
+                <li class="pop-form-i__item sahalin-back">Excel</li>
+                <li class="pop-form-i__item sahalin-back">
+                  Управление рисками
+                </li>
+                <li class="pop-form-i__item sahalin-back">Tillda</li>
+              </ul>
+              <div class="pop-form-i__info sahalin-back-dark">
+                Общий опыт требуемый для перехода на следующий опыт
+                <div class="pop-form-i__info_time">2 года</div>
+              </div>
+            </li>
+            <li class="pop-form__item pop-form-i">
+              <div class="pop-form-i__title">Junior Product Manager</div>
+              <ul class="pop-form-i__list">
+                <li class="pop-form-i__item sahalin-back">
+                  Управление командой разработки
+                </li>
+                <li class="pop-form-i__item sahalin-back">
+                  Планирование проекта
+                </li>
+                <li class="pop-form-i__item sahalin-back">
+                  Финансовое планирование
+                </li>
+                <li class="pop-form-i__item sahalin-back">Excel</li>
+                <li class="pop-form-i__item sahalin-back">
+                  Управление рисками
+                </li>
+                <li class="pop-form-i__item sahalin-back">Tillda</li>
+              </ul>
+              <div class="pop-form-i__info sahalin-back-dark">
+                Общий опыт требуемый для перехода на следующий опыт
+                <div class="pop-form-i__info_time">2 года</div>
+              </div>
+            </li>
+          </ul>
+          <div class="pop-form__buttons">
+            <button
+              type="button"
+              class="main__btn-light sahalin-main__btn-light"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              Назад
+            </button>
+            <button type="button" class="main__btn sahalin-back">
+              Выбрать
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+//= template/modals.html
+//= template/inc/end.html

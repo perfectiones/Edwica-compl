@@ -1,0 +1,226 @@
+.lesson__back-to-course {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: $color_neutrals-2_secondary;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.lesson__lessons-list {
+    list-style: none;
+    margin-top: 32px;
+
+    li {
+        padding: 16px 16px 16px 24px;
+        height: 56px;
+        border: 1px solid $color_neutrals-5-borders;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 12px;
+        
+        a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            color: $color_neutrals-1_black;
+        }
+
+        .lesson__completed-exercises-number {
+            width: 32px;
+            height: 32px;
+            padding: 4px;
+            border-radius: 8px;
+            background-color: $color-statements-9_yellow_light;
+            color: $color-statements-7_yellow_dark;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+
+        &.active {
+            background-color: $color-accent_main;
+
+            a {
+                color: white;
+            }
+        }
+
+        &.completed > a {
+            color: $color-statements-1_green_dark;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.lesson__module-name {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: $color_neutrals-2_secondary;
+}
+
+.lesson__lesson-name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 32px;
+    color: $color_neutrals-1_black;
+}
+
+.lesson__video {
+    min-height: 480px;
+    background-image: url("/img/lesson-video.png");
+    border: 1px solid $color_neutrals-5-borders;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    width: 100%;
+}
+
+.lesson__block {
+    border: 1px solid $color_neutrals-5-borders;
+    border-radius: 16px;
+    margin-bottom: 24px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    .lesson__block-header {
+        display: flex;
+        align-items: center;
+        padding: 24px;
+
+        .lesson__block-content-toggle-button {
+            text-align: center;
+            border-radius: 50%;
+            min-width: 32px;
+            height: 32px;
+            background-color: $color-accent_extra_light;
+
+            img {
+                position: relative;
+                top: 4px;
+            }
+        }
+
+        .lesson__given-points {
+            text-align: center;
+            padding: 4px;
+            margin-right: 26.5px;
+            border-radius: 8px;
+            background-color: $color-statements-3_green_light;
+            color: $color-statements-1_green_dark;
+            font-weight: bold;
+            min-width: 32px;
+            height: 32px;
+        }
+
+        .completion-mark {
+            margin-right: 25px;
+        }
+
+        h2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 28px;
+            line-height: 36px;
+            color: $color_neutrals-1_black;
+            flex-grow: 1;
+        }
+    }
+
+    .lesson__block-content {
+        padding: 24px;
+        border-bottom: 1px solid $color_neutrals-5-borders;
+        
+
+        button {
+            padding: 10px 24px;
+            background-color: $color-accent_main;
+            color: white;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            border-radius: 8px;
+            margin-top: 24px;
+        }
+
+        h3 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        #homework-uploaded-file {
+            margin-left: 24px;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        #homework-input-clear-button {
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            margin-left: 8px;
+        }
+
+        &:first-child {
+            border-top: 1px solid $color_neutrals-5-borders;
+        }
+    }
+    
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.lesson__assets {
+    border: 1px solid $color_neutrals-5-borders;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    padding: 24px 24px 32px 24px;
+
+    .lesson__asset {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        margin-right: 50px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    h2 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        color: $color_neutrals-1_black;
+        flex-grow: 1;
+    }
+}

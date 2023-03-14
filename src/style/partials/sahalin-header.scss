@@ -1,0 +1,60 @@
+.sah-hed {
+  // .sah-hed__row
+  &__wrapper {
+    border-bottom: 0.5px solid #b4b4b9;
+  }
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+  }
+  // .sah-hed__logo
+  &__logo {
+    flex: 1 0 33.3333%;
+    & a img {
+      @include adaptiveValue("width", 236, 178, 1);
+      @include adaptiveValue("heigth", 51, 38, 1);
+    }
+  }
+  // .sah-hed__btns
+  &__btns {
+    flex: 1 0 33.3333%;
+    display: flex;
+    justify-content: center;
+    @include adaptiveValue("gap", 50, 20, 1);
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+  &__btns a:nth-child(1) {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    &::after {
+      content: "";
+      position: relative;
+      display: inline-block;
+      width: 11px;
+      height: 9px;
+      background: url("/img/sahalin-arrow.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: 1px;
+    }
+  }
+  // .sah-hed__account
+  &__account {
+    flex: 1 1 33.3333%;
+    position: relative;
+    right: 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @include adaptiveValue("gap", 30, 10, 1);
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+}

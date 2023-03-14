@@ -1,0 +1,295 @@
+//= template/inc/start.html
+
+<div class="prof-class">
+  <div class="container-a container-a-spesh">
+    <button type="button" class="item-conv__button-reset">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M14 16L10 12L14 8"
+          stroke="#A897BD"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+
+      <p>Формирование траектории</p>
+    </button>
+    <div class="prof-class__main fasdf">
+      <div class="prof-class__header prof-head">
+        <div class="prof-head__main">
+          <div class="prof-head__title main__subtitle">Образование</div>
+          <div class="prof-head__score">
+            <p class="prof-head__score_text main__text-small">
+              Вы заработали: 350 баллов
+            </p>
+            <div class="prof-head__score_plus main__text-small pl">
+              + 150 баллов
+            </div>
+          </div>
+        </div>
+        <button type="button" class="prof-head__prof">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M13.3328 15.7751C12.3524 16.3421 11.2141 16.6667 10 16.6667C8.78592 16.6667 7.64763 16.3421 6.66717 15.7751C6.69826 13.961 8.17851 12.5 10 12.5C11.8215 12.5 13.3017 13.961 13.3328 15.7751ZM14.8422 14.5823C14.2868 12.4263 12.3294 10.8333 10 10.8333C7.67057 10.8333 5.71319 12.4263 5.15778 14.5823C4.0269 13.3877 3.33333 11.7748 3.33333 10C3.33333 6.3181 6.3181 3.33333 10 3.33333C13.6819 3.33333 16.6667 6.3181 16.6667 10C16.6667 11.7748 15.9731 13.3877 14.8422 14.5823ZM18.3333 10C18.3333 14.6024 14.6024 18.3333 10 18.3333C5.39763 18.3333 1.66667 14.6024 1.66667 10C1.66667 5.39763 5.39763 1.66667 10 1.66667C14.6024 1.66667 18.3333 5.39763 18.3333 10ZM10 8.33333C10.4602 8.33333 10.8333 7.96024 10.8333 7.5C10.8333 7.03976 10.4602 6.66667 10 6.66667C9.53976 6.66667 9.16667 7.03976 9.16667 7.5C9.16667 7.96024 9.53976 8.33333 10 8.33333ZM10 10C11.3807 10 12.5 8.88071 12.5 7.5C12.5 6.11929 11.3807 5 10 5C8.61929 5 7.5 6.11929 7.5 7.5C7.5 8.88071 8.61929 10 10 10Z"
+              fill="#966CEE"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <form action="#" method="get" class="step-s__form">
+        <div class="edit-company__steps-numbers step-n step-nss">
+          <div class="step-n__main no-margin step-nss_ed">
+            <div class="step-n__number step-nss__number">
+              <div class="step-n__number_circle main__text-white">1</div>
+              <div class="step-n__number_text main__text-neutral">
+                Склонности
+              </div>
+            </div>
+            <div class="step-n__gap step-nss__gap"></div>
+            <div class="step-n__number step-nss__number">
+              <div class="step-n__number_circle main__text-white">2</div>
+              <div class="step-n__number_text main__text-neutral">Интересы</div>
+            </div>
+
+            <div class="step-n__gap step-nss__gap"></div>
+            <div class="step-n__number step-nss__number last-numberr">
+              <div class="step-n__number_circle main__text-white">3</div>
+              <div class="step-n__number_text main__text-neutral">
+                Мотивация
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="edit-company__steps steps-m">
+          <div class="steps-m__step step-s step-s__spesh">
+            <div class="container-profor">
+              <div class="profor">
+                <div class="profor__image">
+                  <img src="/img/profor-bg.png" alt="" class="profor__img" />
+                </div>
+
+                <label class="profor__range">
+                  <div class="profor__range_span">
+                    <div class="profor__range_number">1</div>
+                    <div class="profor__range_title">
+                      В школе мне больше всего нравятся:
+                    </div>
+                  </div>
+                  <progress id="profor-progress" max="15" value="1"></progress>
+                  <div class="progress-fake">
+                    <div class="progress-fake__complete"></div>
+                  </div>
+                </label>
+
+                <div class="radio-buttons-row rad-bvv">
+                  <label class="label-for-radio">
+                    <input type="radio" name="radio" value="1" />
+                    <div class="radio-fake">
+                      <div class="radio-fake-text">
+                        Уроки, где есть задания на вычисление, работу с данными
+                      </div>
+                    </div>
+                  </label>
+                  <label class="label-for-radio">
+                    <input type="radio" name="radio" value="1" />
+                    <div class="radio-fake">
+                      <div class="radio-fake-text">
+                        Уроки, где есть работа с новой информацией, изучением,
+                        погружением
+                      </div>
+                    </div>
+                  </label>
+                  <label class="label-for-radio">
+                    <input type="radio" name="radio" value="1" />
+                    <div class="radio-fake">
+                      <div class="radio-fake-text">
+                        Уроки, где можно выполнять практические задания, опыты,
+                        мастерские
+                      </div>
+                    </div>
+                  </label>
+                </div>
+
+                <div class="step-s__buttons r_btns">
+                  <button
+                    class="step-s__prev_btn main__btn-light r_btn"
+                    onclick="goUp();"
+                  >
+                    Назад
+                  </button>
+                  <button
+                    class="step-s__next_btn main__btn r_btn"
+                    onclick="goUp();"
+                  >
+                    Далее
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s step-s__spesh">
+            <div class="container-profor">
+              <div class="profor">
+                <label class="profor__range">
+                  <div
+                    class="profor__range_span"
+                    style="justify-content: center"
+                  >
+                    <div class="profor__range_title">
+                      Какие объекты живой и неживой природы вызывают у вас
+                      интерес?
+                    </div>
+                  </div>
+                  <progress id="profor-progress" max="15" value="1"></progress>
+                  <div class="progress-fake">
+                    <div class="progress-fake__complete"></div>
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div class="radio-buttons-row rad-bvv rad-ed">
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    земля, почва, ландшафт, рельеф
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    вода, водные ресурсы, океан, ледники
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    полезные ископаемые, минералы, природные источники:
+                    разведка, добыча и переработка
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    источники энергии, энергетика традиционная и альтернативная
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    экология: защита природы, очистка, переработка
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    растения для еды, для красоты, для медицины, для агро
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    химические элементы, материалы, вещества, ткани, лекарства
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    животные сами по себе или для целей человека
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    микроорганизмы, микроэлементы, клетки, гены
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">
+                    физиология и анатомия человека
+                  </div>
+                </div>
+              </label>
+              <label class="label-for-radio label_edd">
+                <input type="radio" name="radio" value="1" />
+                <div class="radio-fake rad-fff">
+                  <div class="radio-fake-text">космос, планеты</div>
+                </div>
+              </label>
+            </div>
+            <div class="step-s__buttons r_btns">
+              <button
+                class="step-s__prev_btn main__btn-light r_btn"
+                onclick="goUp();"
+              >
+                Назад
+              </button>
+              <button
+                class="step-s__next_btn main__btn r_btn"
+                onclick="goUp();"
+              >
+                Далее
+              </button>
+            </div>
+          </div>
+
+          <div class="steps-m__step step-s step-s__spesh">
+            <div class="slider__cards-main slider-cm"></div>
+            <div class="step-s__buttons r_btns">
+              <button
+                class="step-s__prev_btn main__btn-light r_btn"
+                onclick="goUp();"
+              >
+                Назад
+              </button>
+              <button
+                class="step-s__next_btn main__btn-light r_btn"
+                onclick="goUp();"
+              >
+                Далее
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+//= template/inc/end.html

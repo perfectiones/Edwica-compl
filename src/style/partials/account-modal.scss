@@ -1,0 +1,85 @@
+.jobs__list{
+    margin-top: 19px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    .job{
+       display: grid;
+        grid-template-columns: minmax(206px, 496px) minmax(81px, 199px);
+         border: 1px solid #EFE8F8;
+        border-radius: 8px;
+        @media (max-width:$tablet) {
+            height: auto;
+        }
+        &s__name{
+            padding: 9px 0 0 35px;
+            height: 74px;
+            border-right: 1px solid rgba(239, 232, 248, 1);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #6C6377;
+            @media (max-width:$tablet) {
+                padding: 7px 13px 10px 16px;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+                height: auto;
+                span{
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 24px;
+                }
+            }
+        }
+        &s__stat{
+            display: flex;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #A897BD;
+            @media (max-width:$tablet) {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 24px;
+            }
+            span{
+                color: #6C6377;
+            }
+            p{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    }
+    
+}
+.hi{
+    display: none;
+    @media (max-width:$tablet) {
+        display: block;
+    }
+}
+.hi-no{
+    display: block;
+    @media (max-width:$tablet) {
+        display: none;
+    }
+}
+.main-ofice{
+    .radial-progress{
+
+    .text{
+            font-size: 6px;
+            
+        }
+    }
+}
+    
+

@@ -1,0 +1,3609 @@
+//= template/inc/start.html
+//= template/inc/account-header.html
+
+<div class="content-wrapper account-wrapper main-page">
+  <div class="container-ac">
+    <div class="top-p">
+      <div class="top-p__it row">
+        <div class="company col-990">
+          <div class="company-des">
+            <div class="company__logo">
+              <svg
+                class="d-3-none svg-dec"
+                width="20"
+                height="21"
+                viewBox="0 0 20 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.6673 13V15.7778C16.6673 16.1461 16.5112 16.4994 16.2334 16.7599C15.9556 17.0203 15.5788 17.1667 15.1858 17.1667H4.81547C4.42255 17.1667 4.04573 17.0203 3.7679 16.7599C3.49007 16.4994 3.33398 16.1461 3.33398 15.7778V13"
+                  stroke="#966CEE"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M13.3327 7.16671L9.99935 3.83337L6.66602 7.16671"
+                  stroke="#966CEE"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 3.83337L10 13"
+                  stroke="#966CEE"
+                  stroke-width="1.66667"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+    
+              <div class="logo-wrapper">
+                <img src="/img/Re160.png" />
+              </div>
+            </div>
+            <div class="company__info">
+  
+              <div class="agency-name">
+              <p>Агентство по развитию человеческого капитала Сахалинской области</p>
+              </div>
+              <div class="activities">
+                <div class="activ__item desc">
+                  <div class="item__img">
+                    <svg
+                      width="17"
+                      height="15"
+                      viewBox="0 0 17 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M8.74369 7.68118C9.15656 7.30082 9.48772 6.83038 9.71469 6.30178C9.94165 5.77319 10.0591 5.19882 10.0591 4.61765C10.0591 3.52558 9.6515 2.47824 8.92594 1.70603C8.20038 0.933822 7.21632 0.5 6.19022 0.5C5.16413 0.5 4.18006 0.933822 3.45451 1.70603C2.72895 2.47824 2.32133 3.52558 2.32133 4.61765C2.32133 5.19882 2.43879 5.77319 2.66576 6.30178C2.89273 6.83038 3.22389 7.30082 3.63676 7.68118C2.55358 8.2032 1.63458 9.0462 0.989647 10.1094C0.344714 11.1726 0.00113889 12.411 0 13.6765C0 13.8949 0.0815228 14.1044 0.226634 14.2588C0.371746 14.4132 0.568559 14.5 0.773778 14.5C0.978997 14.5 1.17581 14.4132 1.32092 14.2588C1.46603 14.1044 1.54756 13.8949 1.54756 13.6765C1.54756 12.366 2.03669 11.1092 2.90736 10.1825C3.77803 9.25588 4.95891 8.73529 6.19022 8.73529C7.42154 8.73529 8.60242 9.25588 9.47309 10.1825C10.3438 11.1092 10.8329 12.366 10.8329 13.6765C10.8329 13.8949 10.9144 14.1044 11.0595 14.2588C11.2046 14.4132 11.4015 14.5 11.6067 14.5C11.8119 14.5 12.0087 14.4132 12.1538 14.2588C12.2989 14.1044 12.3804 13.8949 12.3804 13.6765C12.3793 12.411 12.0357 11.1726 11.3908 10.1094C10.7459 9.0462 9.82687 8.2032 8.74369 7.68118ZM6.19022 7.08824C5.73111 7.08824 5.2823 6.94334 4.90056 6.67187C4.51882 6.40039 4.22129 6.01454 4.04559 5.5631C3.86989 5.11166 3.82392 4.61491 3.91349 4.13566C4.00306 3.65641 4.22415 3.2162 4.54879 2.87068C4.87344 2.52516 5.28706 2.28986 5.73735 2.19453C6.18765 2.0992 6.65439 2.14813 7.07856 2.33512C7.50273 2.52211 7.86527 2.83878 8.12034 3.24506C8.37541 3.65135 8.51156 4.12901 8.51156 4.61765C8.51156 5.27289 8.26699 5.90129 7.83166 6.36462C7.39632 6.82794 6.80588 7.08824 6.19022 7.08824ZM13.7268 7.35176C14.222 6.75827 14.5455 6.0251 14.6583 5.24051C14.7711 4.45592 14.6685 3.65336 14.3627 2.92941C14.0569 2.20547 13.5611 1.59101 12.9348 1.16C12.3086 0.728982 11.5787 0.499788 10.8329 0.5C10.6277 0.5 10.4309 0.586765 10.2857 0.741206C10.1406 0.895648 10.0591 1.10512 10.0591 1.32353C10.0591 1.54194 10.1406 1.75141 10.2857 1.90585C10.4309 2.06029 10.6277 2.14706 10.8329 2.14706C11.4485 2.14706 12.039 2.40735 12.4743 2.87068C12.9097 3.334 13.1542 3.96241 13.1542 4.61765C13.1531 5.0502 13.0454 5.47486 12.8417 5.84917C12.638 6.22348 12.3455 6.53431 11.9936 6.75059C11.8788 6.82102 11.783 6.92161 11.7153 7.04273C11.6475 7.16385 11.6101 7.30145 11.6067 7.44235C11.6034 7.58216 11.6337 7.72054 11.6946 7.84445C11.7555 7.96836 11.8451 8.07371 11.9549 8.15059L12.2566 8.36471L12.3572 8.42235C13.2899 8.89318 14.0768 9.63787 14.6252 10.5687C15.1735 11.4996 15.4605 12.5778 15.4523 13.6765C15.4523 13.8949 15.5339 14.1044 15.679 14.2588C15.8241 14.4132 16.0209 14.5 16.2261 14.5C16.4313 14.5 16.6282 14.4132 16.7733 14.2588C16.9184 14.1044 16.9999 13.8949 16.9999 13.6765C17.0062 12.4127 16.7088 11.1682 16.136 10.0612C15.5631 8.95425 14.7338 8.02155 13.7268 7.35176Z"
+                        fill="#615473"
+                      />
+                    </svg>
+                  </div>
+                  <div class="item__text">
+                    <p>Пользователей</p>
+                    <p><span> 11 321</span></p>
+                  </div>
+                </div>
+                <div class="activ__item desc">
+                  <div class="item__img">
+                    <svg
+                      width="16"
+                      height="17"
+                      viewBox="0 0 16 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.46303 9.65295L6.81406 12.0142C6.81406 12.0142 14.4014 9.98426 13.1291 3.2443C13.1291 3.2443 7.56601 1.26328 4.46303 9.65295Z"
+                        stroke="#615473"
+                        stroke-width="1.33333"
+                      />
+                      <path
+                        d="M9.70873 6.87674C10.053 7.22097 10.6111 7.22097 10.9553 6.87674C11.2996 6.5325 11.2996 5.97437 10.9553 5.63014C10.6111 5.2859 10.053 5.2859 9.70873 5.63014C9.36449 5.97437 9.36449 6.5325 9.70873 6.87674Z"
+                        stroke="#615473"
+                        stroke-width="1.33333"
+                      />
+                      <path
+                        d="M8.03711 12.1053L8.52209 13.8292L10.7038 12.6323L10.3941 10.2197"
+                        stroke="#615473"
+                        stroke-width="1.33333"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M4.57532 8.64355L2.85146 8.15857L4.04832 5.97689L6.46094 6.28653"
+                        stroke="#615473"
+                        stroke-width="1.33333"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M6.38674 11.8692C5.84362 13.5673 2.90599 13.4688 2.90599 13.4688C2.90599 13.4688 2.68968 10.6675 4.46802 10.0167"
+                        stroke="#615473"
+                        stroke-width="1.33333"
+                      />
+                    </svg>
+                  </div>
+    
+                  <div class="item__text">
+                    <p>Активность</p>
+                    <p><span> 70% </span></p>
+                  </div>
+                </div>
+    
+                
+              </div>
+            </div>
+            
+          </div>
+          <div class="company-mob">
+
+            <div class="company-mob__logo">
+              <div class="logo-mob__wrapper">
+                <img src="/img/Re160.png" />
+              </div>
+              <div class="logo-mob__ulpoad">
+
+                <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.8327 10V12.2222C13.8327 12.5169 13.7078 12.7995 13.4855 13.0079C13.2633 13.2163 12.9618 13.3333 12.6475 13.3333H4.3512C4.03687 13.3333 3.73541 13.2163 3.51315 13.0079C3.29088 12.7995 3.16602 12.5169 3.16602 12.2222V10" stroke="#966CEE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.1673 5.33366L8.50065 2.66699L5.83398 5.33366" stroke="#966CEE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M8.5 2.66699L8.5 10.0003" stroke="#966CEE" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  <p>Загрузить</p>
+              </div>
+            </div>
+
+            <div class="activ__list">
+
+              <div class="activ__item mob">
+                <div class="item__img">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.00065 2.49967H12.0007V5.83301C12.0007 8.04215 10.2098 9.83301 8.00065 9.83301C5.79151 9.83301 4.00065 8.04215 4.00065 5.83301V2.49967Z"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                    <path
+                      d="M12.0007 6.50033L12.0007 3.16699L13.0007 3.16699C13.9211 3.16699 14.6673 3.91318 14.6673 4.83366C14.6673 5.75413 13.9211 6.50033 13.0007 6.50033L12.0007 6.50033Z"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                    <path
+                      d="M3.99935 6.50033L3.99935 3.16699L2.99935 3.16699C2.07887 3.16699 1.33268 3.91318 1.33268 4.83366C1.33268 5.75413 2.07887 6.50033 2.99935 6.50033L3.99935 6.50033Z"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                    <path
+                      d="M4.66667 13.833C4.66667 13.0966 5.26362 12.4997 6 12.4997H10C10.7364 12.4997 11.3333 13.0966 11.3333 13.833V14.4997H4.66667V13.833Z"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                    <rect
+                      x="6.66667"
+                      y="9.83366"
+                      width="2.66667"
+                      height="2.66667"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                  </svg>
+                </div>
+  
+                <div class="item__text">
+                  <p>Рейтинг</p>
+                  <p><span> 1435 </span></p>
+                </div>
+              </div>
+  
+              <div class="activ__item mob">
+                <div class="item__img">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="2.00065"
+                      y="9.16667"
+                      width="2.66667"
+                      height="3.33333"
+                      rx="0.666667"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                    <rect
+                      x="6.66667"
+                      y="3.83366"
+                      width="2.66667"
+                      height="8.66667"
+                      rx="0.666667"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                    <rect
+                      x="11.3327"
+                      y="6.49967"
+                      width="2.66667"
+                      height="6"
+                      rx="0.666667"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                  </svg>
+                </div>
+  
+                <div class="item__text">
+                  <p>Место</p>
+                  <p><span> 321</span></p>
+                </div>
+              </div>
+  
+              <div class="activ__item mob">
+                <div class="item__img">
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M4.46303 9.65295L6.81406 12.0142C6.81406 12.0142 14.4014 9.98426 13.1291 3.2443C13.1291 3.2443 7.56601 1.26328 4.46303 9.65295Z"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                    <path
+                      d="M9.70873 6.87674C10.053 7.22097 10.6111 7.22097 10.9553 6.87674C11.2996 6.5325 11.2996 5.97437 10.9553 5.63014C10.6111 5.2859 10.053 5.2859 9.70873 5.63014C9.36449 5.97437 9.36449 6.5325 9.70873 6.87674Z"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                    <path
+                      d="M8.03711 12.1053L8.52209 13.8292L10.7038 12.6323L10.3941 10.2197"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.57532 8.64355L2.85146 8.15857L4.04832 5.97689L6.46094 6.28653"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M6.38674 11.8692C5.84362 13.5673 2.90599 13.4688 2.90599 13.4688C2.90599 13.4688 2.68968 10.6675 4.46802 10.0167"
+                      stroke="#615473"
+                      stroke-width="1.33333"
+                    />
+                  </svg>
+                </div>
+  
+                <div class="item__text">
+                  <p>Активность</p>
+                  <p><span> 70% </span></p>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+  
+        <div class="progress__percent col-990">
+          <div class="rad__con main-ofice">
+            <svg class="radial-progress" data-percentage="61" viewBox="0 0 80 80">
+              <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+              <circle
+                class="complete"
+                cx="40"
+                cy="40"
+                r="35"
+                stroke-linecap="round"
+                style="stroke-dashoffset: 39.58406743523136"
+              ></circle>
+              <text
+                class="percentage"
+                x="50%"
+                y="57%"
+                transform="matrix(0, 1, -1, 0, 80, 0)"
+              >
+                <tspan
+                  x="50%"
+                  y="45%"
+                  class="text"
+                  style="font-size: 7px; color: #a897bd; font-weight: 400"
+                >
+                  Прогресс
+                </tspan>
+                <tspan x="50%" y="65%">61%</tspan>
+              </text>
+            </svg>
+            <div class="rad__con_info d-3">
+              <div class="rad__con_text">Прогресс</div>
+              <div class="rad__con_num">61%</div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="button col-990">
+          <ul class="top-p__nav">
+            <li>
+              Главная
+            </li>
+            <li>
+              База образовательных материалов
+            </li>
+            <li>
+              Пользователи
+            </li>
+            <li>
+              Чат
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="top-p__li">
+        <ul class="success__list">
+          
+          <li>
+            <div class="success__item">
+              <p class="title">
+                Сейчас используют траекторию
+              </p>
+              <p class="subtitle">
+                1 200 чел
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="success__item">
+              <p class="title">
+                Сейчас проходят курсы
+              </p>
+              <p class="subtitle">
+                932 чел.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="success__item">
+              <p class="title">
+                построили траекторию до конца
+              </p>
+              <p class="subtitle">
+                8 654 чел
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="success__item">
+              <p class="title">
+                ср. срок достижения цели
+              </p>
+              <p class="subtitle">
+                2,3 года
+              </p>  
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="content">
+
+      <div class="title title-section">
+        <p>Статистика по пользователям</p>
+      </div>
+
+      <div class="stat-block__list">
+        <div class="stat-block sign-gender ful">
+          <div class="title">
+            <p>Доля пользователей по половому признаку</p>
+          </div>
+
+          <div class="chart-body">
+
+            <div class="chart__main">
+              <canvas id="chart__user-place"></canvas>
+            </div>
+            <div class="chart-fraction__list gender">
+
+              <div class="item">
+
+                <div class="circle gr"></div>
+
+                <div class="info">
+                  <p class="name">
+                    Мужчин
+                  </p>
+                  <p class="percent">
+                    71%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle or"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Женщин
+                  </p>
+                  <p class="percent">
+                    29%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-block sign-geo ful">
+          <div class="title">
+            <p>Доля пользователей по локации</p>
+          </div>
+
+          <div class="chart-body">
+
+            <div class="chart__main">
+              <canvas id="chart__user-geo"></canvas>
+            </div>
+            <div class="chart-fraction__list geo">
+
+              <div class="item">
+
+                <div class="circle gr"></div>
+
+                <div class="info">
+                  <p class="name">
+                    Ужно-Сахалинск
+                  </p>
+                  <p class="percent">
+                    23%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle or"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Улануде
+                  </p>
+                  <p class="percent">
+                    22%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle blu"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Владивосток
+                  </p>
+                  <p class="percent">
+                    9%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle yel"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Санк-Питербург
+                  </p>
+                  <p class="percent">
+                    7%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle or-light"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Москва
+                  </p>
+                  <p class="percent">
+                    6%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle gr-light"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Сочи
+                  </p>
+                  <p class="percent">
+                    5%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle gr-dark"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Саратов
+                  </p>
+                  <p class="percent">
+                    5%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle blu-dark"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Калининград
+                  </p>
+                  <p class="percent">
+                    4%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle pin-dark"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Другие
+                  </p>
+                  <p class="percent">
+                    19%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-block bin">
+          <div class="stat-block-mid sign-status ful">
+            <div class="title">
+              <p>Доля пользователей по статусу</p>
+            </div>
+  
+            <div class="chart-body">
+  
+              <div class="chart__main">
+                <canvas id="chart__user-status"></canvas>
+              </div>
+              <div class="chart-fraction__list status">
+                
+                <div class="item">
+  
+                  <div class="circle or"></div>
+                  
+                  <div class="info">
+                    <p class="name">
+                      Школьник
+                    </p>
+                    <p class="percent">
+                      7%
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="item">
+  
+                  <div class="circle gr-dark"></div>
+                  
+                  <div class="info">
+                    <p class="name">
+                      Студент
+                    </p>
+                    <p class="percent">
+                      43%
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="item">
+  
+                  <div class="circle blu-dark"></div>
+                  
+                  <div class="info">
+                    <p class="name">
+                      Трудящийся
+                    </p>
+                    <p class="percent">
+                      50%
+                    </p>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-block-min ful des">
+            <div class="title">
+              <p>Готовность к переезду</p>
+            </div>
+  
+            <div class="statistic-body">
+              <div class="age__button-wrapper" style="margin:18px 0;">
+                <div class="age__button">
+                  <div class="button act">
+                    <p>школьник</p>
+                  </div>
+                  <div class="button">
+                    <p>студент</p>
+                  </div>
+                  <div class="button">
+                    <p>трудящийся</p>
+                  </div>
+                </div>
+              </div>
+              <div class="slogan__list">
+                <div class="slogan__item">
+                  <p>доля из общего числа</p>
+                  <p><span>23%</span></p>
+                </div>
+                <div class="slogan__item">
+                  <p>человек</p>
+                  <p><span>432</span></p>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+  
+        <div class="stat-block chart-age ful">
+          <div class="title">
+            <p>Ср. возраст пользователей</p>
+          </div>
+
+          <div class="chart-bar">
+            <div class="chart-bar__wrapper">
+            <canvas id="chart__user-age"></canvas>
+          </div>
+          </div>
+          
+          <form class="chart__form">
+            <div class="sel">
+              <div class="step-s__input">
+                <div class="step-s__input_text main__text-neutral">
+                  Статус
+                </div>
+                <select name="site" class="main__select">
+                  <option value="geekbrains">Студент</option>
+                  <option value="geekbrainsss">Студент-1</option>
+                  <option value="geekbrainsss">Студент-2</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="sel">
+              <div class="step-s__input">
+                <div class="step-s__input_text main__text-neutral">
+                  Пол
+                </div>
+                <select name="site" class="main__select">
+                  
+                  <option value="geekbrainsss">Мужской</option>
+                  <option value="geekbrainsss">Женский</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div class="stat-block-min ful mob">
+          <div class="title">
+            <p>Готовность к переезду</p>
+          </div>
+
+          <div class="statistic-body">
+            <div class="age__button-wrapper" style="margin:18px 0;">
+              <div class="age__button">
+                <div class="button act">
+                  <p>школьник</p>
+                </div>
+                <div class="button">
+                  <p>студент</p>
+                </div>
+                <div class="button">
+                  <p>трудящийся</p>
+                </div>
+              </div>
+            </div>
+            <div class="slogan__list">
+              <div class="slogan__item">
+                <p>доля из общего числа</p>
+                <p><span>23%</span></p>
+              </div>
+              <div class="slogan__item">
+                <p>человек</p>
+                <p><span>432</span></p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="title title-section">
+        <p>Статистика по траектории</p>
+      </div>
+
+      <div class="stat-block__list">
+        <div class="list__part-left">
+          <div class="stat-block sign-risk-zon ful">
+          <div class="title">
+            <p>Доля пользователей в зоне риска</p>
+          </div>
+
+          <div class="age__button-wrapper dec-hid" style="margin:18px 0;">
+            <div class="age__button">
+              <div class="button act">
+                <p>школьник</p>
+              </div>
+              <div class="button">
+                <p>студент</p>
+              </div>
+              <div class="button">
+                <p>трудящийся</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="chart-body">
+
+            <div class="chart__main">
+              <canvas id="chart__user-riskZone"></canvas>
+            </div>
+            <div class="chart-fraction__list gender">
+
+              <div class="item">
+
+                <div class="circle gr"></div>
+
+                <div class="info">
+                  <p class="name">
+                    Зеленая зона
+                  </p>
+                  <p class="percent">
+                    71%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle or"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Красная зона
+                  </p>
+                  <p class="percent">
+                    29%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+          <div class="stat-block top-risk-zon ful">
+            <div class="title">
+              <p>ТОП пользователей в зоне риска</p>
+            </div>
+
+            <div class="age__button-wrapper" style="margin:18px 0;">
+
+            <div class="age__button">
+              <div class="button act">
+                <p>школьник</p>
+              </div>
+              <div class="button">
+                <p>студент</p>
+              </div>
+              <div class="button">
+                <p>трудящийся</p>
+              </div>
+            </div>
+          </div>
+
+              <div class="users__list">
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-1.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Ивашечкин М.И.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Руководитель туристического агентства</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">76%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/us-li-min.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Ивашечкин М.И.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Руководитель туристического агентства
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">1%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-2.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Сергеев С.С.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Режиссер телевизионных программ</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">69%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-2.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Сергеев С.С.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Режиссер телевизионных программ
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">69%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-3.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Виницкая Н.А.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Режиссер телевизионных программ</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>1 / 2</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">59%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-3.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Виницкая Н.А.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Режиссер телевизионных программ
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 2</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">59%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-4.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Чеботырев В.А.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Слесарь технологических установок нефтегазовой отрасли</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">52%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-4.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Чеботырев В.А.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Слесарь технологических установок нефтегазовой отрасли
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">52%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            <div class="showmore__button">
+              Все студенты 
+              <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.7207 9L5.83296 5L1.7207 1"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            </div>
+          </div>
+
+          <div class="stat-block top-risk-zon tw ful">
+            <div class="title" style="margin-bottom: 7px;">
+              <p>Неактивные пользователи</p>
+            </div>
+
+              <div class="users__list">
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-1.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Ивашечкин М.И.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Руководитель туристического агентства</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">76%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/us-li-min.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Ивашечкин М.И.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Руководитель туристического агентства
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">1%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-2.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Сергеев С.С.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Режиссер телевизионных программ</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">69%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-2.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Сергеев С.С.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Режиссер телевизионных программ
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">69%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-3.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Виницкая Н.А.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Режиссер телевизионных программ</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>1 / 2</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">59%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-3.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Виницкая Н.А.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Режиссер телевизионных программ
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 2</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">59%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-4.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Чеботырев В.А.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Слесарь технологических установок нефтегазовой отрасли</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">52%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-4.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Чеботырев В.А.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Слесарь технологических установок нефтегазовой отрасли
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">52%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-1.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Ивашечкин М.И.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Руководитель туристического агентства</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">76%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/us-li-min.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Ивашечкин М.И.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Руководитель туристического агентства
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">1%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="showmore__button">
+                Все студенты 
+                <svg
+                width="7"
+                height="10"
+                viewBox="0 0 7 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.7207 9L5.83296 5L1.7207 1"
+                  stroke="#966CEE"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              </div>
+          </div>
+
+          
+        </div>
+        
+        <div class="list__part-right">
+          <div class="stat-block top-job-sel ful ">
+            <div class="title">
+              <p>Топ выбранных профессий</p>
+            </div>
+
+            <div class="age__button-wrapper" style="margin:18px 0;">
+
+            <div class="age__button">
+              <div class="button act">
+                <p>школьник</p>
+              </div>
+              <div class="button">
+                <p>студент</p>
+              </div>
+              <div class="button">
+                <p>трудящийся</p>
+              </div>
+            </div>
+            </div>
+
+            <div class="jobs__list">
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Аналитик данных (Data Analyst)</p>
+                </div>
+                <div class="job__stat">
+                  <p>Выбрали</p>
+                  <p><span>12%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Big Data Analyst: спциалист по анализу больших данных</p>
+                </div>
+                <div class="job__stat">
+                  <p>Выбрали</p>
+                  <p><span>11%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Data Mining Specialist: специалист по интеллектуальной обработке данных</p>
+                </div>
+                <div class="job__stat">
+                  <p>Выбрали</p>
+                  <p><span>7%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Интернет-маркетолог</p>
+                </div>
+                <div class="job__stat">
+                  <p>Выбрали</p>
+                  <p><span>5%</span></p>
+                </div>
+              </div>
+            </div>              
+
+            <div 
+              class="showmore__button"
+              type="button"
+              class="job__showmore"
+              data-toggle="modal"
+              data-target="#us-li-1"
+              >
+              Весь список
+              <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.7207 9L5.83296 5L1.7207 1"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            </div>
+          </div>
+
+          <div class="stat-block top-risk-zon ful">
+            <div class="title">
+              <p>ТОП пользователей по достижению целей</p>
+            </div>
+
+            <div class="age__button-wrapper" style="margin:18px 0;">
+
+            <div class="age__button">
+              <div class="button act">
+                <p>школьник</p>
+              </div>
+              <div class="button">
+                <p>студент</p>
+              </div>
+              <div class="button">
+                <p>трудящийся</p>
+              </div>
+            </div>
+          </div>
+
+              <div class="users__list">
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-1.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Ивашечкин М.И.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Руководитель туристического агентства</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">76%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/us-li-min.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Ивашечкин М.И.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Руководитель туристического агентства
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">1%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-2.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Сергеев С.С.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Режиссер телевизионных программ</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">69%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-2.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Сергеев С.С.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Режиссер телевизионных программ
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">69%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-3.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Виницкая Н.А.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Режиссер телевизионных программ</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>1 / 2</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">59%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-3.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Виницкая Н.А.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Режиссер телевизионных программ
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 2</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">59%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="user">
+
+                  <div class="user-dec">
+                    <div class="user__person">
+  
+                      <div class="avatar">
+                        <img src="/img/user-risk_avatar-4.png" />
+                      </div>
+  
+                      <div class="name">
+                        <p>Чеботырев В.А.</p>
+                      </div>
+                      <div class="user__post">
+                        <p>Слесарь технологических установок нефтегазовой отрасли</p>
+                      </div>
+                    </div>
+                    
+                    
+  
+                    <div class="user__stage">
+                      <p>Этап</p>
+                      <p><span>3 / 4</span></p>
+                    </div>
+  
+                    <div class="user__progress">
+                      <p>прогресс</p>
+                      <p><span class="high">52%</span></p>
+                    </div>
+  
+                    <div class="user__contact">
+                      <div class="message">
+                        <svg
+                        width="12"
+                        height="12"
+                        viewBox="0 0 12 12"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.44259 7.56597L4.28902 8.55882L7.85068 2.81344C8.14505 2.33857 7.97036 1.73136 7.46048 1.45719C6.9506 1.18303 6.29862 1.34573 6.00424 1.8206L2.44259 7.56597ZM5.16464 9.79393L9.08163 3.47534C9.76852 2.36731 9.36089 0.950477 8.17117 0.310757C6.98145 -0.328964 5.46016 0.0506759 4.77328 1.15871L0.85628 7.4773C0.85628 7.4773 0.764921 7.73955 0.661173 8.13668C0.384526 9.19562 0.0197883 11.2135 1.06422 11.7751C2.10865 12.3367 3.80269 11.0336 4.64905 10.281C4.96645 9.99874 5.16464 9.79393 5.16464 9.79393ZM1.95079 8.83011L3.35943 9.58755C3.18765 9.72929 2.99764 9.87684 2.79905 10.0158C2.42646 10.2766 2.09138 10.459 1.83473 10.544C1.83163 10.545 1.82857 10.546 1.82555 10.547C1.82495 10.5441 1.82436 10.5411 1.82376 10.5381C1.77444 10.2886 1.77653 9.92714 1.83273 9.49624C1.86268 9.26656 1.90488 9.03954 1.95079 8.83011ZM1.87895 10.715C1.87895 10.715 1.87716 10.7129 1.87434 10.7075C1.87767 10.7121 1.87895 10.715 1.87895 10.715ZM1.64267 10.5879C1.64267 10.5879 1.64599 10.5875 1.65188 10.5879C1.64549 10.5883 1.64267 10.5879 1.64267 10.5879Z"
+                          fill="white"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M11.014 12H6.03909C5.64658 12 5.32839 11.7037 5.32839 11.3381C5.32839 10.9726 5.64658 10.6762 6.03909 10.6762H11.014C11.4065 10.6762 11.7246 10.9725 11.7246 11.3381C11.7246 11.7037 11.4065 12 11.014 12Z"
+                          fill="white"
+                        />
+                      </svg>
+                      </div>
+  
+                      <div class="arrow">
+                        <svg
+                        width="9"
+                        height="15"
+                        viewBox="0 0 9 15"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.54102 13.5L7.54102 7.5L1.54102 1.5"
+                          stroke="#392B4B"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="user-mob">
+                    <div class="user__person">
+                      <div class="user__avatar">
+                        <img src="/img/user-risk_avatar-4.png">
+                      </div>
+                      <div class="gap"></div>
+                      <div class="user__name">
+                        Чеботырев В.А.
+                      </div>
+                    </div>
+  
+                    <div class="user__post">
+                      Слесарь технологических установок нефтегазовой отрасли
+                    </div>
+  
+                    <div class="user__success">
+                      <div class="stage">
+                        <p>Этап</p>
+                        <p><span>0 / 4</span></p>
+                      </div>
+                      <div class="user__progress">
+                        <p>Прогресс</p>
+                        <p><span class="low">52%</span></p>
+                      </div>
+                    </div>
+  
+                    <div class="user__contact">
+                      <button class="more">
+                        Подробнее
+                      </button>
+                      <button class="message">
+                        Написать
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            <div class="showmore__button">
+              Все студенты 
+              <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.7207 9L5.83296 5L1.7207 1"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            </div>
+          </div>
+
+          <div class="stat-block sign-risk ful">
+            <div class="title">
+              <p>Доля пользователей в зоне риска</p>
+            </div>
+            
+            <div class="age__button-wrapper" style="margin:18px 0;">
+
+              <div class="age__button">
+                <div class="button act">
+                  <p>школьник</p>
+                </div>
+                <div class="button">
+                  <p>студент</p>
+                </div>
+                <div class="button">
+                  <p>трудящийся</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="chart-body">
+  
+              <div class="chart__main">
+                <canvas id="chart__user-risk"></canvas>
+              </div>
+              <div class="chart-fraction__list gender">
+  
+                <div class="item">
+  
+                  <div class="circle gr"></div>
+  
+                  <div class="info">
+                    <p class="name">
+                      Активные
+                    </p>
+                    <p class="percent">
+                      71%
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="item">
+  
+                  <div class="circle or"></div>
+                  
+                  <div class="info">
+                    <p class="name">
+                      Неактивные
+                    </p>
+                    <p class="percent">
+                      29%
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="title title-section tit-b">
+        <p>Статистика трудоустройства пользователей</p>
+      </div>
+
+      <div class="stat-block__list">
+
+        <div class="stat-block sign-employed ful">
+          <div class="title">
+            <p>Доля трудоустроенных пользователей</p>
+          </div>
+
+          <div class="chart-body">
+
+            <div class="chart__main">
+              <canvas id="chart__user-employed"></canvas>
+            </div>
+            <div class="chart-fraction__list gender">
+
+              <div class="item">
+
+                <div class="circle gr"></div>
+
+                <div class="info">
+                  <p class="name">
+                    Трудоустроены
+                  </p>
+                  <p class="percent">
+                    71%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle or"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Нетрудоустроенны
+                  </p>
+                  <p class="percent">
+                    29%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stat-block sign-employed-tr ful">
+          <div class="title">
+            <p>Трудоустроенные по траектории пользователи</p>
+          </div>
+
+          <div class="chart-body">
+
+            <div class="chart__main">
+              <canvas id="chart__employed-tr"></canvas>
+            </div>
+            <div class="chart-fraction__list gender">
+
+              <div class="item">
+
+                <div class="circle gr"></div>
+
+                <div class="info">
+                  <p class="name">
+                    Трудоустроены
+                  </p>
+                  <p class="percent">
+                    71%
+                  </p>
+                </div>
+              </div>
+
+              <div class="item">
+
+                <div class="circle or"></div>
+                
+                <div class="info">
+                  <p class="name">
+                    Нетрудоустроенны
+                  </p>
+                  <p class="percent">
+                    29%
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="title title-section tit-s ">
+        <p>Информация по закрытым и незакрытым задачам</p>
+      </div>
+
+        <div class="stat-block ful tasks__status">
+          <div class="title">
+            <p>Количество закрытых и незакрытых тем</p>
+          </div>
+          <div class="task__list">
+            <div class="task">
+              <p>задачи закрты</p>
+              <p><span>932</span></p>
+            </div>
+            <div class="task">
+              <p>задач не знакрыты</p>
+              <p><span>4 321</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-block__list">
+          <div class="stat-block top-job-sel ful ">
+            <div class="title">
+              <p>Требующиеся материалы</p>
+            </div>
+
+            <div class="jobs__list">
+              <div class="job__item">
+                <div class="job__name">
+                  <p>PostgreSQL</p>
+                </div>
+                <div class="job__stat">
+                  <p>Требуется</p>
+                  <p><span>92%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Numpy</p>
+                </div>
+                <div class="job__stat">
+                  <p>Требуется</p>
+                  <p><span>92%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Pandas</p>
+                </div>
+                <div class="job__stat">
+                  <p>Требуется</p>
+                  <p><span>91%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Power BI</p>
+                </div>
+                <div class="job__stat">
+                  <p>Требуется</p>
+                  <p><span>90%</span></p>
+                </div>
+              </div>
+            </div>              
+
+            <div class="showmore__button"
+              type="button"
+              data-toggle="modal"
+              data-target="#us-li-2"
+            >
+              Весь список
+              <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.7207 9L5.83296 5L1.7207 1"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            </div>
+          </div>
+
+          <div class="stat-block top-job-sel ful "
+          >
+            <div class="title">
+              <p>ТОП востребованых курсов</p>
+            </div>
+
+            <div class="jobs__list">
+              <div class="job__item">
+                <div class="job__name">
+                  <p>SWOT, PEST, 5 сил Портера</p>
+                </div>
+                <div class="job__stat">
+                  <p>Приобрели</p>
+                  <p><span>63%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>СТРАТЕГИЯ КОМПАНИИ - РАЗРАБОТКА И ОЦЕНКА ЭФФЕКТИВНОСТИ</p>
+                </div>
+                <div class="job__stat">
+                  <p>Приобрели</p>
+                  <p><span>57%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Figma</p>
+                </div>
+                <div class="job__stat">
+                  <p>Приобрели</p>
+                  <p><span>54%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Математическая статистика</p>
+                </div>
+                <div class="job__stat">
+                  <p>Приобрели</p>
+                  <p><span>51%</span></p>
+                </div>
+              </div>
+            </div>              
+
+            <div class="showmore__button"
+              type="button"
+              data-toggle="modal"
+              data-target="#us-li-3"
+            >
+              Весь список
+              <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.7207 9L5.83296 5L1.7207 1"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="title title-section tit-s ">
+          <p>Потребность региона в кадрах</p>
+        </div>
+
+        <div class="stat-block__list">
+          <div class="stat-block sign-employed ful rec">
+            <div class="title">
+              <p>Доля закрытой потребности</p>
+            </div>
+  
+            <div class="chart-body">
+  
+              <div class="chart__main">
+                <canvas id="chart__user-employed-close"></canvas>
+              </div>
+              <div class="chart-fraction__list gender">
+  
+                <div class="item">
+  
+                  <div class="circle gr"></div>
+  
+                  <div class="info">
+                    <p class="name">
+                      Трудоустроены
+                    </p>
+                    <p class="percent">
+                      71%
+                    </p>
+                  </div>
+                </div>
+  
+                <div class="item">
+  
+                  <div class="circle or"></div>
+                  
+                  <div class="info">
+                    <p class="name">
+                      Нетрудоустроенны
+                    </p>
+                    <p class="percent">
+                      29%
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stat-block top-job-sel ful ">
+            <div class="title">
+              <p>Востребованные профобласти в регионе</p>
+            </div>
+
+            <div class="jobs__list">
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Офисные службы</p>
+                </div>
+                <div class="job__stat">
+                  <p>Открытых вакансий</p>
+                  <p><span>9 321</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Туризм и обслуживание</p>
+                </div>
+                <div class="job__stat">
+                  <p>Открытых вакансий</p>
+                  <p><span>57%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Figma</p>
+                </div>
+                <div class="job__stat">
+                  <p>Приобрели</p>
+                  <p><span>54%</span></p>
+                </div>
+              </div>
+
+              <div class="job__item">
+                <div class="job__name">
+                  <p>Математическая статистика</p>
+                </div>
+                <div class="job__stat">
+                  <p>Приобрели</p>
+                  <p><span>51%</span></p>
+                </div>
+              </div>
+            </div>              
+
+            <div class="showmore__button"
+              type="button"
+              data-toggle="modal"
+              data-target="#us-li-4"
+            >
+              Весь список
+              <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.7207 9L5.83296 5L1.7207 1"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            </div>
+          </div>
+        </div>
+        
+        <div class="stat-block solo search-bl">
+          <div class="title">
+            <p>Востребованные профессии в регионе</p>
+          </div>
+
+          <div class="filtr-form">
+            <form>
+              <div class="step-s__input">
+                <div class="step-s__input_text main__text-neutral">
+                  Профобласть
+                </div>
+                <select name="site" class="main__select">
+                  
+                  <option value="geekbrainsss">IT</option>
+                  <option value="geekbrainsss">IT</option>
+                </select>
+              </div>
+            </form>
+            <form>
+              <div class="filtr-search">
+                <input
+                  type="text"
+                  placeholder="Поиск по названию профессии"
+                  name="FilterSearch[name]"
+                />
+  
+                <button type="submit" class="search-btn">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.8068 14.8288L20 20M16.6738 10.3369C16.6738 13.8367 13.8367 16.6738 10.3369 16.6738C6.83714 16.6738 4 13.8367 4 10.3369C4 6.83713 6.83714 4 10.3369 4C13.8367 4 16.6738 6.83713 16.6738 10.3369Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M7.5 11C7.83333 12.1667 9 14 12 13"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="filtr-res__list">
+            <div class="result">
+              <div class="res__name">
+                <p>Аналитик данных (Data Analyst)</p>
+              </div>
+              <div class="specific">
+                <p>Трудоустроенно</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Поставленно целей</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Всего вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Открытых вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Процент закрытия</p>
+                <p><span>3202</span></p>
+              </div>
+            </div>
+            <div class="result">
+              <div class="res__name">
+                <p>Аналитик данных (Data Analyst)</p>
+              </div>
+              <div class="specific">
+                <p>Трудоустроенно</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Поставленно целей</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Всего вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Открытых вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Процент закрытия</p>
+                <p><span>3202</span></p>
+              </div>
+            </div>
+            <div class="result">
+              <div class="res__name">
+                <p>Аналитик данных (Data Analyst)</p>
+              </div>
+              <div class="specific">
+                <p>Трудоустроенно</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Поставленно целей</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Всего вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Открытых вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Процент закрытия</p>
+                <p><span>3202</span></p>
+              </div>
+            </div>
+            <div class="result">
+              <div class="res__name">
+                <p>Аналитик данных (Data Analyst)</p>
+              </div>
+              <div class="specific">
+                <p>Трудоустроенно</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Поставленно целей</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Всего вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Открытых вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Процент закрытия</p>
+                <p><span>3202</span></p>
+              </div>
+            </div>
+            <div class="result">
+              <div class="res__name">
+                <p>Аналитик данных (Data Analyst)</p>
+              </div>
+              <div class="specific">
+                <p>Трудоустроенно</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Поставленно целей</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Всего вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Открытых вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Процент закрытия</p>
+                <p><span>3202</span></p>
+              </div>
+            </div>
+            <div class="result">
+              <div class="res__name">
+                <p>Аналитик данных (Data Analyst)</p>
+              </div>
+              <div class="specific">
+                <p>Трудоустроенно</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Поставленно целей</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Всего вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Открытых вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Процент закрытия</p>
+                <p><span>3202</span></p>
+              </div>
+            </div>
+            <div class="result">
+              <div class="res__name">
+                <p>Аналитик данных (Data Analyst)</p>
+              </div>
+              <div class="specific">
+                <p>Трудоустроенно</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Поставленно целей</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Всего вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Открытых вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Процент закрытия</p>
+                <p><span>3202</span></p>
+              </div>
+            </div>
+            <div class="result">
+              <div class="res__name">
+                <p>Аналитик данных (Data Analyst)</p>
+              </div>
+              <div class="specific">
+                <p>Трудоустроенно</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Поставленно целей</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Всего вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Открытых вакансий</p>
+                <p><span>3202</span></p>
+              </div>
+              <div class="specific">
+                <p>Процент закрытия</p>
+                <p><span>3202</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="filtr__showmore">
+            <p>Все студенты</p>
+            <svg
+              width="7"
+              height="10"
+              viewBox="0 0 7 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.7207 9L5.83296 5L1.7207 1"
+                stroke="#966CEE"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+
+        </div>
+
+    </div>
+  </div>
+</div>
+ 
+//= template/modals.html
+//= template/inc/end.html
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+<script>
+  
+  const chart__status = document
+    .getElementById("chart__user-status")
+    .getContext("2d")
+  const myChart__status = new Chart(chart__status, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [7,43,50],
+          backgroundColor: [
+            "#FF604B",
+            "#4F4BFF",
+            "#71C97A"
+          ],
+          borderColor: ["#FFFFFF"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+
+  const chart__emplCl = document
+    .getElementById("chart__user-employed-close")
+    .getContext("2d")
+  const myChart__empCL = new Chart(chart__emplCl, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [71,29],
+          backgroundColor: [
+            "#71C97A",
+            "#FF604B",
+            
+          ],
+          borderColor: ["#FFFFFF"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+
+  const chart__employed = document
+    .getElementById("chart__user-employed")
+    .getContext("2d")
+  const myChart__employed= new Chart(chart__employed, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [71,29],
+          backgroundColor: [
+            "#71C97A",
+            "#FF604B"
+          ],
+          borderColor: ["#FFFFFF"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+  
+  const chart__employedTr = document
+    .getElementById("chart__employed-tr")
+    .getContext("2d")
+  const myChart__employedTr = new Chart(chart__employedTr, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [29,71],
+          backgroundColor: [
+            "#FF604B",
+            "#71C97A"
+          ],
+          borderColor: ["#FFFFFF"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+
+  const chart__riskZone = document
+    .getElementById("chart__user-riskZone")
+    .getContext("2d")
+  const myChart__riskZone = new Chart(chart__riskZone, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [29,71],
+          backgroundColor: [
+            "#FF604B",
+            "#71C97A"
+          ],
+          borderColor: ["#FFFFFF"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+
+  const chart__place = document
+    .getElementById("chart__user-place")
+    .getContext("2d")
+  const myChart__place = new Chart(chart__place, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [29,71],
+          backgroundColor: [
+            "#FF604B",
+            "#71C97A"
+          ],
+          borderColor: ["#FFFFFF"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+
+  const chart__geo = document
+    .getElementById("chart__user-geo")
+    .getContext("2d")
+  const myChart__geo = new Chart(chart__geo, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [23,22,9,7,6,5,5,4,19],
+          backgroundColor: [
+            "#71C97A",
+            "#FF604B",
+            "#4B93FF",
+            "#EDD717",
+            "#ED9717",
+            "#B5ED17",
+            "#6C8F07",
+            "#2A078F",
+            "#7C078F"
+          ],
+          borderColor: ["#FFFFFF"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+
+  const chart__risk = document
+    .getElementById("chart__user-risk")
+    .getContext("2d")
+  const myChart__risk = new Chart(chart__risk, {
+    type: "doughnut",
+    data: {
+      datasets: [
+        {
+          data: [71,29],
+          backgroundColor: [
+            "#71C97A",
+            "#FF604B"
+          ],
+          borderColor: ["#FFFFFF"],
+          borderWidth: 2,
+        },
+      ],
+    },
+    options: {
+      plugins: {
+        tooltip: {
+          enabled: false,
+          
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+
+  const chart__age = document.getElementById("chart__user-age").getContext("2d")
+
+  
+
+  const data = {
+    labels: [
+      "0 - 10",
+      "10 - 17",
+      "17 - 24",
+      "24 - 30",
+      "30 - 40",
+      "40 - 50",
+      "50 - 60",
+      "60 и более",
+    ],
+    datasets: [
+      {
+        data: [70, 100, 3975, 7900, 7700, 5000, 200, 60],
+        label: "",
+        fill: false,
+        backgroundColor: ["#A194ED"],
+        borderWidth: 1,
+        borderRadius: 8,
+      },
+    ],
+  }
+
+  const myChart__age = new Chart(chart__age, {
+    type: "bar",
+    data: data,
+    options: {
+      maintainAspectRatio: false,
+      responsive: false,
+      plugins: {
+        tooltip: {
+          
+          yAlign: "bottom",
+          displayColors: false,
+          
+        },
+        legend: {
+          display: false,
+        },
+      },
+
+      scales: {},
+
+      onAnimationComplete: function () {
+        var ctx = this.chart.ctx
+        ctx.font = this.scale.font
+        ctx.fillStyle = this.scale.textColor
+        ctx.textAlign = "center"
+        ctx.textBaseline = "bottom"
+
+        this.datasets.forEach(function (dataset) {
+          dataset.points.forEach(function (points) {
+            ctx.fillText(points.value, points.x, points.y - 10)
+          })
+        })
+      },
+    },
+  })
+</script>
